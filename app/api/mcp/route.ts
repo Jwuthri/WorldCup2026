@@ -12,41 +12,56 @@ import fs from "node:fs";
 import path from "node:path";
 import { TOOL_DEFS, runTool, resolveTeam } from "@/lib/aiTools";
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:4026";
 const CHART_URI = "ui://mundial26/chart.html";
 
+// Public base URL for deep links. Prefer an explicit env override (e.g. a custom
+// domain); otherwise derive it from the incoming request so it's always correct
+// wherever this is deployed — no env var to set on Railway/Vercel/etc.
+function baseFromReq(req: Request): string {
+  const env = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "");
+  if (env) return env;
+  const h = req.headers;
+  const host = h.get("x-forwarded-host") ?? h.get("host");
+  if (host) return `${h.get("x-forwarded-proto") ?? "https"}://${host}`;
+  try {
+    return new URL(req.url).origin;
+  } catch {
+    return "http://localhost:4026";
+  }
+}
+
 const desc = (name: string) => TOOL_DEFS.find((t) => t.name === name)?.description ?? name;
-const teamLink = (input: any) => {
+const teamLink = (input: any, base: string) => {
   const t = resolveTeam(String(input?.team ?? ""));
-  return t ? `${SITE}/team/${t.abbr}` : null;
+  return t ? `${base}/team/${t.abbr}` : null;
 };
 
-// name -> [zod input shape, deep link back into the app]
-const TEXT_TOOLS: Record<string, [z.ZodRawShape, (input: any) => string | null]> = {
+// name -> [zod input shape, deep link (base is the runtime public origin)]
+const TEXT_TOOLS: Record<string, [z.ZodRawShape, (input: any, base: string) => string | null]> = {
   list_matches: [
     { team: z.string().optional().describe("Team name or abbreviation, e.g. 'Spain' or 'ESP'"), stage: z.string().optional() },
-    () => `${SITE}/matches`,
+    (_i, base) => `${base}/matches`,
   ],
-  get_match: [{ match_id: z.string().describe("Id from list_matches") }, (i) => `${SITE}/match/${i.match_id}`],
-  get_match_conditions: [{ match_id: z.string().describe("Id from list_matches") }, (i) => `${SITE}/match/${i.match_id}`],
+  get_match: [{ match_id: z.string().describe("Id from list_matches") }, (i, base) => `${base}/match/${i.match_id}`],
+  get_match_conditions: [{ match_id: z.string().describe("Id from list_matches") }, (i, base) => `${base}/match/${i.match_id}`],
   get_team: [{ team: z.string().describe("Team name or abbreviation") }, teamLink],
   get_team_schedule: [{ team: z.string().describe("Team name or abbreviation") }, teamLink],
-  get_player: [{ name: z.string() }, () => `${SITE}/players`],
-  similar_players: [{ name: z.string().describe("Player name (partial ok)") }, () => `${SITE}/map`],
+  get_player: [{ name: z.string() }, (_i, base) => `${base}/players`],
+  similar_players: [{ name: z.string().describe("Player name (partial ok)") }, (_i, base) => `${base}/map`],
   get_team_strength: [{ team: z.string().describe("Team name or abbreviation") }, teamLink],
   head_to_head: [
     { team_a: z.string(), team_b: z.string() },
-    (i) => {
+    (i, base) => {
       const a = resolveTeam(String(i?.team_a ?? "")), b = resolveTeam(String(i?.team_b ?? ""));
-      return a && b ? `${SITE}/compare?a=${a.abbr}&b=${b.abbr}` : null;
+      return a && b ? `${base}/compare?a=${a.abbr}&b=${b.abbr}` : null;
     },
   ],
-  get_referee: [{ match_id: z.string().optional().describe("Optional id from list_matches") }, () => `${SITE}/whistle`],
+  get_referee: [{ match_id: z.string().optional().describe("Optional id from list_matches") }, (_i, base) => `${base}/whistle`],
   simulate_match: [
     { team_a: z.string().describe("Team name or abbreviation"), team_b: z.string().describe("Team name or abbreviation") },
-    (i) => {
+    (i, base) => {
       const a = resolveTeam(String(i?.team_a ?? "")), b = resolveTeam(String(i?.team_b ?? ""));
-      return a && b ? `${SITE}/compare?ta=${a.abbr}&tb=${b.abbr}` : null;
+      return a && b ? `${base}/compare?ta=${a.abbr}&tb=${b.abbr}` : null;
     },
   ],
   leaderboard: [
@@ -54,13 +69,13 @@ const TEXT_TOOLS: Record<string, [z.ZodRawShape, (input: any) => string | null]>
       metric: z.enum(["goals", "assists", "xg", "avg_rating", "top_speed", "distance", "saves", "passes_completed"]),
       limit: z.number().int().optional().describe("Default 10, max 20"),
     },
-    () => `${SITE}/awards`,
+    (_i, base) => `${base}/awards`,
   ],
   get_standings: [
     { group: z.string().optional().describe("e.g. 'A', 'Group H' — omit for all groups") },
-    () => `${SITE}/tournament`,
+    (_i, base) => `${base}/tournament`,
   ],
-  get_awards: [{}, () => `${SITE}/awards`],
+  get_awards: [{}, (_i, base) => `${base}/awards`],
 };
 
 // coverage guard: every non-chart tool in TOOL_DEFS must be registered here,
@@ -70,7 +85,7 @@ const UNCOVERED = TOOL_DEFS.map((t) => t.name).filter(
 );
 if (UNCOVERED.length) console.warn(`[mcp] tools missing from TEXT_TOOLS: ${UNCOVERED.join(", ")}`);
 
-function buildServer(): McpServer {
+function buildServer(base: string): McpServer {
   const server = new McpServer(
     { name: "mundial26", version: "1.0.0" },
     {
@@ -82,7 +97,7 @@ function buildServer(): McpServer {
   for (const [name, [shape, link]] of Object.entries(TEXT_TOOLS)) {
     server.registerTool(name, { description: desc(name), inputSchema: shape }, async (input: any) => {
       const r = runTool(name, input);
-      const url = r.isError ? null : link(input);
+      const url = r.isError ? null : link(input, base);
       return {
         content: [{ type: "text" as const, text: url ? `${r.text}\n\nOpen in MUNDIAL·26: ${url}` : r.text }],
         isError: r.isError,
@@ -139,7 +154,7 @@ async function handler(req: Request): Promise<Response> {
     sessionIdGenerator: undefined,
     enableJsonResponse: true,
   });
-  await buildServer().connect(transport);
+  await buildServer(baseFromReq(req)).connect(transport);
   return transport.handleRequest(req);
 }
 
