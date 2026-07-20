@@ -8,7 +8,10 @@ import { luckOf } from "@/lib/luck";
 import { flagUrl } from "@/lib/flags";
 import MiniCard from "@/components/MiniCard";
 import Heatmap from "@/components/Heatmap";
+import TeamJourney, { type JourneyStop } from "@/components/TeamJourney";
 import { teamTerritory } from "@/lib/heatmap";
+import { getCalendar } from "@/lib/data";
+import { VENUES, haversineKm } from "@/lib/venues";
 
 export function generateStaticParams() {
   return [...getTeams().keys()].map((abbr) => ({ abbr }));
@@ -45,6 +48,32 @@ export default async function TeamPage({
   const territory = teamTerritory(abbr);
   const vsTerritory = vsTeam ? teamTerritory(vsTeam.abbr) : null;
   const resultByMatch = new Map(t.results.map((r) => [r.matchId, r]));
+
+  // journey: the team's matches in date order, joined to venues for the travel map
+  const stops = getCalendar()
+    .filter((m) => m.home.abbr === abbr || m.away.abbr === abbr)
+    .sort((a, b) => +new Date(a.date) - +new Date(b.date))
+    .map((m): JourneyStop | null => {
+      const v = VENUES[m.city];
+      const r = resultByMatch.get(m.id);
+      if (!v || !r) return null;
+      return {
+        matchId: m.id,
+        city: m.city,
+        stadium: m.stadium,
+        date: new Date(m.date).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" }),
+        opp: r.opp,
+        oppAbbr: r.oppAbbr,
+        score: r.score,
+        outcome: r.outcome,
+        lat: v.lat,
+        lon: v.lon,
+        km: 0,
+      };
+    })
+    .filter(Boolean) as JourneyStop[];
+  for (let i = 1; i < stops.length; i++)
+    stops[i].km = haversineKm(VENUES[stops[i - 1].city], VENUES[stops[i].city]);
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-10 sm:px-8">
@@ -125,6 +154,16 @@ export default async function TeamPage({
           </div>
         </section>
       </div>
+
+      {/* journey */}
+      {stops.length >= 2 && (
+        <TeamJourney
+          stops={stops}
+          venues={Object.values(VENUES).map((v) => ({ city: v.city, lat: v.lat, lon: v.lon }))}
+          color="var(--gold)"
+          teamName={t.name}
+        />
+      )}
 
       {/* territory */}
       {territory.avg && (

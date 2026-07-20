@@ -61,7 +61,7 @@ const ratingTone = (r: number | null) =>
   r == null ? "var(--faint)" : r >= 8 ? "var(--gold)" : r >= 6.5 ? "var(--chalk)" : "var(--ember)";
 
 /** formation coordinates: depth lines from yardFormation, own half, GK at edge */
-function formationXY(p: TPlayer, side: "home" | "away", lineCount: number) {
+export function formationXY(p: Pick<TPlayer, "slot">, side: "home" | "away", lineCount: number) {
   const slot = p.slot ?? { line: 0, side: 50 };
   const depth = lineCount > 1 ? slot.line / (lineCount - 1) : 0; // 0=GK line .. 1=front line
   const x = 55 + depth * 380; // 55..435 inside own half

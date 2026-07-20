@@ -17,9 +17,11 @@ import MatchTheater, {
 } from "@/components/MatchTheater";
 import DuelBars, { type DuelRow } from "@/components/DuelBars";
 import ShotReplay from "@/components/ShotReplay";
+import XgRace from "@/components/XgRace";
+import PaperVsPlayed, { type MorphPlayer, type MorphSide } from "@/components/PaperVsPlayed";
 import MatchColumn, { readColumn } from "@/components/MatchColumn";
 import Heatmap from "@/components/Heatmap";
-import { matchTerritory, hasHeat } from "@/lib/heatmap";
+import { matchTerritory, hasHeat, decodeHeatmap, GRID_W, GRID_H } from "@/lib/heatmap";
 
 export function generateStaticParams() {
   return getCalendar().map((m) => ({ id: m.id }));
@@ -166,6 +168,35 @@ const toTSide = (side: MatchSide, panels: Map<string, TPanelSection[]>): TSide =
 });
 
 const parseMin = (m: string) => parseInt(String(m).replace(/[^0-9+]/g, "").split("+")[0] || "0");
+
+/* ---- paper vs played: heatmap center of gravity per starter ---- */
+function centroidOf(p: MatchPlayer): { fx: number; fy: number } | null {
+  if (!p.heatmap) return null;
+  const g = decodeHeatmap(p.heatmap);
+  if (!g) return null;
+  let sum = 0, sx = 0, sy = 0;
+  for (let i = 0; i < g.length; i++) {
+    const r = Math.floor(i / GRID_W), c = i % GRID_W;
+    sum += g[i]; sx += g[i] * (c + 0.5); sy += g[i] * (r + 0.5);
+  }
+  if (!sum) return null;
+  return { fx: sx / sum / GRID_W, fy: sy / sum / GRID_H };
+}
+
+const toMorphSide = (s: MatchSide): MorphSide => ({
+  abbr: s.ref.abbr,
+  color: s.color,
+  formation: s.formation,
+  players: s.players
+    .filter((p) => p.starter && p.formationSlot)
+    .map((p) => {
+      const played = centroidOf(p);
+      return played
+        ? { id: p.fifaId, shortName: p.shortName, shirt: p.shirt, slot: p.formationSlot!, played }
+        : null;
+    })
+    .filter(Boolean) as MorphPlayer[],
+});
 
 /* ---- team duel rows ---- */
 const TEAM_SPECS: { label: string; f?: string; s?: string; fmt?: (v: number) => string }[] = [
@@ -326,6 +357,26 @@ export default async function MatchPage({ params }: { params: Promise<{ id: stri
           </Link>
         </p>
       </div>
+
+      {/* the xG race */}
+      {shots.length > 0 && (
+        <div className="mt-8">
+          <XgRace
+            shots={shots}
+            home={{ abbr: cal.home.abbr, color: home.color }}
+            away={{ abbr: cal.away.abbr, color: away.color }}
+            maxMinute={maxMinute}
+          />
+        </div>
+      )}
+
+      {/* paper vs played */}
+      {(() => {
+        const mh = toMorphSide(home), ma = toMorphSide(away);
+        return mh.players.length >= 8 && ma.players.length >= 8
+          ? <PaperVsPlayed home={mh} away={ma} />
+          : null;
+      })()}
 
       {/* team duel */}
       {duelRows.length > 0 && (
