@@ -1,26 +1,32 @@
-// Bundles mcp-app/chart.ts into a single self-contained HTML file served as
-// the MCP Apps ui:// resource. Run: npm run build:mcp-app (also runs on prebuild).
+// Bundles each mcp-app/*.ts iframe into a self-contained HTML file served as an
+// MCP Apps ui:// resource. Run: npm run build:mcp-app (also runs on prebuild).
 import { build } from "esbuild";
 import fs from "node:fs";
 
-const { outputFiles } = await build({
-  entryPoints: ["mcp-app/chart.ts"],
-  bundle: true,
-  minify: true,
-  write: false,
-  format: "iife",
-  platform: "browser",
-  target: "es2022",
-});
+const APPS = [
+  ["chart", "MUNDIAL·26 chart"],
+  ["rematch", "MUNDIAL·26 rematch machine"],
+  ["shotmap", "MUNDIAL·26 shot map"],
+];
 
-const js = outputFiles[0].text;
-if (js.includes("</script>")) throw new Error("bundle contains </script>; cannot inline");
+for (const [name, title] of APPS) {
+  const { outputFiles } = await build({
+    entryPoints: [`mcp-app/${name}.ts`],
+    bundle: true,
+    minify: true,
+    write: false,
+    format: "iife",
+    platform: "browser",
+    target: "es2022",
+  });
+  const js = outputFiles[0].text;
+  if (js.includes("</script>")) throw new Error(`${name}: bundle contains </script>; cannot inline`);
 
-const html = `<!doctype html>
+  const html = `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>MUNDIAL·26 chart</title>
+<title>${title}</title>
 <style>
   html, body { margin: 0; }
   body {
@@ -34,11 +40,11 @@ const html = `<!doctype html>
 </style>
 </head>
 <body>
-<figure id="chart" style="margin:0"></figure>
+<div id="app"><figure id="chart" style="margin:0"></figure></div>
 <script>${js}</script>
 </body>
 </html>
 `;
-
-fs.writeFileSync("assets/mcp-chart-app.html", html);
-console.log(`assets/mcp-chart-app.html — ${(html.length / 1024).toFixed(0)} kB`);
+  fs.writeFileSync(`assets/mcp-${name}-app.html`, html);
+  console.log(`assets/mcp-${name}-app.html — ${(html.length / 1024).toFixed(0)} kB`);
+}

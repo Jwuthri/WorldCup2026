@@ -45,10 +45,11 @@ Each question costs a few cents (Claude Opus reads a ~15k-token data dossier).
 
 `/api/mcp` exposes the same 15 data tools as a remote MCP server, so anyone can chat with the
 tournament data from **their own** Claude (or any MCP client) — no API key on our side, their
-subscription pays for the tokens. `render_chart` is an [MCP App](https://modelcontextprotocol.io/docs/extensions/apps):
-hosts that support the extension (Claude, Claude Desktop, VS Code…) render our bar/scatter
-charts interactively inside the chat, in the site's night-turf look. Every tool result links
-back to the matching page here.
+subscription pays for the tokens. Three tools are [MCP Apps](https://modelcontextprotocol.io/docs/extensions/apps)
+that render interactive UI inside the chat on supporting hosts (Claude, Claude Desktop, VS Code…):
+`render_chart` (bar/scatter), `get_match` (xG shot map on a pitch), and `simulate_match` (the
+full rematch machine — team pickers included; changing a team calls the tool again from the
+iframe). Every tool result links back to the matching page here.
 
 Connect it:
 
@@ -73,6 +74,7 @@ request), [lib/aiTools.ts](lib/aiTools.ts) (shared tool layer, also used by `/as
 | `/team/[abbr]` | Team identity (percentile profile vs all 48 teams), results, squad — e.g. `/team/ESP` |
 | `/map` | **The tribes**: all 523 regular outfielders sorted into 8 k-means style archetypes — face walls, plain-word traits, and a "who plays like X" finder. Team style families below. Fortune index (10k xG Monte Carlo per group match) shows on `/tournament` + team pages. |
 | `/compare` | Two cards + stat radar, shareable via URL params — plus **the rematch machine**: simulate any hypothetical team matchup (`?ta=FRA&tb=ARG`), Poisson-from-xG + Elo, 10k runs, backtested |
+| `/mundle` | **Mundle** — the daily guessing game: one mystery player from the top 200, six guesses, real-data clues (team/confederation, position, tribe, rating), emoji-share results. New player at midnight UTC. |
 | `/ask` | Tactical Q&A over the data (needs the API key above) |
 | `/connect` | Visitor-facing guide to the MCP server — connect the database to their own Claude/ChatGPT |
 

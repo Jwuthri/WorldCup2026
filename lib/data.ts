@@ -339,6 +339,7 @@ export type StandingRow = {
   gd: number;
   pts: number;
   through: boolean;
+  confed: string;
 };
 
 export const getStandings = cache((): Record<string, StandingRow[]> => {
@@ -358,6 +359,7 @@ export const getStandings = cache((): Record<string, StandingRow[]> => {
       gd: r.GoalsDiference,
       pts: r.Points,
       through: r.QualificationStatus === "ConfirmedQualified",
+      confed: r.Team?.IdConfederation ?? "",
     });
   }
   for (const g of Object.values(groups)) g.sort((a, b) => a.pos - b.pos);

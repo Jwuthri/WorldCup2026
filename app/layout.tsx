@@ -43,9 +43,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/matches" className="hover:text-chalk">All 104 matches</Link>
               <Link href="/players" className="hover:text-chalk">Player cards</Link>
               <Link href="/awards" className="hover:text-chalk">Honours</Link>
+              <Link href="/rankings" className="hover:text-chalk">Rankings</Link>
               <Link href="/territory" className="hover:text-chalk">Territory</Link>
               <Link href="/whistle" className="hover:text-chalk">The whistle</Link>
               <Link href="/map" className="hover:text-chalk">The tribes</Link>
+              <Link href="/mundle" className="hover:text-chalk">Mundle</Link>
               <Link href="/compare" className="hover:text-chalk">Compare</Link>
               <Link href="/connect" className="hover:text-chalk">Connect your AI</Link>
             </nav>

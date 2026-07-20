@@ -11,8 +11,17 @@ import { z } from "zod";
 import fs from "node:fs";
 import path from "node:path";
 import { TOOL_DEFS, runTool, resolveTeam } from "@/lib/aiTools";
+import { getMatchBundle } from "@/lib/data";
+import { getRates, simulate } from "@/lib/sim";
 
 const CHART_URI = "ui://mundial26/chart.html";
+const REMATCH_URI = "ui://mundial26/rematch.html";
+const SHOTMAP_URI = "ui://mundial26/shotmap.html";
+const APP_RESOURCES: [string, string, string][] = [
+  ["MUNDIAL·26 chart", CHART_URI, "mcp-chart-app.html"],
+  ["MUNDIAL·26 rematch machine", REMATCH_URI, "mcp-rematch-app.html"],
+  ["MUNDIAL·26 shot map", SHOTMAP_URI, "mcp-shotmap-app.html"],
+];
 
 // Public base URL for deep links. Prefer an explicit env override (e.g. a custom
 // domain); otherwise derive it from the incoming request so it's always correct
@@ -42,7 +51,6 @@ const TEXT_TOOLS: Record<string, [z.ZodRawShape, (input: any, base: string) => s
     { team: z.string().optional().describe("Team name or abbreviation, e.g. 'Spain' or 'ESP'"), stage: z.string().optional() },
     (_i, base) => `${base}/matches`,
   ],
-  get_match: [{ match_id: z.string().describe("Id from list_matches") }, (i, base) => `${base}/match/${i.match_id}`],
   get_match_conditions: [{ match_id: z.string().describe("Id from list_matches") }, (i, base) => `${base}/match/${i.match_id}`],
   get_team: [{ team: z.string().describe("Team name or abbreviation") }, teamLink],
   get_team_schedule: [{ team: z.string().describe("Team name or abbreviation") }, teamLink],
@@ -57,13 +65,6 @@ const TEXT_TOOLS: Record<string, [z.ZodRawShape, (input: any, base: string) => s
     },
   ],
   get_referee: [{ match_id: z.string().optional().describe("Optional id from list_matches") }, (_i, base) => `${base}/whistle`],
-  simulate_match: [
-    { team_a: z.string().describe("Team name or abbreviation"), team_b: z.string().describe("Team name or abbreviation") },
-    (i, base) => {
-      const a = resolveTeam(String(i?.team_a ?? "")), b = resolveTeam(String(i?.team_b ?? ""));
-      return a && b ? `${base}/compare?ta=${a.abbr}&tb=${b.abbr}` : null;
-    },
-  ],
   leaderboard: [
     {
       metric: z.enum(["goals", "assists", "xg", "avg_rating", "top_speed", "distance", "saves", "passes_completed"]),
@@ -78,10 +79,13 @@ const TEXT_TOOLS: Record<string, [z.ZodRawShape, (input: any, base: string) => s
   get_awards: [{}, (_i, base) => `${base}/awards`],
 };
 
-// coverage guard: every non-chart tool in TOOL_DEFS must be registered here,
+// tools registered below as MCP Apps (interactive iframes), not plain text tools
+const APP_TOOL_NAMES = new Set(["render_chart", "get_match", "simulate_match"]);
+
+// coverage guard: every tool in TOOL_DEFS must be registered somewhere,
 // or it silently won't reach MCP clients (the #1 drift bug of a hand-kept map)
 const UNCOVERED = TOOL_DEFS.map((t) => t.name).filter(
-  (n) => n !== "render_chart" && !(n in TEXT_TOOLS)
+  (n) => !APP_TOOL_NAMES.has(n) && !(n in TEXT_TOOLS)
 );
 if (UNCOVERED.length) console.warn(`[mcp] tools missing from TEXT_TOOLS: ${UNCOVERED.join(", ")}`);
 
@@ -104,6 +108,82 @@ function buildServer(base: string): McpServer {
       };
     });
   }
+
+  // simulate_match — interactive rematch machine (pickers re-call this tool from the iframe)
+  registerAppTool(
+    server,
+    "simulate_match",
+    {
+      description: desc("simulate_match"),
+      inputSchema: {
+        team_a: z.string().describe("Team name or abbreviation"),
+        team_b: z.string().describe("Team name or abbreviation"),
+      },
+      _meta: { ui: { resourceUri: REMATCH_URI } },
+    },
+    async (input: any) => {
+      const r = runTool("simulate_match", input);
+      const a = resolveTeam(String(input?.team_a ?? "")), b = resolveTeam(String(input?.team_b ?? ""));
+      if (r.isError || !a || !b) return { content: [{ type: "text" as const, text: r.text }], isError: true };
+      const rates = getRates();
+      const ra = rates.get(a.abbr)!, rb = rates.get(b.abbr)!;
+      const link = `${base}/compare?ta=${a.abbr}&tb=${b.abbr}`;
+      return {
+        content: [{ type: "text" as const, text: `${r.text}\n\nOpen in MUNDIAL·26: ${link}` }],
+        structuredContent: {
+          kind: "rematch",
+          a: { abbr: a.abbr, name: a.name },
+          b: { abbr: b.abbr, name: b.name },
+          teams: [...rates.values()].map((t) => ({ abbr: t.abbr, name: t.name })).sort((x, y) => x.name.localeCompare(y.name)),
+          sim: simulate(ra, rb),
+          link,
+        },
+      };
+    }
+  );
+
+  // get_match — score header + xG shot map on a pitch
+  registerAppTool(
+    server,
+    "get_match",
+    {
+      description: desc("get_match"),
+      inputSchema: { match_id: z.string().describe("Id from list_matches") },
+      _meta: { ui: { resourceUri: SHOTMAP_URI } },
+    },
+    async (input: any) => {
+      const r = runTool("get_match", input);
+      const b = getMatchBundle(String(input?.match_id ?? ""));
+      if (r.isError || !b) return { content: [{ type: "text" as const, text: r.text }], isError: r.isError };
+      const link = `${base}/match/${b.cal.id}`;
+      const side = (s: typeof b.home, ref: typeof b.cal.home) => ({
+        name: ref.name,
+        abbr: ref.abbr,
+        score: ref.score,
+        color: s.color,
+      });
+      return {
+        content: [{ type: "text" as const, text: `${r.text}\n\nOpen in MUNDIAL·26: ${link}` }],
+        structuredContent: {
+          kind: "shotmap",
+          home: side(b.home, b.cal.home),
+          away: side(b.away, b.cal.away),
+          stage: `${b.cal.stage}${b.cal.group ? ` ${b.cal.group}` : ""}`,
+          venue: b.cal.stadium,
+          shots: b.shots.map((s) => ({
+            team: s.team,
+            minute: s.minute,
+            player: s.player,
+            xg: Number.isFinite(s.xg as number) ? s.xg : null,
+            outcome: s.outcome,
+            x: s.x,
+            y: s.y,
+          })),
+          link,
+        },
+      };
+    }
+  );
 
   registerAppTool(
     server,
@@ -135,15 +215,17 @@ function buildServer(base: string): McpServer {
     }
   );
 
-  registerAppResource(server, "MUNDIAL·26 chart", CHART_URI, { mimeType: RESOURCE_MIME_TYPE }, async () => ({
-    contents: [
-      {
-        uri: CHART_URI,
-        mimeType: RESOURCE_MIME_TYPE,
-        text: fs.readFileSync(path.join(process.cwd(), "assets", "mcp-chart-app.html"), "utf8"),
-      },
-    ],
-  }));
+  for (const [label, uri, file] of APP_RESOURCES) {
+    registerAppResource(server, label, uri, { mimeType: RESOURCE_MIME_TYPE }, async () => ({
+      contents: [
+        {
+          uri,
+          mimeType: RESOURCE_MIME_TYPE,
+          text: fs.readFileSync(path.join(process.cwd(), "assets", file), "utf8"),
+        },
+      ],
+    }));
+  }
 
   return server;
 }

@@ -53,7 +53,7 @@ export default function ConnectPage() {
       <section className="mb-12 grid gap-3 md:grid-cols-3">
         <div className="rounded-lg border border-pitchline bg-surface p-4">
           <h2 className="display text-xl font-semibold">Claude</h2>
-          <p className="text-xs text-gold">interactive charts in-chat</p>
+          <p className="text-xs text-gold">interactive apps in-chat: charts, shot maps, the match simulator</p>
           <p className="mb-2 text-xs text-faint">claude.ai or Claude Desktop — Pro, Max, or Team</p>
           <ol className="list-decimal space-y-1.5 pl-4 text-sm text-dim">
             <li>Settings → <span className="text-chalk">Connectors</span></li>
