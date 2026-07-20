@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import PlayerCard from "@/components/PlayerCard";
+import PromoVideo from "@/components/PromoVideo";
 import type { Card } from "@/lib/cards";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -73,6 +74,13 @@ export default function StoryFilm({ film }: { film: Film }) {
         });
         gsap.to(".scroll-cue", { y: 8, repeat: -1, yoyo: true, duration: 0.9, ease: "sine.inOut" });
         gsap.to(".hero-glow", { scale: 1.15, opacity: 0.5, repeat: -1, yoyo: true, duration: 3.2, ease: "sine.inOut" });
+
+        /* Scene 1b — the promo reel */
+        gsap.timeline({
+          scrollTrigger: { trigger: ".scene-promo", start: "top top", end: "+=1000", scrub: 1, pin: true },
+        })
+          .from(".promo-frame", { scale: 0.94, autoAlpha: 0, duration: 0.5, ease: "power2.out" })
+          .from(".promo-caption", { y: 24, autoAlpha: 0, duration: 0.5 }, "<40%");
 
         /* Scene 2 — formations draw in */
         gsap.utils.toArray<SVGGeometryElement>(".draw").forEach((el) => {
@@ -171,6 +179,15 @@ export default function StoryFilm({ film }: { film: Film }) {
           ))}
         </div>
         <p className="scroll-cue eyebrow absolute bottom-8">scroll ↓</p>
+      </section>
+
+      {/* Scene 1b — promo */}
+      <section className="scene-promo flex min-h-svh flex-col items-center justify-center px-4">
+        <p className="promo-caption eyebrow mb-5">15 seconds · the data theater</p>
+        <PromoVideo />
+        <p className="promo-caption mt-5 max-w-md text-center text-sm text-dim">
+          Formations, xG, heatmaps, player cards — every number from all 104 matches.
+        </p>
       </section>
 
       {/* Scene 2 — formations */}
