@@ -43,7 +43,7 @@ Each question costs a few cents (Claude Opus reads a ~15k-token data dossier).
 
 ## The MCP server (bring your own model)
 
-`/api/mcp` exposes the same 13 data tools as a remote MCP server, so anyone can chat with the
+`/api/mcp` exposes the same 15 data tools as a remote MCP server, so anyone can chat with the
 tournament data from **their own** Claude (or any MCP client) — no API key on our side, their
 subscription pays for the tokens. `render_chart` is an [MCP App](https://modelcontextprotocol.io/docs/extensions/apps):
 hosts that support the extension (Claude, Claude Desktop, VS Code…) render our bar/scatter
@@ -72,7 +72,7 @@ request), [lib/aiTools.ts](lib/aiTools.ts) (shared tool layer, also used by `/as
 | `/player/[id]` | Full card + "the receipts" (real totals) + match-by-match ratings |
 | `/team/[abbr]` | Team identity (percentile profile vs all 48 teams), results, squad — e.g. `/team/ESP` |
 | `/map` | **The tribes**: all 523 regular outfielders sorted into 8 k-means style archetypes — face walls, plain-word traits, and a "who plays like X" finder. Team style families below. Fortune index (10k xG Monte Carlo per group match) shows on `/tournament` + team pages. |
-| `/compare` | Two cards + stat radar, shareable via URL params |
+| `/compare` | Two cards + stat radar, shareable via URL params — plus **the rematch machine**: simulate any hypothetical team matchup (`?ta=FRA&tb=ARG`), Poisson-from-xG + Elo, 10k runs, backtested |
 | `/ask` | Tactical Q&A over the data (needs the API key above) |
 | `/connect` | Visitor-facing guide to the MCP server — connect the database to their own Claude/ChatGPT |
 

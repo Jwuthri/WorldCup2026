@@ -1,7 +1,4 @@
-import { cache } from "react";
-import fs from "node:fs";
-import path from "node:path";
-import { getCalendar } from "./data";
+import { getCalendar, getMatchBundle } from "./data";
 import { getStrength } from "./strength";
 
 /**
@@ -32,49 +29,44 @@ export type SimResult = {
   matrix: number[][]; // [goalsA 0..5+][goalsB 0..5+] probabilities
 };
 
-const readJson = (rel: string) => {
-  try {
-    return JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", rel), "utf8"));
-  } catch {
-    return null;
-  }
-};
+// module memo, not react cache(): sums shot xG across all 104 bundles once per boot
+// (season_teams.json has no XGAgainst — per-shot xG from the 365 join is the honest source)
+let _rates: Map<string, TeamRates> | null = null;
 
-export const getRates = cache((): Map<string, TeamRates> => {
-  const st = readJson("fifa/season_teams.json") ?? {};
+export function getRates(): Map<string, TeamRates> {
+  if (_rates) return _rates;
   const strength = getStrength();
-  const byId: Record<string, { abbr: string; name: string; matches: number }> = {};
-  for (const m of getCalendar()) {
-    for (const side of [m.home, m.away]) {
-      (byId[side.id] ??= { abbr: side.abbr, name: side.name, matches: 0 }).matches++;
-    }
-  }
   const out = new Map<string, TeamRates>();
-  for (const [tid, rows] of Object.entries(st)) {
-    const ref = byId[tid];
-    if (!ref?.matches) continue;
-    const tm: Record<string, number> = {};
-    for (const r of rows as [string, number][]) tm[r[0]] = r[1];
-    out.set(ref.abbr, {
-      abbr: ref.abbr,
-      name: ref.name,
-      matches: ref.matches,
-      xgFor: tm.XG ?? 0,
-      xgAgainst: tm.XGAgainst ?? 0,
-      elo: strength[ref.abbr]?.elo ?? 1700,
-    });
+  const ensure = (abbr: string, name: string) => {
+    let t = out.get(abbr);
+    if (!t) out.set(abbr, (t = { abbr, name, matches: 0, xgFor: 0, xgAgainst: 0, elo: strength[abbr]?.elo ?? 1700 }));
+    return t;
+  };
+  for (const m of getCalendar()) {
+    const b = getMatchBundle(m.id);
+    if (!b) continue;
+    let hx = 0, ax = 0;
+    for (const s of b.shots) {
+      const xg = Number.isFinite(s.xg as number) ? (s.xg as number) : 0; // parseFloat junk → NaN, not null
+      if (s.team === "home") hx += xg;
+      else ax += xg;
+    }
+    const home = ensure(m.home.abbr, m.home.name);
+    const away = ensure(m.away.abbr, m.away.name);
+    home.matches++; home.xgFor += hx; home.xgAgainst += ax;
+    away.matches++; away.xgFor += ax; away.xgAgainst += hx;
   }
-  return out;
-});
+  return (_rates = out);
+}
 
-const avgXgPerMatch = cache((): number => {
+function avgXgPerMatch(): number {
   let xg = 0, n = 0;
   for (const t of getRates().values()) {
     xg += t.xgFor;
     n += t.matches;
   }
   return n ? xg / n : 1.3;
-});
+}
 
 // ponytail: γ tuned by eyeballing the backtest; refit if rates or Elo source change
 const ELO_GAMMA = 0.18;
@@ -144,7 +136,9 @@ export function simulate(a: TeamRates, b: TeamRates, sims = 10_000): SimResult {
 
 /** % of the 104 real matches where the model's most likely 90' outcome happened.
  *  ponytail: rates include the match being predicted (in-sample) — say so in copy. */
-export const getBacktest = cache((): { hit: number; n: number } => {
+let _backtest: { hit: number; n: number } | null = null;
+export function getBacktest(): { hit: number; n: number } {
+  if (_backtest) return _backtest;
   const rates = getRates();
   let hit = 0, n = 0;
   for (const m of getCalendar()) {
@@ -158,5 +152,5 @@ export const getBacktest = cache((): { hit: number; n: number } => {
     if (pred === actual) hit++;
     n++;
   }
-  return { hit: n ? Math.round((hit / n) * 100) : 0, n };
-});
+  return (_backtest = { hit: n ? Math.round((hit / n) * 100) : 0, n });
+}

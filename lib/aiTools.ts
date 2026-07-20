@@ -8,6 +8,7 @@ import { getHonours } from "@/lib/honours";
 import { VENUES } from "@/lib/venues";
 import { archetypeOf, similarTo, teamStyleOf } from "@/lib/ml";
 import { luckOf } from "@/lib/luck";
+import { getRates, simulate, getBacktest } from "@/lib/sim";
 
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
 
@@ -139,6 +140,19 @@ export const TOOL_DEFS: Anthropic.Tool[] = [
       type: "object",
       properties: { name: { type: "string", description: "Player name (partial ok)" } },
       required: ["name"],
+    },
+  },
+  {
+    name: "simulate_match",
+    description:
+      "The rematch machine: simulate a hypothetical matchup between any two teams (e.g. 'who would have won France vs Argentina?'). Poisson goals from tournament xG for/against blended with Elo, 10,000 runs — win/draw/loss %, most likely scorelines, knockout advance odds. Also fine for replaying real matches ('was the final an upset?').",
+    input_schema: {
+      type: "object",
+      properties: {
+        team_a: { type: "string", description: "Team name or abbreviation" },
+        team_b: { type: "string", description: "Team name or abbreviation" },
+      },
+      required: ["team_a", "team_b"],
     },
   },
   {
@@ -502,6 +516,34 @@ export function runTool(name: string, input: any): { text: string; isError?: boo
               archetype: archetypeOf(s.card.id)?.label,
             })),
             method: "cosine similarity of z-scored per-90 vectors (22 dims: shooting, progression, receiving, pressing, physical); GK pool separate",
+          }),
+        };
+      }
+
+      case "simulate_match": {
+        const a = resolveTeam(String(input?.team_a ?? ""));
+        const b = resolveTeam(String(input?.team_b ?? ""));
+        if (!a || !b) return { text: `Unknown team "${!a ? input?.team_a : input?.team_b}".`, isError: true };
+        if (a.abbr === b.abbr) return { text: "Pick two different teams.", isError: true };
+        const rates = getRates();
+        const ra = rates.get(a.abbr), rb = rates.get(b.abbr);
+        if (!ra || !rb) return { text: "No rate data for that matchup.", isError: true };
+        const s = simulate(ra, rb);
+        const bt = getBacktest();
+        const met = getCalendar().find(
+          (m) => (m.home.abbr === a.abbr && m.away.abbr === b.abbr) || (m.home.abbr === b.abbr && m.away.abbr === a.abbr)
+        );
+        return {
+          text: JSON.stringify({
+            matchup: `${a.name} vs ${b.name} (10,000 simulations)`,
+            ninety_minutes: { [a.name]: `${Math.round(s.pA * 100)}%`, draw: `${Math.round(s.pDraw * 100)}%`, [b.name]: `${Math.round(s.pB * 100)}%` },
+            knockout_advance: { [a.name]: `${Math.round(s.koA * 100)}%`, [b.name]: `${Math.round(s.koB * 100)}%` },
+            expected_goals: { [a.abbr]: Math.round(s.lambdaA * 100) / 100, [b.abbr]: Math.round(s.lambdaB * 100) / 100 },
+            most_likely_scores: s.topScores.map((t) => `${a.abbr} ${t.a}:${t.b} ${b.abbr} (${(t.p * 100).toFixed(1)}%)`),
+            they_actually_met: met
+              ? `${met.home.name} ${met.home.score}:${met.away.score} ${met.away.name}${met.penHome != null ? ` (${met.penHome}-${met.penAway} pens)` : met.resultType === 3 ? " a.e.t." : ""} — ${met.stage}, match_id ${met.id}`
+              : "never met this tournament",
+            method: `Poisson goals from tournament xG for/against per match vs field average, Elo-adjusted; ET at λ/3, pens 50/50. Backtest: model's favourite 90' outcome hit ${bt.hit}% of ${bt.n} real matches (in-sample). Form only — no lineups or injuries.`,
           }),
         };
       }

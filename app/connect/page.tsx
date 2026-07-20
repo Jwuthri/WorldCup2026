@@ -12,6 +12,9 @@ const TOOLS: [string, string][] = [
   ["get_team", "identity profile vs all 48 teams, style family, fortune, squad"],
   ["get_player", "card ratings, season totals, style archetype, match-by-match"],
   ["similar_players", "statistical twins — who plays like X, from tracking vectors"],
+  ["simulate_match", "who would have won any hypothetical matchup — 10k sims"],
+  ["get_standings", "the twelve group tables"],
+  ["get_awards", "official honours vs what the data says"],
   ["leaderboard", "top players by goals, xG, speed, distance…"],
   ["get_team_strength", "Elo rating, world rank, pre-tournament form"],
   ["head_to_head", "all-time record between any two nations"],
@@ -22,6 +25,7 @@ const TOOLS: [string, string][] = [
 ];
 
 const PROMPTS = [
+  "Who would have won France vs Argentina?",
   "Who overperformed their xG the most this tournament?",
   "Compare Spain and France's pressing numbers.",
   "Chart the golden boot race against expected goals.",
@@ -78,9 +82,9 @@ export default function ConnectPage() {
       <section className="mb-12">
         <h2 className="display mb-1 text-3xl font-semibold">What your AI gets</h2>
         <p className="mb-5 text-sm text-dim">
-          Twelve tools over the frozen tournament database — FIFA stadium tracking, xG shot data,
-          ratings, style clustering, Elo, weather, travel. Every answer links back to the matching
-          page here.
+          Fifteen tools over the frozen tournament database — FIFA stadium tracking, xG shot data,
+          ratings, style clustering, Elo, a match simulator, weather, travel. Every answer links
+          back to the matching page here.
         </p>
         <div className="grid gap-2 sm:grid-cols-2">
           {TOOLS.map(([name, blurb]) => (

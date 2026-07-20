@@ -145,8 +145,8 @@ for c in range(K):
 
 # ---------------- team styles ----------------
 
-TEAM_DIMS = [
-    "XG", "XGAgainst", "AttemptAtGoal", "AttemptAtGoalAgainst", "PassesCompleted",
+TEAM_DIMS = [  # note: season_teams has no XGAgainst — don't add it back, it reads as constant 0
+    "XG", "AttemptAtGoal", "AttemptAtGoalAgainst", "PassesCompleted",
     "CompletedBallProgressions", "LinebreaksAttemptedCompleted", "Crosses",
     "DefensivePressuresApplied", "ForcedTurnovers", "ReceptionsInBehind", "TotalDistance",
 ]

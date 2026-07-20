@@ -42,6 +42,13 @@ const TEXT_TOOLS: Record<string, [z.ZodRawShape, (input: any) => string | null]>
     },
   ],
   get_referee: [{ match_id: z.string().optional().describe("Optional id from list_matches") }, () => `${SITE}/whistle`],
+  simulate_match: [
+    { team_a: z.string().describe("Team name or abbreviation"), team_b: z.string().describe("Team name or abbreviation") },
+    (i) => {
+      const a = resolveTeam(String(i?.team_a ?? "")), b = resolveTeam(String(i?.team_b ?? ""));
+      return a && b ? `${SITE}/compare?ta=${a.abbr}&tb=${b.abbr}` : null;
+    },
+  ],
   leaderboard: [
     {
       metric: z.enum(["goals", "assists", "xg", "avg_rating", "top_speed", "distance", "saves", "passes_completed"]),
