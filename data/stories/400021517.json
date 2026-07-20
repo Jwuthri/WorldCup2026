@@ -1,0 +1,32 @@
+{
+  "headline": "Early Strike, Suffocating Control: Colombia Overwhelms Ghana",
+  "story": [
+    "Colombia's decisive strike in the 14th minute set the tone for an evening of relentless domination at Kansas City. Quintero and Arias controlled the midfield tempo from the outset, imposing their 4-3-3 on Ghana's reactive 4-1-4-1. The Africans pressed high—4.7 phases to Colombia's 3.2—but without penetration. By half-time, Colombia had amassed eleven shots; Ghana managed just two. Davinson Sanchez's defensive composure meant Ghana rarely threatened the backline.",
+    "Colombia's xG of 1.8 against Ghana's 0.26 told the complete story. The winning goal proved sufficient despite second-half profligacy: Quintero's side squandered chances of 0.28 xG (58'), 0.23 xG (81'), and 0.22 xG (90+2'). Ghana's offensive void—zero shots on target—reflected their fundamental lack of answers to Colombia's midfield control and superior ball recovery (13.9 seconds against Ghana's 22.5). Lawrence Ati-Zigi made saves when required, but Thomas Partey's tireless defence could not compensate."
+  ],
+  "keyMoment": {
+    "minute": "14",
+    "text": "Early Colombian strike silenced Ghana's pressing and determined the evening's outcome."
+  },
+  "advice": {
+    "home": {
+      "team": "Colombia",
+      "verdict": "Territorial dominance and clinical efficiency; only that Ghana's press never threatened.",
+      "points": [
+        "Early strike (14') silenced Ghana's high press and kept them at 0.26 xG.",
+        "Possession control (55%) through Quintero/Arias mastery forced Ghana into reactive mode.",
+        "Ball recovery (13.9s vs 22.5s) exposed Ghana's defensive fragility on turnovers."
+      ]
+    },
+    "away": {
+      "team": "Ghana",
+      "verdict": "High press (4.7 phases) generated no reward; offensive impotence decided it.",
+      "points": [
+        "Zero shots on target reflects systemic isolation; press created no scoring chances.",
+        "High press (4.7 phases) exhausted without compensation—xG of merely 0.26 tells the tale.",
+        "Ball recovery time (22.5s vs 13.9s) left defence exposed; Partey alone insufficient."
+      ]
+    }
+  },
+  "statLine": "Ghana's zero shots on target was the match's defining statistic: a clean accounting of total football abdication."
+}

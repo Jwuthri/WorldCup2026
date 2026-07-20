@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import AskClient from "./AskClient";
 
 export const metadata = {
@@ -6,7 +7,9 @@ export const metadata = {
   description: "An agentic analyst over the tournament's real tracking data — it retrieves, charts, and cites.",
 };
 
+// ponytail: /ask off by default on public deploy (don't burn the API key). Set ASK_ENABLED=true to turn on.
 export default function AskPage() {
+  if (process.env.ASK_ENABLED !== "true") notFound();
   return (
     <main className="mx-auto max-w-3xl px-4 py-10 sm:px-8">
       <h1 className="display mb-1 text-4xl font-bold">Ask the data</h1>

@@ -15,6 +15,9 @@ Output:
 type ChatMsg = { role: "user" | "assistant"; content: string };
 
 export async function POST(req: Request) {
+  // ponytail: /ask off by default on public deploy (don't burn the API key). Set ASK_ENABLED=true to turn on.
+  if (process.env.ASK_ENABLED !== "true") return new Response("Not found", { status: 404 });
+
   let body: { messages?: ChatMsg[] };
   try {
     body = await req.json();

@@ -218,8 +218,8 @@ export default function Home() {
           })()}
         </div>
         <p className="mt-3 text-xs text-faint">
-          Group stage only · actual points minus expected points · full methodology on{" "}
-          <Link href="/map" className="text-gold underline-offset-4 hover:underline">the map</Link>.
+          Group stage only · actual points minus expected points · from the same pipeline as{" "}
+          <Link href="/map" className="text-gold underline-offset-4 hover:underline">the tribes</Link>.
         </p>
       </section>
 

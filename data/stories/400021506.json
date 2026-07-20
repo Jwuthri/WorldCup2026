@@ -1,0 +1,32 @@
+{
+  "headline": "England's Dominance Counts for Nothing",
+  "story": [
+    "England dominated completely. With 72% possession to Ghana's 20%, they controlled the tempo throughout a cagey first half before building pressure in the second. The Ghanaians defended deep and compact, denying space and inviting pressure. It was a match of clear tactical extremes: England's 4-2-3-1 probing, Ghana's 4-1-4-1 sitting and waiting. The turning points came late, when clear chances arrived but were spurned.",
+    "England's 1.78 xG and 19 shots told the story of relentless pressure, yet three efforts on target proved insufficient against Ghana's disciplined blocks. Benjamin Asare was immense at the back, marshalling the visitors' compact shape while Marc Guéhi and Reece James kept England steady. The fatal moment arrived in the 86th minute when a 0.32 xG chance went begging; three minutes into stoppage time, another opportunity (0.17 xG) slipped away. England's possession superiority and pressing intensity—high-press phases 9.0 to Ghana's 1.7—translated to control, not consequences."
+  ],
+  "keyMoment": {
+    "minute": "86",
+    "text": "Unmarked or clear inside the box—a big chance spurned when England's grip seemed tightest."
+  },
+  "advice": {
+    "home": {
+      "team": "England",
+      "verdict": "Possession without ruthlessness leaves only regret.",
+      "points": [
+        "The 0.32 xG chance in 86 minutes had to go in; clinical finishing is non-negotiable.",
+        "Marc Guéhi (7.5) and Reece James (7.4) anchored brilliantly; attackers had to match them.",
+        "Nineteen shots but just three on target—conversion rate is the missing piece."
+      ]
+    },
+    "away": {
+      "team": "Ghana",
+      "verdict": "Asare's heroics wasted on a threadbare attack.",
+      "points": [
+        "Benjamin Asare's 7.6 rating—the night's standout—needed support: 0.34 xG is not enough.",
+        "Two shots, zero on target: one clinical counter-attack on the break wins this.",
+        "Twenty-two-point-five second recovery time shows excellent discipline; one audacious phase could've flipped it."
+      ]
+    }
+  },
+  "statLine": "England's 1.78 xG and 72% possession produced precisely zero goals—a study in wasted dominance."
+}

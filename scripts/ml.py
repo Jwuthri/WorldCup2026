@@ -2,21 +2,17 @@
 """ML layer over the frozen WC2026 dataset -> data/ml/ml.json
 
 - player style vectors (per-90, z-scored) -> cosine neighbors ("similar players")
-- k-means archetypes (outfield k=8) + t-SNE 2D coords (the style map)
+- k-means archetypes (outfield k=8) — the tribes
 - team style families (k=4 on per-match team vectors)
-- our own xG model (logistic regression on shot geometry) vs 365scores xG
 
 Names/teams/photos are NOT here — the app joins those at render time by player id.
 Run: npm run ml  (or python3 scripts/ml.py). Deterministic: seed 26 everywhere.
 """
 import json
-import math
 from pathlib import Path
 
 import numpy as np
 from sklearn.cluster import KMeans
-from sklearn.linear_model import LogisticRegression
-from sklearn.manifold import TSNE
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -147,9 +143,6 @@ for c in range(K):
     low = sorted(zip(OUTFIELD_DIMS, z), key=lambda t: t[1])[:2]
     print(f"cluster {c} (n={int((labels == c).sum())}): +{top} -{low}")
 
-ts = TSNE(n_components=2, perplexity=40, random_state=SEED, init="pca").fit_transform(map_Z)
-ts = (ts - ts.min(axis=0)) / (ts.max(axis=0) - ts.min(axis=0)) * 100.0  # 0-100 both axes
-
 # ---------------- team styles ----------------
 
 TEAM_DIMS = [
@@ -179,62 +172,6 @@ for c in range(4):
     members = [team_ids[i] for i in range(len(team_ids)) if tkm.labels_[i] == c]
     print(f"team style {c} (n={len(members)}): {prof}")
 
-# ---------------- xG model ----------------
-
-shots, shot_meta = [], []
-for gf in sorted((DATA / "s365/games").glob("*[0-9].json")):
-    game = json.loads(gf.read_text()).get("game") or {}
-    names = {mm.get("id"): mm.get("name") for mm in game.get("members", []) if mm.get("id") is not None}
-    for ev in (game.get("chartEvents") or {}).get("events", []):
-        try:
-            fifa_xg = float(ev.get("xg"))
-        except (TypeError, ValueError):
-            continue
-        t = str(ev.get("time", "")).replace("'", "")
-        if not t.split("+")[0].isdigit():  # drops shootout rows
-            continue
-        line, side = float(ev.get("line", 50)), float(ev.get("side", 50))
-        body = str(ev.get("bodyPart") or "").lower()
-        sub = int(ev.get("subType") or 0)
-        outcome = (ev.get("outcome") or {}).get("name", "")
-        dist = math.hypot(line, (side - 50.0) * 0.68)
-        angle = math.atan2(abs(side - 50.0) * 0.68, max(line, 1e-6))
-        shots.append([dist, angle, dist * angle, 1.0 if "head" in body else 0.0, 1.0 if sub == 9 else 0.0])
-        shot_meta.append({
-            "player": names.get(ev.get("playerId")), "minute": t, "fifa": fifa_xg,
-            "goal": 1 if outcome == "Goal" else 0,
-        })
-
-X = np.array(shots)
-y = np.array([s["goal"] for s in shot_meta])
-print(f"shots {len(y)}, goals {int(y.sum())} ({y.mean():.3f})")
-lr = LogisticRegression(max_iter=1000, random_state=SEED).fit(X, y)
-ours = lr.predict_proba(X)[:, 1]
-
-# calibration by 365-xG decile-ish buckets
-BUCKETS = [0, 0.03, 0.06, 0.1, 0.15, 0.25, 0.4, 1.01]
-calib = []
-fifa_xgs = np.array([s["fifa"] for s in shot_meta])
-for lo, hi in zip(BUCKETS, BUCKETS[1:]):
-    mask = (fifa_xgs >= lo) & (fifa_xgs < hi)
-    if mask.sum() < 5:
-        continue
-    calib.append({
-        "range": f"{lo:.2f}–{hi if hi <= 1 else 1:.2f}",
-        "n": int(mask.sum()),
-        "fifa": round(float(fifa_xgs[mask].mean()), 3),
-        "ours": round(float(ours[mask].mean()), 3),
-        "scored": round(float(y[mask].mean()), 3),
-    })
-
-diff = ours - fifa_xgs
-order = np.argsort(-np.abs(diff))
-disagreements = [
-    {**{k: shot_meta[i][k] for k in ("player", "minute", "fifa")},
-     "ours": round(float(ours[i]), 2), "goal": int(y[i])}
-    for i in order[:12] if shot_meta[i]["player"]
-][:10]
-
 # ---------------- labels (informed by the centroid prints above) ----------------
 
 ARCHETYPES = json.loads((ROOT / "scripts/ml_labels.json").read_text()) if (ROOT / "scripts/ml_labels.json").exists() else None
@@ -242,20 +179,10 @@ ARCHETYPES = json.loads((ROOT / "scripts/ml_labels.json").read_text()) if (ROOT 
 # ---------------- write ----------------
 
 out = {
-    "players": {
-        pid: {"x": round(float(ts[i, 0]), 1), "y": round(float(ts[i, 1]), 1), "cluster": int(labels[i])}
-        for i, pid in enumerate(map_ids)
-    },
+    "players": {pid: {"cluster": int(labels[i])} for i, pid in enumerate(map_ids)},
     "similar": similar,
     "teamStyles": {tid: int(tkm.labels_[i]) for i, tid in enumerate(team_ids)},
     "labels": ARCHETYPES,  # filled from scripts/ml_labels.json after eyeballing the prints
-    "xgModel": {
-        "n": len(y),
-        "coefs": {k: round(float(c), 4) for k, c in zip(["dist", "angle", "dist_angle", "header", "penalty"], lr.coef_[0])},
-        "intercept": round(float(lr.intercept_[0]), 4),
-        "calib": calib,
-        "disagreements": disagreements,
-    },
 }
 (DATA / "ml").mkdir(exist_ok=True)
 (DATA / "ml/ml.json").write_text(json.dumps(out))

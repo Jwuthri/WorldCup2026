@@ -1,0 +1,32 @@
+{
+  "headline": "Croatia's Clinical Strike Sinks Panama in Toronto",
+  "story": [
+    "Panama came to Toronto bristling defensively—a five-four-one formation that invited Croatia to break them down. And break them down they did, controlling 52 per cent possession with a relentless high press. The visitors' superior ball recovery (13.2 seconds to Panama's 16.9) told the tale: they were sharper, more organised, more likely to transition possession into threat. The turning point came in the 54th minute, when a clinical finish burst Panama's resistance and set the template for an increasingly comfortable evening.",
+    "Croatia's 0.94 expected goals betokened not dominance but sloppiness in the final third. They took their most clear-cut chance—a 0.80 xG shot in the 54th—and converted ruthlessly. Then came the panic: successive opportunities of 0.51 and 0.48 xG arrived at 57 minutes (one saved, one missed). Panama, suffocated by a disciplined five-four-one, never got close enough: their 0.69 xG came from eight shots, only one on target. The Croats' recovery time advantage proved decisive in a match that should have been more comfortable than the scoreline suggested."
+  ],
+  "keyMoment": {
+    "minute": "54",
+    "text": "Fifty-fourth minute: Croatia's ruthless 0.80 xG conversion punctures Panama's defensive shape and shifts momentum irreversibly."
+  },
+  "advice": {
+    "home": {
+      "team": "Panama",
+      "verdict": "Defensive discipline could not mask attacking impotence.",
+      "points": [
+        "Eight shots, one on target: conversion rate (0.69 xG) reveals wide finishing and poor shot selection.",
+        "Recovery time lag (16.9s vs Croatia's 13.2s) meant perpetual defensive reset and lost transition moments.",
+        "Big chances squandered: 0.20 and 0.15 xG misses at 60 and 68 minutes cost them any realistic path back."
+      ]
+    },
+    "away": {
+      "team": "Croatia",
+      "verdict": "Clinical in the moment; profligate soon after; survived sloppy finishing.",
+      "points": [
+        "Converted 0.80 xG chance in 54th: one clear-cut opportunity decided it against a defensive setup.",
+        "Wasted 0.51 and 0.48 xG at 57 minutes; against elite opposition, such profligacy would have proven catastrophic.",
+        "Ball recovery dominance (13.2s vs 16.9s) and high-press intensity (4.9 phases vs 3.6) controlled tempo without threat."
+      ]
+    }
+  },
+  "statLine": "One 0.80 xG chance: all Croatia needed to beat Panama, whose eight shots (one on target) mustered just 0.69 expected goals."
+}

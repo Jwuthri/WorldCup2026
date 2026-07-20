@@ -1,0 +1,32 @@
+{
+  "headline": "Croatia's Clinical Finishing Withstands Ghana's Press",
+  "story": [
+    "Ghana pressed intensely with 6.6 high-press phases, forcing 40 turnovers but struggling to organize the pressure into threatening positions. Croatia's midfield recycling (51% possession, 18.7-second recovery time) allowed them to escape Ghana's trap and find space on transition. The match took shape as Ghana chasing, Croatia building slowly through the thirds, with Ghana's aggression consistently leaving gaps to exploit.",
+    "Ghana's xG of 0.75 versus Croatia's 0.48 revealed the critical difference: opportunity creation versus clinical finishing. Ghana managed only one shot on target from six attempts; Croatia converted two from four on-target efforts. The underlying issue: Ghana's high-press intensity (6.6 phases) expended energy without generating the accuracy to punish Croatia. Croatia's lower recovery time (18.7 versus 22.4 seconds) reflected tighter defensive organization, extracting full value from limited chances."
+  ],
+  "keyMoment": {
+    "minute": 70,
+    "text": "Ghana's aggressive press (6.6 phases) created turnovers but not clear chances; Croatia's clinical accuracy (4 shots on target, 2 goals) proved decisive."
+  },
+  "advice": {
+    "home": {
+      "team": "Croatia",
+      "verdict": "Clinical finishing compensated for lower expected goals against relentless pressing.",
+      "points": [
+        "Four shots on target (50% accuracy) versus Ghana's one from six (17%); finishing precision made the difference.",
+        "Ball recovery speed of 18.7 seconds versus Ghana's 22.4 seconds proved critical in defending against 40 forced turnovers.",
+        "Survived Ghana's 43% possession share and 6.6 high-press phases by containing the pressure without conceding a second goal."
+      ]
+    },
+    "away": {
+      "team": "Ghana",
+      "verdict": "Better finishing on superior chances would have drawn this; pressing intensity alone wasn't enough.",
+      "points": [
+        "Only one shot on target from six attempts (17% accuracy); even one more conversion means 2-2 draw.",
+        "Six high-press phases and 40 forced turnovers generated possessions without clear chances; pressing efficiency, not intensity, was lacking.",
+        "0.75 expected goals versus 0.48 meant Ghana created superior chances; shooting accuracy, not possession volume, decided the result."
+      ]
+    }
+  },
+  "statLine": "Ghana created more (0.75 xG vs 0.48) but converted less: one on-target shot to Croatia's four proved the decisive gap."
+}

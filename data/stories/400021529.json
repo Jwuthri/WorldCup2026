@@ -1,0 +1,32 @@
+{
+  "headline": "Spain's Late Blow Ends Portugal's Stubborn Rearguard",
+  "story": [
+    "Spain suffocated Portugal in Dallas. Possession 51 per cent to 42, high-press sequences 9.0 to 4.1, forced turnovers 55 to 43—the numbers tell of relentless territorial dominance. Yet Spain wasted a big chance in the eighth minute. Portugal, passive and compact, managed only 2 shots on target from 10 attempts, but held firm until the 91st minute, when Spain finally converted and delivered the knockout blow.",
+    "Ball recovery time was Spain's lethal advantage: 13.8 seconds versus Portugal's 19.1 generated constant attacking flow. The xG gap—1.72 to 0.91—should have produced a wider margin. João Neves and Bruno Fernandes, Portugal's creative fulcrum, were systematically suffocated by Spain's press. A late Portuguese chance in the 90th minute (xG 0.16) was too desperate, too late. Spain's conversion in the 91st minute ended a match of Spanish dominance interrupted by frustration."
+  ],
+  "keyMoment": {
+    "minute": "90+1",
+    "text": "Spain's goal ended the siege—not a great chance (xG 0.55) but the only one that mattered."
+  },
+  "advice": {
+    "home": {
+      "team": "Portugal",
+      "verdict": "Possession passivity and chance starvation made survival impossible.",
+      "points": [
+        "Only 42% possession gave Spain perpetual attacking pressure; reactive football breeds defeat.",
+        "xG 0.91 too thin for knockout stages; João Neves and Fernandes were starved.",
+        "Late chance in 90+7 (xG 0.16) needed 90 minutes of play; too little too late."
+      ]
+    },
+    "away": {
+      "team": "Spain",
+      "verdict": "Unstoppable pressing and superior transitions won despite late finishing.",
+      "points": [
+        "Nine high-press phases forced 55 turnovers; oppressive football finally broke Portuguese resolve.",
+        "Ball recovery 13.8s versus Portugal's 19.1s enabled constant transitions; quicker tempo wins.",
+        "Eighth-minute miss (xG 0.61) nearly proved fatal; efficiency arrived late in 91st minute."
+      ]
+    }
+  },
+  "statLine": "Spain's 1.72 xG advantage, built on nine high-press phases and 55 forced turnovers, required 91 minutes to translate into the single goal that ended Portugal's increasingly desperate resistance."
+}

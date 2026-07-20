@@ -1,0 +1,32 @@
+{
+  "headline": "Austria Grind Past Resilient Jordan in Extra Time",
+  "story": [
+    "Austria controlled the game throughout, holding 53 per cent possession and pressing Jordan across the pitch with eight high-press phases. Yet Jordan's disciplined 3-4-2-1 grabbed two goals from low-expected chances, at 50 and 76 minutes, threatening a shock result. Austria's superior recovery speed—regaining possession in 11.8 seconds to Jordan's 17.5—proved decisive. The Austrian midfield of Schmid and Schlager methodically wore them down, and a clinical finish in extra time sealed a 3-1 victory.",
+    "Austria's xG advantage (1.93 to 0.53) laid bare the gulf in chance creation, yet they lacked ruthlessness until the final whistle. An Austria chance at 63 minutes was blocked; a bigger one at 90+2 was saved before the winner arrived. Ali Alowan (8.3 rating) led Jordan's resistance brilliantly, and Odeh Fakhouri pressed hard, but their limited press intensity (3.6 phases to Austria's 8.1) and low attacking volume left them perpetually behind. Austria's 11.8-second ball recovery time proved more decisive than the shot counts."
+  ],
+  "keyMoment": {
+    "minute": "90+12",
+    "text": "Austria's extra-time goal capped relentless pressure—Jordan's defensive resistance finally gave way."
+  },
+  "advice": {
+    "home": {
+      "team": "Austria",
+      "verdict": "Possession and press intensity wore down Jordan's shape.",
+      "points": [
+        "Held 53% possession to Jordan's 33%; eight high-press phases created constant pressure.",
+        "Ball recovery advantage (11.8s to 17.5s) kept momentum and control on Austria's side.",
+        "Survived missed big chances (90+2 save, 63 blocked) before the 0.79 xG clincher."
+      ]
+    },
+    "away": {
+      "team": "Jordan",
+      "verdict": "Outpressed and outpossessed; couldn't generate enough quality chances.",
+      "points": [
+        "3.6 high-press phases versus Austria's 8.1 surrendered midfield control entirely.",
+        "17.5-second recovery time versus Austria's 11.8s meant perpetually chasing possession.",
+        "11 shots but only 0.53 xG revealed attacking imprecision despite Alowan's 8.3 rating."
+      ]
+    }
+  },
+  "statLine": "Austria's expected-goal advantage was stark (1.93 to 0.53), their possession control complete (53%), yet a 0.79 xG finish in extra time was required to clinch."
+}

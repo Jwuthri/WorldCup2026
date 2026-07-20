@@ -1,0 +1,32 @@
+{
+  "headline": "Egypt's Early Shock Succumbs to Argentine Second-Half Surge",
+  "story": [
+    "Egypt stunned Argentina with two goals from low-xG situations in the opening hour, exploiting gaps as Messi and company searched for rhythm. Yet Argentina controlled play throughout (57% possession, 19 shots to Egypt's five), squandering three big chances before half-time. The shape shifted decisively from the 79th minute: Argentina's press—nine high-pressure phases to Egypt's four—suffocated the midfield, with ball recovery time dropping to 14.1 seconds versus Egypt's labored 21.3.",
+    "Argentina's 2.63 expected-goals advantage over Egypt's 0.76 proved decisive once late intensity took hold. Messi's 8.7 rating and Romero's defensive leadership at 7.4 anchored a surge that exposed Egypt's exhaustion; high-press frequency at 9.9 to 3.9 meant there was nowhere to hide in midfield. Egypt's ruthless early finishing (0.74 combined xG on two goals) couldn't withstand Argentina's second-half dominance: three goals in fourteen minutes between 79' and 90+2' sealed the rout."
+  ],
+  "keyMoment": {
+    "minute": "79",
+    "text": "Argentina's press finally broke through: momentum shifted irrevocably toward an avalanche of goals."
+  },
+  "advice": {
+    "home": {
+      "team": "Argentina",
+      "verdict": "Dominance delayed but delivered: relentless second-half pressing overwhelmed an exhausted defence.",
+      "points": [
+        "9.9 high-press phases vs Egypt's 3.9 created pressure that forced 39 turnovers to clinch late victory.",
+        "Recovery time of 14.1 seconds vs Egypt's 21.3 made late transitions lethal as fatigue compounded.",
+        "Three big chances (xG 0.79, 0.30, 0.26) wasted early; Messi's 8.7 and Romero's 7.4 stayed dangerous."
+      ]
+    },
+    "away": {
+      "team": "Egypt",
+      "verdict": "Clinical early, pressed into submission—dominance gap and recovery lag proved insurmountable late.",
+      "points": [
+        "Two goals from 0.74 xG showed ruthlessness; 0.76 total xG left no margin against Argentina.",
+        "High-press gap (3.9 vs 9.9) meant no intensity to sustain the early lead when fatigue set in.",
+        "Ball recovery 21.3 seconds (7.2 seconds slower) made defending impossible under intense late press."
+      ]
+    }
+  },
+  "statLine": "Argentina's expected-goals advantage of 2.63 to 0.76 translated to victory only through a fourteen-minute final-quarter explosion."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Argentina's Precision Problem Survives Cabo Verde's Shock",
+  "story": [
+    "Argentina ran the match: 59 per cent possession, 22 shots, eight high-press bursts that recovered the ball every 15 seconds. Yet they were nearly mugged. Lionel Messi's opener at 29 seemed to have settled it, then Cabo Verde equalised at 59—a goal born of nothing, xG 0.05. Argentina restored order at 92, then the Cape Verdeans struck again, impossibly, at 103. An extra-time script entirely dictated by Lisandro Martinez's one-man defensive masterclass, until Argentina's third arrived at 111.",
+    "The numbers tell the story of a team that shot magnificently and finished poorly. Argentina's xG was 2.73; they needed 120 minutes to convert it to three goals. Alexis Mac Allister's mettle in midfield kept the press alive while Cabo Verde's Sidny Cabral, their best, couldn't orchestrate rescue from 0.52 xG. Two gilt-edged Argentina chances, xG 0.49 at 63 and 0.15 at 90+5, went begging. But Lisandro Martinez—rated 9.1—suffocated the Cape Verdean attack so thoroughly that even their audacity couldn't quite finish the job."
+  ],
+  "keyMoment": {
+    "minute": "111",
+    "text": "Argentina's winner in extra time, separating two teams from different galaxies of resource."
+  },
+  "advice": {
+    "home": {
+      "team": "Argentina",
+      "verdict": "Dominance was never in doubt, but finishing cost them 90 minutes of heartburn.",
+      "points": [
+        "Martinez's 9.1 rating held a fortress; without him, Cabo Verde's 0.52 xG becomes a threat.",
+        "Eight high-press phases forced 51 turnovers; the press won the midfield battle decisively.",
+        "Two missed big chances (0.49 and 0.15 xG) at 63 and 90+5—ruthless sides bury those in 90."
+      ]
+    },
+    "away": {
+      "team": "Cabo Verde",
+      "verdict": "Scripted a miracle on scraps, yet the gap in possession control proved fatal.",
+      "points": [
+        "Recovery time: 25.1 seconds vs Argentina's 15.2 meant they never owned the midfield.",
+        "Sidny Cabral's 7.9 rating was valiant, but one bright player cannot overcome a 2.21 xG deficit.",
+        "Two goals from 0.52 xG was extraordinary; one more chance earlier and this shifts entirely."
+      ]
+    }
+  },
+  "statLine": "Argentina's 2.73 expected goals required 120 minutes to materialize, while Cabo Verde's 0.52 xG produced two genuine threats in the heart of extra time."
+}

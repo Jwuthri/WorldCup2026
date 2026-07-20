@@ -1,4 +1,3 @@
-import Link from "next/link";
 import CopyUrl from "./CopyUrl";
 
 export const metadata = {
@@ -10,9 +9,13 @@ export const metadata = {
 const TOOLS: [string, string][] = [
   ["list_matches", "every match with ids, filterable by team or stage"],
   ["get_match", "the full match file — xG shots, duel stats, formations, top ratings"],
-  ["get_team", "identity profile vs all 48 teams, results, squad"],
-  ["get_player", "card ratings, season totals, match-by-match"],
+  ["get_team", "identity profile vs all 48 teams, style family, fortune, squad"],
+  ["get_player", "card ratings, season totals, style archetype, match-by-match"],
+  ["similar_players", "statistical twins — who plays like X, from tracking vectors"],
   ["leaderboard", "top players by goals, xG, speed, distance…"],
+  ["get_team_strength", "Elo rating, world rank, pre-tournament form"],
+  ["head_to_head", "all-time record between any two nations"],
+  ["get_referee", "card and foul tendencies per official"],
   ["get_match_conditions", "weather, altitude, roof, kickoff time"],
   ["get_team_schedule", "travel km, rest days, fatigue math"],
   ["render_chart", "draws bar/scatter charts inside the chat"],
@@ -75,8 +78,9 @@ export default function ConnectPage() {
       <section className="mb-12">
         <h2 className="display mb-1 text-3xl font-semibold">What your AI gets</h2>
         <p className="mb-5 text-sm text-dim">
-          Eight tools over the frozen tournament database — FIFA stadium tracking, xG shot data,
-          ratings, weather, travel. Every answer links back to the matching page here.
+          Twelve tools over the frozen tournament database — FIFA stadium tracking, xG shot data,
+          ratings, style clustering, Elo, weather, travel. Every answer links back to the matching
+          page here.
         </p>
         <div className="grid gap-2 sm:grid-cols-2">
           {TOOLS.map(([name, blurb]) => (
@@ -98,14 +102,6 @@ export default function ConnectPage() {
           ))}
         </div>
       </section>
-
-      <p className="text-sm text-dim">
-        No paid AI plan? The built-in analyst at{" "}
-        <Link href="/ask" className="text-gold underline-offset-4 hover:underline">
-          Ask the data
-        </Link>{" "}
-        answers the same questions right here.
-      </p>
     </main>
   );
 }

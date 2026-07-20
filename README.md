@@ -21,6 +21,7 @@ Open **http://localhost:4026** — the port is pinned, so this URL is always the
 | `npm start` | Serve the production build at http://localhost:4026 (run `npm run build` first) |
 | `npm run harvest` | Re-download all tournament data into `data/` (only needed if `data/` is missing — it's idempotent and skips existing files) |
 | `npm run enrich` | Fetch kickoff weather for all matches from Open-Meteo into `data/enrich/` (free, no key; idempotent) |
+| `npm run ml` | Recompute the ML layer (`data/ml/ml.json`): style vectors, similar players, k-means archetypes, t-SNE map coords, team style families. Needs `pip install scikit-learn`. Deterministic (seed 26). |
 
 ## The AI feature ("Ask the data")
 
@@ -42,7 +43,7 @@ Each question costs a few cents (Claude Opus reads a ~15k-token data dossier).
 
 ## The MCP server (bring your own model)
 
-`/api/mcp` exposes the same 8 data tools as a remote MCP server, so anyone can chat with the
+`/api/mcp` exposes the same 13 data tools as a remote MCP server, so anyone can chat with the
 tournament data from **their own** Claude (or any MCP client) — no API key on our side, their
 subscription pays for the tokens. `render_chart` is an [MCP App](https://modelcontextprotocol.io/docs/extensions/apps):
 hosts that support the extension (Claude, Claude Desktop, VS Code…) render our bar/scatter
@@ -70,6 +71,7 @@ request), [lib/aiTools.ts](lib/aiTools.ts) (shared tool layer, also used by `/as
 | `/players` | Every player's real-data card (searchable, filterable) |
 | `/player/[id]` | Full card + "the receipts" (real totals) + match-by-match ratings |
 | `/team/[abbr]` | Team identity (percentile profile vs all 48 teams), results, squad — e.g. `/team/ESP` |
+| `/map` | **The tribes**: all 523 regular outfielders sorted into 8 k-means style archetypes — face walls, plain-word traits, and a "who plays like X" finder. Team style families below. Fortune index (10k xG Monte Carlo per group match) shows on `/tournament` + team pages. |
 | `/compare` | Two cards + stat radar, shareable via URL params |
 | `/ask` | Tactical Q&A over the data (needs the API key above) |
 | `/connect` | Visitor-facing guide to the MCP server — connect the database to their own Claude/ChatGPT |

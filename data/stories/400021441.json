@@ -1,0 +1,32 @@
+{
+  "headline": "Korea's Composure Wins After Wayward First Half",
+  "story": [
+    "Korea Republic dictated possession (56 per cent) and territory throughout, but early profligacy nearly cost them dearly. They spurned three gilt-edged chances before the break—a blocked effort (45+2) and two saved attempts at 49 and 56 minutes—allowing Czechia to steal ahead at 59 with a low-expectation finish. The shape remained unchanged: Korea pressing but struggling to convert, Czechia compact and opportunistic.",
+    "Korea's dominance in ball recovery (12.8 seconds to Czechia's 18.4) proved decisive. After trailing, they converted twice in 13 minutes—first through a 0.31 xG chance at 67, then a cleaner 0.37 opportunity at 80. In-beom Hwang (8.9 rating) and Lee Kang-in (8.0) drove the second-half onslaught, while Czechia's Ladislav Krejčí (7.2) couldn't sufficiently shield a flagging rearguard. Korea's clinical finish, not their territorial dominance, won the day."
+  ],
+  "keyMoment": {
+    "minute": "67",
+    "text": "Korea equalizes with a 0.31 xG chance; from this moment, their ball recovery dominance becomes irresistible."
+  },
+  "advice": {
+    "home": {
+      "team": "Korea Republic",
+      "verdict": "Second-half composure salvaged a first-half misfiring attack; defending lapse nearly proved fatal.",
+      "points": [
+        "Ball recovery speed (12.8s vs 18.4s) was the platform: faster transitions unlocked two finishing chances.",
+        "Hwang's 8.9 rating and Kang-in's 8.0 were decisive; Czechia's defensive average offered no answer.",
+        "Missed three big chances (45+2, 49, 56) before Czechia's goal; that nearly proved fatal but composure held."
+      ]
+    },
+    "away": {
+      "team": "Czechia",
+      "verdict": "Early proficiency might have held; Korea's xG advantage (1.77 vs 0.64) proved insurmountable.",
+      "points": [
+        "Krejčí's 22' miss (0.28 xG) needed to go in; one goal then alters the entire trajectory.",
+        "Conceding twice in 13 minutes (67-80) was fatal; sharpness at 59 came too late.",
+        "Ball recovery lag (18.4s vs 12.8s) meant transitions favoured Korea; defensive shape fractured under pressure."
+      ]
+    }
+  },
+  "statLine": "Having wasted three first-half chances, Korea Republic then converted twice in 13 minutes to transform a potential upset into a routine victory."
+}

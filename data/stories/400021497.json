@@ -1,0 +1,32 @@
+{
+  "headline": "Mahrez Inspires Desert Dominance, Denied by Austrian Steel",
+  "story": [
+    "Algeria's 61 per cent possession and 5.5 high-press phases should have governed Kansas City. Instead, they surrendered inside 30 minutes to Austria's efficient 0.77 xG strike. Mahrez's creative dominance and superior turnovers (39 to 24) forced an unlikely equaliser (0.09 xG) before half-time. The second half mirrored the first: Austria ahead at 55 minutes, Algeria level at 60. Two defences matched against attacking intent. By stoppage time, organised defending had surrendered to chaos—both teams trading goals in desperation.",
+    "The decisive moment came at 44 minutes: Algeria missed a high-quality chance (0.46 xG) that would have settled a game already tipping their way through possession and press. Despite 12 shots (five on target) and 1.54 xG to Austria's 10 shots and 1.06, Algeria found only 90+3 for a lead. Three minutes later, it was gone. Sabitzer (8.0) held Austria's rearguard despite 34 per cent possession; Alaba (6.9) escaped reckoning. A draw that masked two entirely different matches."
+  ],
+  "keyMoment": {
+    "minute": "90+6",
+    "text": "Austria's final equaliser strips victory from Algeria's grasp."
+  },
+  "advice": {
+    "home": {
+      "team": "Algeria",
+      "verdict": "Possession without precision, pressing without finish.",
+      "points": [
+        "That 44' big chance (0.46 xG) would have broken Austria's resilience. Take it.",
+        "Twelve shots but five on target: 1.54 xG demands clinical execution, not luck.",
+        "Led 90+3 after dominance. Conceded 90+6: defensive collapse in final moments unforgivable."
+      ]
+    },
+    "away": {
+      "team": "Austria",
+      "verdict": "Ruthless defence bought time; late escape masked a flawed approach.",
+      "points": [
+        "1.06 xG, three goals: clinical finishing kept them in it from 34 per cent possession.",
+        "Only 2.0 high-press phases: reactive defending worked only because Algeria squandered chances.",
+        "Sabitzer (8.0) and Alaba (6.9) survived their final test. That gamble works once, rarely twice."
+      ]
+    }
+  },
+  "statLine": "Austria scored three goals from 1.06 expected goals whilst surrendering 61 per cent possession; Algeria, three from 1.54, saw dominance dissolve in the final three minutes."
+}

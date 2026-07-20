@@ -1,0 +1,32 @@
+{
+  "headline": "Spain's suffocation finally broke Argentina in the 106th minute",
+  "story": [
+    "Spain's siege took 106 minutes to crack. Argentina sat narrow and deep from the opening minute, content to disrupt Spain's build-play and spring the rare counter—and for most of 90 minutes it held. Spain's midfield pressed relentlessly (14.3 high-press phases), forced 26 turnovers, recovered possession in 10.2 seconds, and cycled 20 shots. Argentina offered almost nothing: two shots, zero on target, an xG of 0.09. But the Argentine defence, anchored by Otamendi and reinforced by Enzo Fernández's discipline, bent without breaking until the 90th minute, when Fernández's second yellow left Argentina a man down.",
+    "The dam burst in extra time. With Argentina exhausted and exposed, Spain's crisp passing—orchestrated by Pedri (7.8 rating) and Nico Williams (7.7)—found space it had chased in vain for ninety minutes. The decisive goal arrived at 106', low expected value (0.22 xG) by Spain's standards, but clinical. Argentina's sole real chance came at 120+2', one last desperate miss. Emiliano Martínez (7.5), the goalkeeper, had been Argentina's salvation all tournament; he couldn't stop what Spain had become inevitable."
+  ],
+  "keyMoment": {
+    "minute": "106",
+    "text": "Spain scored from open play in extra time, breaking Argentina's exhausted defence a man down."
+  },
+  "advice": {
+    "home": {
+      "team": "Spain",
+      "verdict": "Relentless press and ball recovery won a final they nearly drew through profligacy.",
+      "points": [
+        "14.3 high-press phases created the chaos that forced 26 turnovers and opened Argentina's shape in extra time.",
+        "Three big chances in normal time (0.24, 0.18, 0.24 xG) went begging; the danger was conceding a late break into the final moment.",
+        "Pedri (7.8 rating) and Nico Williams (7.7) orchestrated patterns that only yielded one goal despite 1.72 xG—precision matters more than volume."
+      ]
+    },
+    "away": {
+      "team": "Argentina",
+      "verdict": "Enzo Fernández's red card at 90+3 exposed a defence designed to outlast, not to lead.",
+      "points": [
+        "An xG of 0.09 reflects the chasm: Argentina created nothing from open play and relied on Martínez (7.5) to deny Spain's 12 on-target shots.",
+        "Enzo Fernández's discipline collapsed in the 90th minute; the second yellow removed Argentina's midfield shield when they needed one most.",
+        "A single big chance missed at 120+2 (0.18 xG) was Argentina's only shot at an upset—insufficient when facing a press that recovered possession in 10.2 seconds."
+      ]
+    }
+  },
+  "statLine": "Spain's 1.72 expected goals to Argentina's 0.09—the final's true scoreline was decided not in ninety minutes but in the ceaseless pressure of 106."
+}

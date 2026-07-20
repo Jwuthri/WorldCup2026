@@ -1,0 +1,32 @@
+{
+  "headline": "Portugal's Profligacy Pardoned by Late Ruthlessness",
+  "story": [
+    "Portugal dominated possession and pressing from the outset, but squandered the match's clearest opportunities in a chaotic opening quarter. Three big chances gone begging—blocked, saved, missed—in the first sixteen minutes left Gonçalo Ramos and his teammates frustrated. Croatia, camping deep with only 2.4 high-press phases, absorbed the pressure and struck first through a low-xG chance at 53'. The game tilted on a knife's edge: Portugal were outplaying them, yet losing.",
+    "The numbers exposed Croatia's fatal weakness. Slow ball recovery—21.2 seconds versus Portugal's 13.1—meant they could never build momentum from transitions. Ramos (7.7) led the press that wore them down; Mateo Kovacic (7.4) fought valiantly in midfield but couldn't stop the tide. Portugal equalized at 68' with a genuine chance (0.79 xG), then punished late-game fatigue with a 90+4' goal from barely-expected territory (0.07 xG). Croatia's 6 shots on-target masked a deeper truth: they were never going to win this match."
+  ],
+  "keyMoment": {
+    "minute": "90+4'",
+    "text": "Portugal's low-probability late goal—the only finish that mattered when the pressure finally broke through."
+  },
+  "advice": {
+    "home": {
+      "team": "Portugal",
+      "verdict": "Controlled and won, but one moment of poor finishing in the opening quarter threatened to undo it all.",
+      "points": [
+        "Missed three big chances worth 0.86 xG in first 16 minutes—conversion rate, not creation, was the issue.",
+        "High pressing (9.8 phases) exhausted Croatia's recovery time; pressing worked when discipline held.",
+        "Late goal at 0.07 xG shows ruthlessness; could have cost them dearly if Croatia's save at 77' had fallen differently."
+      ]
+    },
+    "away": {
+      "team": "Croatia",
+      "verdict": "Defended deep but lacked the recovery pace and clinical edge to punish Portugal's early misses.",
+      "points": [
+        "Ball recovery time (21.2s) too slow; Portugal's 13.1s dominance in transition broke defensive shape repeatedly.",
+        "Saved six shots but scored only once—clinical defending without attacking reward compounds low 1.17 xG.",
+        "Missed big chance at 77' (0.23 xG) in a match where one more goal changes the story entirely."
+      ]
+    }
+  },
+  "statLine": "Portugal's 1.91 xG created genuine control; Croatia's 6 shots on-target created an illusion of resilience that their 21.2-second ball recovery time demolished."
+}

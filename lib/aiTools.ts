@@ -1,9 +1,10 @@
 import type Anthropic from "@anthropic-ai/sdk";
-import { getCalendar, getMatchBundle, getSeasonPlayers, getPlayerDirectory } from "@/lib/data";
+import { getCalendar, getMatchBundle, getSeasonPlayers, getPlayerDirectory, getStandings } from "@/lib/data";
 import { getCards } from "@/lib/cards";
 import { getTeams, type Team } from "@/lib/teams";
 import { getConditions, getTeamSchedule } from "@/lib/context";
 import { getStrength, getForm, getHeadToHead, getRefereeForMatch, getReferees } from "@/lib/strength";
+import { getHonours } from "@/lib/honours";
 import { VENUES } from "@/lib/venues";
 import { archetypeOf, similarTo, teamStyleOf } from "@/lib/ml";
 import { luckOf } from "@/lib/luck";
@@ -129,6 +130,31 @@ export const TOOL_DEFS: Anthropic.Tool[] = [
       properties: { team: { type: "string", description: "Team name or abbreviation" } },
       required: ["team"],
     },
+  },
+  {
+    name: "similar_players",
+    description:
+      "Statistical twins: the players most similar to a given player by per-90 style vector (cosine similarity over 22 tracking-derived dimensions), plus their k-means style archetype. Use for 'who plays like X' and scouting-replacement questions.",
+    input_schema: {
+      type: "object",
+      properties: { name: { type: "string", description: "Player name (partial ok)" } },
+      required: ["name"],
+    },
+  },
+  {
+    name: "get_standings",
+    description:
+      "Group-stage tables. Pass a group letter (A–L) for one table, or nothing for all 12. Each row: position, played/W/D/L, goals for/against, goal difference, points, and whether the team qualified for the knockouts. Use for 'how did group X finish', qualification, and who-went-through questions.",
+    input_schema: {
+      type: "object",
+      properties: { group: { type: "string", description: "e.g. 'A', 'Group H' — omit for all groups" } },
+    },
+  },
+  {
+    name: "get_awards",
+    description:
+      "The tournament honours: Golden Boot, Golden Glove, Best Player, Best Young Player and the Team of the Tournament — each as our data-driven pick with the reasoning, alongside the official jury winner and whether they agree. Use for 'who won X award', 'best player/keeper/young player', and jury-vs-data debates.",
+    input_schema: { type: "object", properties: {} },
   },
   {
     name: "render_chart",
@@ -366,6 +392,42 @@ export function runTool(name: string, input: any): { text: string; isError?: boo
         };
       }
 
+      case "get_standings": {
+        const groups = getStandings();
+        const want = input?.group ? norm(String(input.group)).replace(/^group/, "") : null;
+        const entries = Object.entries(groups).filter(
+          ([g]) => !want || norm(g).replace(/^group/, "") === want
+        );
+        if (!entries.length)
+          return { text: want ? `No group "${input.group}". Groups are A–L.` : "No standings available.", isError: true };
+        const fmt = (rows: any[]) =>
+          rows
+            .map(
+              (r) =>
+                `${r.pos}. ${r.name} — ${r.pts} pts (${r.w}W ${r.d}D ${r.l}L, GF ${r.gf} GA ${r.ga}, GD ${r.gd > 0 ? "+" : ""}${r.gd})${r.through ? " ✓ through" : ""}`
+            )
+            .join("\n");
+        return { text: entries.map(([g, rows]) => `${g}\n${fmt(rows)}`).join("\n\n") };
+      }
+
+      case "get_awards": {
+        const h = getHonours();
+        const out = h.awards.map((a) => ({
+          award: a.title,
+          rule: a.rule,
+          our_pick: a.rows.slice(0, 3).map((r) => `${r.card.name} (${r.card.team}) — ${r.line}`),
+          official_winner: a.official
+            ? `${a.official.name}${a.official.matches ? " ✓ agrees with our data" : " (jury differs from our data pick)"}`
+            : undefined,
+        }));
+        return {
+          text: JSON.stringify({
+            awards: out,
+            team_of_the_tournament: `${h.xiShape}: ${h.xi.map((c) => `${c.name} (${c.team}, ${c.overall})`).join(", ")}`,
+          }),
+        };
+      }
+
       case "get_team": {
         const t = resolveTeam(String(input?.team ?? ""));
         if (!t) return { text: `Unknown team "${input?.team}".`, isError: true };
@@ -417,6 +479,29 @@ export function runTool(name: string, input: any): { text: string; isError?: boo
             season: Object.fromEntries(c.receipts.map((r) => [r.label, r.value])),
             match_by_match: c.perMatch.map((m) => `vs ${m.opp} ${m.score} — rating ${m.rating ?? "n/a"}`),
             others: hits.length > 1 ? hits.slice(1).map((h) => h.name) : undefined,
+          }),
+        };
+      }
+
+      case "similar_players": {
+        const q = norm(String(input?.name ?? ""));
+        if (!q) return { text: "Give a player name.", isError: true };
+        const hit = [...getCards().values()]
+          .filter((c) => norm(c.name).includes(q))
+          .sort((x, y) => y.minutes - x.minutes)[0];
+        if (!hit) return { text: `No player matching "${input.name}".`, isError: true };
+        const twins = similarTo(hit.id, 6);
+        if (!twins.length) return { text: `${hit.name} played under 90 minutes — no stable style vector.` };
+        return {
+          text: JSON.stringify({
+            player: `${hit.name} (${hit.team}, ${hit.pos})`,
+            archetype: archetypeOf(hit.id)?.label,
+            twins: twins.map((s) => ({
+              name: s.card.name, team: s.card.team, pos: s.card.pos, card: s.card.overall,
+              style_match: `${(s.sim * 100).toFixed(0)}%`,
+              archetype: archetypeOf(s.card.id)?.label,
+            })),
+            method: "cosine similarity of z-scored per-90 vectors (22 dims: shooting, progression, receiving, pressing, physical); GK pool separate",
           }),
         };
       }

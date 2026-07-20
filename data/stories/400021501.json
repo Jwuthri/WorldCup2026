@@ -1,0 +1,32 @@
+{
+  "headline": "Colombian Dominance Suffocates Congo DR in Opener",
+  "story": [
+    "Colombia orchestrated a suffocating display in Guadalajara, dominating possession at 58 per cent and pressing relentlessly through high-press phases of 5.1, restricting Congo DR's attacking opportunities. The visitors, set in a rigid 5-3-2 formation, rarely mounted genuine threats, with Mpasi and Tuanzebe marshalling their defence stiffly. Colombia's ball recovery dominance—11.3 seconds versus Congo's 18.8—enabled Rodriguez and his midfield to dictate tempo. With 20 shots attempted to Congo's seven, the control was complete before the 76th-minute breakthrough finally crystallised the pressure.",
+    "The verdict lay in the underlying metrics: Colombia's expected goals of 1.54 to 0.42 reflecting a chasm in quality. Yet the decisive goal, registering just 0.07 xG, arrived fortuitously in the 76th minute—a clinical finish rewarding superiority if not precision. The earlier miss of a 0.20 xG chance that rattled the post in the fourth minute symbolised the gap between Colombia's dominance and their execution. Rodriguez orchestrated the control, whilst Munoz and Sanchez's defensive excellence ensured Congo DR found no way through, despite their compact formation."
+  ],
+  "keyMoment": {
+    "minute": "76",
+    "text": "Colombian breakthrough in the 76th minute—0.07 xG—rewarded ninety minutes of suffocating pressure."
+  },
+  "advice": {
+    "home": {
+      "team": "Colombia",
+      "verdict": "High pressure, relentless control, deserved breakthrough.",
+      "points": [
+        "High-press phases (5.1 vs 3.0) controlled tempo and limited Congo's transitions.",
+        "Ball recovery time (11.3s vs 18.8s) gave Rodriguez consistent possession advantage.",
+        "Shot dominance (20-7, 9 on target vs 1) ensured breakthrough inevitably came."
+      ]
+    },
+    "away": {
+      "team": "Congo DR",
+      "verdict": "Defending well, attacking poorly, no path forward created.",
+      "points": [
+        "Recovery time lag (18.8s vs 11.3s) prevented effective counter-attacking opportunities.",
+        "Shot on target conversion (1 vs 9) meant no attacking threat materialized.",
+        "xG differential (0.42 vs 1.54) exposed inability to match Colombia's attacking quality."
+      ]
+    }
+  },
+  "statLine": "Colombia suffocated Congo DR with twenty shots and relentless high-pressing (5.1 phases) to secure a 1-0 victory despite a low-xG decisive finish."
+}

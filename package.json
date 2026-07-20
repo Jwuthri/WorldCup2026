@@ -8,6 +8,7 @@
     "build:mcp-app": "node scripts/build-mcp-app.mjs",
     "start": "next start -p 4026",
     "harvest": "python3 scripts/harvest.py",
+    "ml": "python3 scripts/ml.py",
     "enrich": "python3 scripts/enrich.py"
   },
   "dependencies": {

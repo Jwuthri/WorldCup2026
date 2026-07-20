@@ -1,0 +1,32 @@
+{
+  "headline": "South Africa's Possession, Canada's Ruthlessness",
+  "story": [
+    "South Africa suffocated the match for 90 minutes. With 56 per cent possession and a textbook 4-2-3-1, they circulated the ball between their lines with the sterile precision of a team afraid to break shape. Canada, in a sharp 4-4-2, conceded the territory and sprinted. Where South Africa made 1.8 high-press forays, Canada made 7.2, turning over the ball 49 times to South Africa's 42. The match was a masterclass in one principle: possession without penetration is just passing practice.",
+    "The number—0.16 expected goals from 56 per cent possession—was South Africa's verdict. Canada's was 1.33 from 36 per cent. Stephen Eustáquio (8.9) orchestrated the press and the break with the urgency South Africa's midfield could not match. Canada wasted a 0.33 xG chance in the 22nd minute, a 0.26 in the 44th, a 0.18 in the same minute, and a 0.15 in the 65th. They finally converted from 0.10 xG in the 90th minute plus two, the winner arriving when South Africa's legs had gone."
+  ],
+  "keyMoment": {
+    "minute": "90+2",
+    "text": "Canada's injury-time goal ends South Africa's dominance-without-reward."
+  },
+  "advice": {
+    "home": {
+      "team": "South Africa",
+      "verdict": "Possession without a knife edge counts for nothing against organised pressure.",
+      "points": [
+        "Press mismatch: 1.8 high-press phases versus Canada's 7.2. Possession needs aggression.",
+        "0.16 xG from 56 per cent possession exposes a creation deficit, not a lack of territory.",
+        "42 forced turnovers, one shot on target: transition play lacked urgency and incision."
+      ]
+    },
+    "away": {
+      "team": "Canada",
+      "verdict": "Pressing intensity and a late clinical finish beat greater possession.",
+      "points": [
+        "7.2 high-press phases forced 49 turnovers; defensive intensity created the winning chaos.",
+        "Converted 0.10 xG at 90+2 after missing 0.92 xG earlier; ruthlessness overcame wastefulness.",
+        "Survived squandered chances at 22, 44, 44, 65 minutes (0.33, 0.26, 0.18, 0.15 xG each)."
+      ]
+    }
+  },
+  "statLine": "South Africa's 56 per cent possession and one shot on target against Canada's 12 shots and 1.33 xG: the gap between control and threat was wider than the Pacific."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Mendes and Cancelo Orchestrate a Five-Goal Statement",
+  "story": [
+    "Portugal dictated from the opening whistle, pressing relentlessly and exploiting Uzbekistan's sluggish transitions. The goal at 6' arrived almost inevitably—Nuno Mendes and João Cancelo orchestrated overwhelming superiority on the flanks. By the 39th minute, when Portugal's third goal arrived, the contest had ceased to be competitive. Uzbekistan's rare moment came at 60', a goal offering no reprieve but a final indignity: a team broken by systematic Portuguese press.",
+    "The numbers exposed the gulf: Portugal generated 2.03 xG despite missing a 0.40 chance at the fourth minute and another at 58'. Uzbekistan's ball recovery time—18.4 seconds to Portugal's 11.7—revealed structural fragility. Fayzullaev and Ganiev, rated 7.1 and 6.6 respectively, lacked the tempo to disrupt the flow. Four goals before half-time rendered the contest academic; the 87th-minute fifth was administrative detail."
+  ],
+  "keyMoment": {
+    "minute": "6",
+    "text": "Mendes and Cancelo combined on the flank; Uzbekistan's shape fractured before 100 passes exchanged."
+  },
+  "advice": {
+    "home": {
+      "team": "Portugal",
+      "verdict": "Textbook opening statement: early dominance, perfect execution, one big chance wasted at 4'.",
+      "points": [
+        "Mendes and Cancelo's flank control (8.4 and 8.2) exploited Uzbekistan's 18.4-second recovery window.",
+        "Missing the 0.40 xG at fourth minute risked giving Uzbekistan hope; the 6' goal crushed it.",
+        "Four goals before half-time rendered the contest academic; missing 0.32 xG at 58' showed complacency."
+      ]
+    },
+    "away": {
+      "team": "Uzbekistan",
+      "verdict": "Outpaced and overwhelmed by Portugal's systematic pressure from the opening minute.",
+      "points": [
+        "Ball recovery time (18.4s vs 11.7s) meant you couldn't disrupt the flow; 34% possession sealed it.",
+        "Fayzullaev (7.1) and Ganiev (6.6) lacked tempo to relieve pressure; 49 forced turnovers broke shape.",
+        "Your 3-4-2-1 never found equilibrium against Portugal's 4-2-3-1; the 60' goal was consolation only."
+      ]
+    }
+  },
+  "statLine": "Portugal scored five from 2.03 xG; Uzbekistan generated 0.44 and mustered one consolation."
+}

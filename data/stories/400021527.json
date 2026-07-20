@@ -1,0 +1,32 @@
+{
+  "headline": "Swiss Efficiency Punishes Algeria's Pressing Gambit",
+  "story": [
+    "Algeria pressed aggressively with 11.3 high-press phases versus Switzerland's 4.9, monopolising possession at 51 per cent. Yet Switzerland's 4-2-3-1 proved disciplined in transition. An early goal in the tenth minute—delivered from 0.97 expected goals—gave Switzerland a crucial lead before Algeria's tournament ambitions had truly awakened. The Africans squandered a significant chance in the sixth minute, their xG of 0.31 suggesting they'd already had the better of the opening moments.",
+    "But Switzerland's second-half ruthlessness settled the tie. A second goal at 46 minutes, improbably registered from just 0.09 xG, embodied Swiss clinical precision where Algeria's press had merely generated volume. Denis Zakaria (7.9), Dan Ndoye (7.8), and Manuel Akanji (7.7) controlled the match's rhythm despite 41 per cent possession. Algeria's Houssem Aouar, rated 6.8, could not translate the team's territorial dominance into clear-cut chances; by the 50th minute, they were effectively finished."
+  ],
+  "keyMoment": {
+    "minute": "46",
+    "text": "Switzerland's second goal from minimal xG (0.09) extinguished Algeria's pressing hopes."
+  },
+  "advice": {
+    "home": {
+      "team": "Switzerland",
+      "verdict": "Converted chances ruthlessly despite minority possession.",
+      "points": [
+        "Two goals from just 1.9 xG—efficient finishing proved decisive.",
+        "Denis Zakaria's 7.9 rating anchored a composed midfield under pressure.",
+        "Late missed big chance (81', 0.65 xG) showed they escaped untested."
+      ]
+    },
+    "away": {
+      "team": "Algeria",
+      "verdict": "Aggressive pressing generated few clear chances.",
+      "points": [
+        "Squandered early big chance (6', xG 0.31) before Switzerland's rhythm took hold.",
+        "11.3 high-press phases created only 0.73 xG total—inefficient suffocation.",
+        "Houssem Aouar (6.8) and midfield couldn't unlock an organised Swiss defence."
+      ]
+    }
+  },
+  "statLine": "Switzerland converted 2 goals from 1.9 expected goals while ceding 0.73 xG to a side that dominated possession."
+}

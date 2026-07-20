@@ -1,0 +1,32 @@
+{
+  "headline": "England's pressing machine crushes Panama's defensive resolve",
+  "story": [
+    "England imposed themselves immediately, pressing high and relentlessly across the pitch. Panama retreated into a 5-4-1 defensive shape, absorbing pressure without generating genuine chances. The statistics painted a portrait of dominance: England held 58% possession to Panama's 33%, executing 11.9 high-press phases to Panama's 2.2. The Central American side recovered possession in 17.4 seconds on average — nearly double England's 8.7 seconds — evidence of sustained pressure. Panama's 13 shots yielded just two on target, a reflection of scrambled opportunities from distance.",
+    "The breakthrough came within five minutes. Goals at 62 and 67 — both low-probability finishes (0.10 and 0.18 xG respectively) — broke Panama's defensive resolve after relentless pressing had eroded resistance. Jude Bellingham (9.3 rating) dominated proceedings throughout, dictating tempo and positioning. Panama's only clear opportunity materialized in the 33rd minute (0.18 xG) but came to nothing. England's press proved too much; the visitors' only vulnerability emerged late, when two chances (0.29 xG at 57 minutes, 0.22 xG at 90+1) were saved, suggesting brief lapses in concentration rather than defensive frailty."
+  ],
+  "keyMoment": {
+    "minute": "62",
+    "text": "First goal as England's relentless pressing finally overwhelms Panama's defensive shape after sustained high-pressure football."
+  },
+  "advice": {
+    "home": {
+      "team": "Panama",
+      "verdict": "Defensively resolute but tactically overwhelmed by superior pressing intensity.",
+      "points": [
+        "Sharpen defensive shape: both conceded goals were low-xG (0.10, 0.18), suggesting avoidable positioning errors.",
+        "Faster possession recovery: 17.4s average versus England's 8.7s meant constant pressure; sharper passing breaks the press.",
+        "Convert 33rd-minute chance: 0.18-xG missed opportunity cost psychology; early goal shifts England's 2.2 press phases strategy."
+      ]
+    },
+    "away": {
+      "team": "England",
+      "verdict": "Controlled from first whistle; relentless press and Bellingham's mastery made victory inevitable.",
+      "points": [
+        "Pressing intensity won it: 11.9 high-press phases to Panama's 2.2 meant constant ball recovery advantage (8.7s vs 17.4s).",
+        "Bellingham's orchestration (9.3 rating) dictated positioning and transitions; he never surrendered possession dominance.",
+        "Defended sloppily late: two 0.29 and 0.22-xG chances saved at 57' and 90+1 showed complacency in final stages."
+      ]
+    }
+  },
+  "statLine": "England recovered possession in 8.7 seconds on average versus Panama's 17.4, a two-to-one edge that turned the match into one-way traffic."
+}

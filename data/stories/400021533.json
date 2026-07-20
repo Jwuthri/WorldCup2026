@@ -1,0 +1,32 @@
+{
+  "headline": "France's Control Breaks Paraguay's Defensive Stranglehold",
+  "story": [
+    "France swarmed the pitch from start, but Paraguay's rigid 5-4-1 formation—a defensive wall—kept them at bay through 69 minutes. The Parisians controlled 67 per cent possession with 3.2 high-press phases, yet breakthrough proved elusive. Paraguay, defending with absolute commitment, scraped five shots without troubling the target. The dam burst in the 70th minute: France's mounting pressure yielded a clinical finish, built on 0.79 xG.",
+    "The xG gap told all: France's 1.93 to Paraguay's 0.13 reflected overwhelming control. With 15 shots against five, France's press forced 37 turnovers while recovering in 8 seconds—Paraguay's 20.5 showed the gulf. Mbappe (7.9) and Doué (7.6) drove attacks; Mauricio and Gill held heroically for the home side. A scrambled save in the 90th minute denied France a second, but one conversion sufficed against such toothless opposition."
+  ],
+  "keyMoment": {
+    "minute": "70",
+    "text": "France breached Paraguay's defensive wall with clinical finishing, built on superior possession and press phases."
+  },
+  "advice": {
+    "home": {
+      "team": "Paraguay",
+      "verdict": "Defensive discipline postponed the inevitable; without attacking threat, the wall crumbles.",
+      "points": [
+        "Zero shots on target and 0.13 xG—Paraguay offered nothing going forward, handing France total control.",
+        "Ball recovery time of 20.5 seconds versus France's 8 allowed 37 forced turnovers; Paraguay chased ghosts.",
+        "The 5-4-1 prioritised survival but needed one dangerous moment to trouble Saliba (7.4) and disrupt France's certainty."
+      ]
+    },
+    "away": {
+      "team": "France",
+      "verdict": "Possession and press dominance converted once; a late miss hinted at vulnerability.",
+      "points": [
+        "67 per cent possession and 3.2 high-press phases built an overwhelming framework; 70th-minute finish justified the blueprint.",
+        "Mbappe (7.9) and Doué (7.6) orchestrated 8-second possession cycles and 37 forced turnovers—France's press left Paraguay in retreat.",
+        "A saved big chance (0.21 xG) at 90+6 reminded France how narrow the margin was; clinical efficiency proved decisive."
+      ]
+    }
+  },
+  "statLine": "France's 1.93 expected goals against Paraguay's 0.13 encapsulated a 15-fold gulf in control—five-to-15 shots, eight-to-20-second recovery times, and the single strike that separated tournament contenders from defensive castaways."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Control without conquest: penalties save Morocco's tournament",
+  "story": [
+    "Morocco's press suffocated Dutch possession from the start, dominating with 61% control across five high-pressure phases. The Netherlands, content with 31% possession, retreated into a compact defensive shape—forcing 52 turnovers to match Morocco's output despite the gulf. Morocco's recovery speed (10.6 seconds) overwhelmed Dutch sluggishness (23.9 seconds), creating constant transitions. Yet profligacy—reflected in 1.3 xG against 0.33—ensured the match ended level at 90 minutes, demanding penalties to separate them.",
+    "Morocco manufactured dominance but could not execute: 11 shots with five on target against the Netherlands' six and two, yet both teams found the net once across 90 minutes. The disparity in ball recovery and high-press intensity gave Morocco the rhythm, yet they could not convert it into a second goal. When penalties arrived, Morocco's clinical precision—winning 3-2—converted possession dominance into tournament survival. The shootout, not the pitch, crowned the victor."
+  ],
+  "keyMoment": {
+    "minute": "90",
+    "text": "Regulation whistle. Morocco's dominance—61% possession, 1.3 xG—ended scoreless, forcing penalties."
+  },
+  "advice": {
+    "home": {
+      "team": "Netherlands",
+      "verdict": "Rearguard discipline undone by Morocco's penalty execution and superior recovery speed.",
+      "points": [
+        "Morocco's high-press advantage (5.0 phases vs 1.1) created relentless pressure; matching their intensity would have disrupted rhythm.",
+        "Ball recovery speed (23.9s vs 10.6s) left transitions exposed; faster pressing and retention would have closed defensive gaps.",
+        "0.33 xG from six shots limited attacking options; clinical finishing from limited possession would have eliminated penalty drama entirely."
+      ]
+    },
+    "away": {
+      "team": "Morocco",
+      "verdict": "Penalty mastery converted possession dominance into tournament progression, despite one-goal wastefulness.",
+      "points": [
+        "1.3 xG to 0.33 promised convincing victory; one goal from 11 shots (five on target) punished wastefulness and forced penalties.",
+        "Five high-press phases generated constant control; converting even one extra chance in open play would have spared the shootout.",
+        "Recovery speed advantage (10.6s vs 23.9s) and possession 61-31 created endless opportunities; yet penalties, not dominance, decided advancement."
+      ]
+    }
+  },
+  "statLine": "Morocco's 1.3 xG, 61% possession, and five on-target shots proved insufficient; penalties—not the pitch—determined their tournament survival."
+}

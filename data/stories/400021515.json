@@ -1,0 +1,32 @@
+{
+  "headline": "Australia's volume wasted as Egypt's accuracy settles penalty drama",
+  "story": [
+    "Australia came to Dallas with aggression and desperation, pressing high in 4.9 phases and forcing 56 turnovers to compensate for their 35 per cent possession. They peppered Egypt's goal with 16 shots. But desperation is not precision. Only two found the target. Egypt, meanwhile, controlled the tempo at 53 per cent possession and turned fewer opportunities—14 shots total—into four on target. The match clung to 1-1 through 90 minutes and beyond, each team's approach cancelling the other out until the lottery of penalties decided who advanced.",
+    "The numbers betrayed Australia's waste. Their expected goals of 0.74 versus Egypt's 1.23 told the true story: Egypt created better chances, not more of them. More telling still was the recovery time: Australia needed 21.5 seconds to reorganise after each press, Egypt 17.9 seconds. That three-second gap—the difference between structured defending and frantic scrambling—compounded across 120 minutes. In the end, Egypt's clinical shooting and tighter shape held firm where Australia's high-press gamble exhausted itself. When the shootout came, it was Egypt who had the nerve, not the Socceroos."
+  ],
+  "keyMoment": {
+    "minute": "120",
+    "text": "Penalty shootout: Egypt converted their composure; Australia's shot allocation had already cost them."
+  },
+  "advice": {
+    "home": {
+      "team": "Australia",
+      "verdict": "Pressing without pattern wasted a 16-shot day; finish is non-negotiable at this stage.",
+      "points": [
+        "Only 2 of 16 shots on target (12.5% accuracy) is tournament suicide; precision drills, not volume.",
+        "Recovery time of 21.5s after pressing suggests shape broke after turnovers; tighter defensive structure needed.",
+        "56 forced turnovers created chaos but not clear chances; press must funnel play toward danger, not just disrupt."
+      ]
+    },
+    "away": {
+      "team": "Egypt",
+      "verdict": "Superior shot quality and composure won the day; susceptibility to high press remains a risk.",
+      "points": [
+        "4 on-target shots from 14 attempts (28.6% accuracy) outclassed Australia's 12.5%; efficiency was the difference.",
+        "1.23 xG against Australia's 0.74 shows clear superiority in chance creation and shot selection.",
+        "Fast 17.9s recovery time locked down Australia's transitions; but sustained high-press eventually forced penalties—a coin flip they survived."
+      ]
+    }
+  },
+  "statLine": "Australia's 16 shots yielded just 0.74 expected goals; Egypt's 14 shots generated 1.23—a gap of 38 per cent that penalties merely confirmed."
+}

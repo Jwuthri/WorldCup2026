@@ -1,0 +1,32 @@
+{
+  "headline": "Norway's Lucky Strike Ends Brazil's Wasteful Dominance",
+  "story": [
+    "Brazil pressed high and created chances but couldn't finish. Dominating through aggression (5.2 high-press phases), they forced Norway into a defensive crouch, yet failed to convert a glorious 0.79-xG opportunity at 14 minutes and squandered another 0.56-xG chance at 59. Norway, meanwhile, absorbed pressure with clinical ruthlessness, recovering the ball in just 16 seconds on average. The match hinged on conversion: Brazil's wastefulness against Norway's improbable precision.",
+    "Statistical chaos decided it. Brazil generated 2.57 xG to Norway's 1.41, yet lost 1-2. Erling Haaland's 8.7 rating dominated; his movement carved open spaces Brazil's 25.2-second ball recovery couldn't exploit. Norway's 79th-minute goal (0.08 xG) and the 90th-minute clincher (0.04 xG) were frankly miraculous finishes. Brazil's consolation at 90+10 (0.79 xG) arrived too late—a reminder that dominating the territory without clinical finishing is merely entertaining defeat."
+  ],
+  "keyMoment": {
+    "minute": "90",
+    "text": "Norway's 0.04-xG finish: impossible odds, perfect execution."
+  },
+  "advice": {
+    "home": {
+      "team": "Brazil",
+      "verdict": "Pressed brilliantly but couldn't kill; two gilt-edged misses cost a quarter-final spot.",
+      "points": [
+        "Squandered 0.79-xG chance at 14 mins (Saved) and 0.56-xG miss at 59; clinical finishing wins tournaments",
+        "Five high-press phases (5.2) generated chances but no goals; aggression without conversion is futile",
+        "Ball recovery averaged 25.2 seconds vs Norway's 16.0; ceded transitions that decided the tie"
+      ]
+    },
+    "away": {
+      "team": "Norway",
+      "verdict": "Converted miracle finishes but survived Brazil's wasteful dominance—next foe won't be so forgiving.",
+      "points": [
+        "Haaland's 8.7 rating controlled the match; yet Brazil missed sitters; next opponent will punish that",
+        "16.0-second ball recovery vs Brazil's 25.2 won transitions; 9 shots, 5 on target shows brutal efficiency",
+        "Two impossible finishes (0.08 and 0.04 xG) won a tie; sustainable football beats fortune long-term"
+      ]
+    }
+  },
+  "statLine": "Brazil squandered 2.57 xG across 14 shots; Norway won with two finishes worth 0.12 xG combined."
+}

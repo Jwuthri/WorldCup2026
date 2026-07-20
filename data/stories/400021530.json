@@ -1,0 +1,32 @@
+{
+  "headline": "Eustáquio's Sorrow: The Chances That Canada Didn't Take",
+  "story": [
+    "Canada arrived in Houston with ambition and a 4-4-2 press, six high-press phases early on breaking Morocco's rhythm. Jayden Nelson and Osorio sniffed danger early—indeed, Canada squandered 0.25 xG in the 10th minute before Morocco had properly settled. But pressing without precision is exhaustion by another name. Morocco's 4-2-3-1 was compact, disciplined, and unruffled. By the 50th minute, Canada's midfield had begun to crack. Ball recovery taking 14 seconds versus Morocco's 10.4 told the story: not control, but desperation.",
+    "Azzedine Ounahi, rating 8.9, orchestrated Morocco's ruthlessness. Canada had 0.68 xG across ten efforts; Morocco had 0.85 from five. The difference wasn't luck—it was conversion. Yassine Bounou (8.2) made an eighth-minute save, but Morocco's clinical finishing, including a 0.45 xG goal in the 90+8th minute, rendered Canada's 78th-minute miss of 0.24 xG a terminal wound. Eustáquio (6.7) and Osorio (6.7) pressed valiantly but never gained control. Morocco scored on every shot on target. Canada scored on none of their big chances."
+  ],
+  "keyMoment": {
+    "minute": "50",
+    "text": "Morocco break the deadlock; Canada's tournament slides from improbable to impossible"
+  },
+  "advice": {
+    "home": {
+      "team": "Canada",
+      "verdict": "Two clear openings were all the margin; the finishing wasn't there",
+      "points": [
+        "10th-minute miss of 0.25 xG and 78th-minute miss of 0.24 xG: knockout football has no room for profligacy",
+        "Ball recovery time of 14.0s against Morocco's 10.4s exposed midfield fragility; press intensity (6.3 phases) needed ruthlessness, not volume",
+        "Eustáquio and Osorio (both 6.7) failed to dictate rhythm; Morocco's shape suffocated Canadian creativity entirely"
+      ]
+    },
+    "away": {
+      "team": "Morocco",
+      "verdict": "Clinical finishing and defensive composure sealed a professional dismissal",
+      "points": [
+        "Four shots on target, four goals: 100% conversion rate (0.85 xG) punished Canada's wastefulness decisively",
+        "Ball recovery in 10.4s faster than Canada's 14.0s gave Ounahi (8.9 rating) time to control the tempo; no red cards, pristine discipline",
+        "Bounou's authority (8.2 rating) commanding the box absorbed Canada's late desperation; all threats neutralised"
+      ]
+    }
+  },
+  "statLine": "Morocco converted all four shots on target into goals; Canada's ten shots yielded three on target and zero goals, missing clear 0.24 xG and 0.25 xG chances."
+}

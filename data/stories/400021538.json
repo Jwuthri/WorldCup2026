@@ -1,0 +1,32 @@
+{
+  "headline": "Spain Presses Belgium Into Submission",
+  "story": [
+    "Spain's dominion was suffocating from the start. They pressed high across 11.4 phases, forced 37 turnovers, and recovered possession at a relentless 11.6 seconds average. Belgium had no answer. A fortunate goal at 41 minutes—a scrap of an attempt worth just 0.13 xG—offered fleeting respite, but Spain's 62% possession never loosened its grip. Fabián Ruiz orchestrated from midfield; the Belgians were asphyxiated.",
+    "The numbers exposed the chasm: Spain's 2.2 expected goals to Belgium's 0.34 was the match's only real narrative. Pau Cubarsí and Rodri Hernández, both rated 7.3–7.5, controlled tempo while Courtois faced just two on-target shots before Spain's clinical 88th-minute finish (0.69 xG). Belgium's 40 forced turnovers were hollow—they lacked the precision to convert desperation into danger. Spain's ball recovery advantage and relentless pressing had already decided it."
+  ],
+  "keyMoment": {
+    "minute": "88",
+    "text": "Spain's late goal sealed it; two hours of press intensity became, at last, inevitable."
+  },
+  "advice": {
+    "home": {
+      "team": "Spain",
+      "verdict": "Relentless pressing dictated everything; survived one low-probability scare at 41.",
+      "points": [
+        "Pressed high across 11.4 phases, forcing 37 turnovers while controlling 62 percent possession.",
+        "Ball recovery time of 11.6 seconds exhausted Belgium's 20-second struggle; midfield dominance was total.",
+        "Rodri and Cubarsí's 7.3–7.5 ratings anchored defence; limited opponent to 0.34 xG across ninety minutes."
+      ]
+    },
+    "away": {
+      "team": "Belgium",
+      "verdict": "Outmatched in possession and tempo; their one goal proved woefully insufficient.",
+      "points": [
+        "Needed sharper finishing: 0.34 xG spoke to limited creation; one fortunate goal at 41 minutes was insufficient.",
+        "Ball recovery time doubled Spain's (20s versus 11.6s); pressed by only 2.8 high-press phases against 11.4.",
+        "Only five shots—two on target—against Spain's seventeen exposed toothless attack; early urgency was critical."
+      ]
+    }
+  },
+  "statLine": "Spain recovered possession in 11.6 seconds versus Belgium's 20-second scramble; attrition became suffocation."
+}

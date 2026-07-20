@@ -1,0 +1,32 @@
+{
+  "headline": "USA's Press Defeats Bosnia Despite Red Card and Thin Margins",
+  "story": [
+    "The United States suffocated Bosnia and Herzegovina through systematic high-press intensity, winning 43 forced turnovers while maintaining a 16.2-second ball-recovery time. Bosnia dominated possession at 48%, yet USA's five-and-a-half high-press phases overwhelmed their visitors' ability to build attacks. A goal arrived on the half-time whistle; when Folarin Balogun received a red card at 64 minutes, logic suggested Bosnia might exploit the man advantage. Instead, USA's defensive discipline—anchored by Chris Richards (7.6) and orchestrated by Malik Tillman (7.9)—held firm until a second goal sealed the tie.",
+    "Bosnia's ten shots generated only 0.21 expected goals, a chasm compared to USA's 0.8. The visitors squandered a 0.21 xG chance that struck the post at 45+8 minutes; had it gone in, the narrative shifts. Tarik Muharemovic (6.9) and Ermedin Demirovic (6.6) worked tirelessly, but Bosnia's 2.4 high-press phases revealed they rarely seized the initiative. USA, despite generating lower xG than might justify two goals, converted clinical finishing into victory. The margin—clean sheet, a red card survived—belonged to a team that imposed its system and made Bosnia live inside it."
+  ],
+  "keyMoment": {
+    "minute": "64",
+    "text": "Balogun's dismissal invited chaos, but USA's press weathered the storm to claim the Round of 32."
+  },
+  "advice": {
+    "home": {
+      "team": "USA",
+      "verdict": "Press dominance and defensive coherence converted 0.8 xG into a commanding win.",
+      "points": [
+        "5.5 high-press phases forced 43 turnovers; your front-foot aggression suffocated Bosnia's build-up play.",
+        "16.2-second recovery time held even after Balogun's 64th-minute red; Bosnia's 8.8s could not exploit the gap.",
+        "Malik Tillman (7.9) and Chris Richards (7.6) anchored the system; without their positioning, Bosnia's possession becomes dangerous."
+      ]
+    },
+    "away": {
+      "team": "Bosnia and Herzegovina",
+      "verdict": "Possession without cutting edge: 48% ownership and 10 shots converted to nothing.",
+      "points": [
+        "0.21 xG from 10 attempts reveals wastefulness; the 45+8' post-strike was your only genuine opportunity squandered.",
+        "2.4 high-press phases surrendered initiative; USA's press allowed no transition rhythm, no attacking momentum.",
+        "10-man USA proved more compact than 11-man Bosnia; after Balogun's 64' red, you created less, not more."
+      ]
+    }
+  },
+  "statLine": "USA converted 0.8 xG into 2-0 while reduced to ten men from the 64th minute; Bosnia's 0.21 xG from 48 percent possession and 10 shots remains the match's starkest judgment."
+}

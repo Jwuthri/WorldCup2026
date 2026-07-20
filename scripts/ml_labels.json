@@ -1,13 +1,21 @@
 {
   "archetypes": [
-    { "id": 0, "label": "Ball hunters", "blurb": "Press first, ask later — elite pressure and forced-turnover volume, minimal build-up duty." },
-    { "id": 1, "label": "Ball-playing anchors", "blurb": "High pass volume at high completion, line-breaking from deep; their rare shots are set-piece headers." },
-    { "id": 2, "label": "Box predators", "blurb": "Top of the food chain for xG, shots and threat — they live between the posts and the penalty spot." },
-    { "id": 3, "label": "Touchline burners", "blurb": "Pace, width and crosses — receive in behind and attack the byline." },
-    { "id": 4, "label": "Midfield metronomes", "blurb": "Volume passers who never stop offering — the tempo-setters covering the most grass." },
-    { "id": 5, "label": "Dead-ball architects", "blurb": "Corners, free kicks and whipped deliveries — the set-piece and cross-volume specialists." },
-    { "id": 6, "label": "Quiet engines", "blurb": "Few touches, safe ball, high speed — the shift-runners who stretch play off the radar." },
-    { "id": 7, "label": "Chaos dribblers", "blurb": "Take-ons, carries and pockets — the ones who break structure with the ball glued to their boot." }
+    { "id": 0, "label": "Ball hunters", "blurb": "Press first, ask later — elite pressure and forced-turnover volume, minimal build-up duty.",
+      "traits": ["presses more than anyone", "wins the ball back high", "sprint-heavy shifts"] },
+    { "id": 1, "label": "Ball-playing anchors", "blurb": "High pass volume at high completion, line-breaking from deep; their rare shots are set-piece headers.",
+      "traits": ["most passes at the back", "breaks lines from deep", "organizes instead of chasing"] },
+    { "id": 2, "label": "Box predators", "blurb": "Top of the food chain for xG, shots and threat — they live between the posts and the penalty spot.",
+      "traits": ["top of the xG food chain", "shot volume kings", "lives inside the box"] },
+    { "id": 3, "label": "Touchline burners", "blurb": "Pace, width and crosses — receive in behind and attack the byline.",
+      "traits": ["elite top speed", "runs in behind", "crosses from the byline"] },
+    { "id": 4, "label": "Midfield metronomes", "blurb": "Volume passers who never stop offering — the tempo-setters covering the most grass.",
+      "traits": ["most ground covered", "always offering for the ball", "sets the tempo"] },
+    { "id": 5, "label": "Dead-ball architects", "blurb": "Corners, free kicks and whipped deliveries — the set-piece and cross-volume specialists.",
+      "traits": ["takes the corners and free kicks", "cross volume off the charts", "creates from standing still"] },
+    { "id": 6, "label": "Quiet engines", "blurb": "Few touches, safe ball, high speed — the shift-runners who stretch play off the radar.",
+      "traits": ["few touches, safe ones", "fast without the ball", "stretches play unseen"] },
+    { "id": 7, "label": "Chaos dribblers", "blurb": "Take-ons, carries and pockets — the ones who break structure with the ball glued to their boot.",
+      "traits": ["most take-ons and carries", "receives between the lines", "breaks structure alone"] }
   ],
   "teamStyles": [
     { "id": 0, "label": "Possession architects", "blurb": "High completed-pass volume, patient build-up, chances without chasing." },

@@ -1,0 +1,32 @@
+{
+  "headline": "Mexico Made Ecuador's Aggression Backfire",
+  "story": [
+    "Ecuador came to dominate: they pressed aggressively (7.7 high-press phases against Mexico's 2.3) and controlled the ball with 53% possession. But aggression in the Estadio Azteca, where Mexico are dangerous on the break, is a liability. Twice in the first half—22nd and 31st minutes—Mexico punished the space left behind. Both goals came from trifling xG (0.10 and 0.12), suggesting clinical finishing or ruthless counter-timing. Ecuador, exhausted by their own pressing, never recovered.",
+    "The numbers tell a brutal story of wasted intensity. Ecuador's high press cost them recovery time: 11.7 seconds to reset versus Mexico's 15.4, which Mexico exploited ruthlessly on the turn. Their possession (53%, 7 shots) generated xG of just 0.47. Mexico's 37% and 15 shots netted 1.86 xG and two actual goals. A big chance at 74'—xG 0.42—went begging. Piero Hincapie's red card in the 95th minute was Ecuador's final humiliation."
+  ],
+  "keyMoment": {
+    "minute": "22",
+    "text": "Mexico scored twice from turnovers in Ecuador's press (22', 31'). The game was won in nine minutes."
+  },
+  "advice": {
+    "home": {
+      "team": "Mexico",
+      "verdict": "Cold counter-pressing beat hot pressing: low intensity (2.3 phases) and fast recovery (15.4s) turned aggression into a liability.",
+      "points": [
+        "Finishing ruthlessness: 2 goals from 0.22 combined xG—clinical work in transition.",
+        "Recovery time discipline: 15.4s reset cycles exploited Ecuador's 11.7s turnaround deficit.",
+        "Energy preservation: 2.3 high-press phases kept legs sharp for breaks when it mattered most."
+      ]
+    },
+    "away": {
+      "team": "Ecuador",
+      "verdict": "Pressing intensity without precision cost them: 0.47 xG on 53% possession was never enough to win.",
+      "points": [
+        "Recovery time gap: 11.7s resets versus Mexico's 15.4s reversed Ecuador's possession advantage.",
+        "Big chance missed: 74' (xG 0.42) would have reset the match; instead left Mexico in control.",
+        "High-press fatigue: 7.7 phases generated zero threat; a measured press would have preserved shape."
+      ]
+    }
+  },
+  "statLine": "Ecuador's 7.7 high-press phases generated just 0.47 xG; Mexico's 2.3 phases created 1.86 and scored twice—doing less, finishing more."
+}

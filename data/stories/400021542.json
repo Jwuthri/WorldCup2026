@@ -1,0 +1,32 @@
+{
+  "headline": "England's blitz survived France's second-half fury in frantic Bronze final",
+  "story": [
+    "England announced their ambitions in the opening quarter, scoring twice in eleven minutes—then added two more before the interval to lead 4-0 at the break. France, despite 42 per cent possession, offered little resistance to that opening salvo. But the second half reversed the script entirely. France emerged with suffocating intensity (6.1 high-press phases) and reclaimed the narrative: three goals in eighteen minutes (48th, 54th, 66th) turned seeming rout into genuine crisis. The final twenty minutes dissolved into breathless chaos, five goals in rapid succession, England's 87th-minute strike the crucial one despite France's desperate 90+6' and 90+8' strikes.",
+    "France's collapse was all the more damning for their underlying dominance: 2.99 xG to England's 2.34 told a story of better chances repeatedly squandered. A gilt-edged 0.39 xG opportunity went begging in the 35th minute when the match hung in balance; another 0.19 xG chance missed at 81st. England's ruthlessness compensated for inferior shot quality—they opened with just 0.04 xG and never looked back. Saka's commanding 9.5 rating contrasted sharply with the predicament that engulfed even Mbappe (8.7), whose brilliance could not rescue a side that high-pressed shrewdly but arrived at the crucial moment a goal short."
+  ],
+  "keyMoment": {
+    "minute": "87",
+    "text": "England's 0.79 xG finish sealed the contest as France mounted desperation finale"
+  },
+  "advice": {
+    "home": {
+      "team": "France",
+      "verdict": "Superior chances, inferior execution cost them the trophy.",
+      "points": [
+        "Squandered 0.39 xG chance at 35', then 0.19 xG miss at 81'—early clinical finishing wins this match",
+        "High press (6.1 phases) came alive in second half but arrived too late—needed suffocation from kick-off",
+        "Generated 2.99 xG but converted only four goals; England's 2.34 xG yielded six—conversion gulf was decisive"
+      ]
+    },
+    "away": {
+      "team": "England",
+      "verdict": "Clinical early blitz weathered the storm when it mattered most.",
+      "points": [
+        "Four goals by halftime on thin xG margins (0.04, 0.09, 0.32, 0.09) showed ruthless conversion efficiency",
+        "Possession superiority (52 per cent) and ball recovery parity (21.6s) let them dictate tempo despite France's press",
+        "87th-minute 0.79 xG finish sealed it; survived France's late 2.99 xG tally through early control and Saka's 9.5 dominance"
+      ]
+    }
+  },
+  "statLine": "England won 6-4 despite France creating 28 per cent more expected goals (2.99 to 2.34)—a conversion chasm that separated ruthless early efficiency from desperate late urgency."
+}

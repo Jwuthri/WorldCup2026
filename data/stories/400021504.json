@@ -1,0 +1,32 @@
+{
+  "headline": "Colombia's Rhythm Proves Stronger Than Uzbekistan's Press",
+  "story": [
+    "Colombia dictated from the start. Luis Diaz and company dominated possession—57 per cent to Uzbekistan's 34—forcing reactive football. Uzbekistan compensated with aggressive pressing (4.4 high-press phases), testing rhythm. But Colombia's 40th-minute breakthrough broke the pattern. By the hour mark, Uzbekistan had engineered their only moment—a 0.98 xG chance that converted at 60—yet Colombia's superior ball recovery (12.6 seconds) meant recycled possession came too quickly for sustained home pressure. The turning point: 65', when Colombia struck again. Control became coronation.",
+    "The numbers confirmed Colombia's superiority: 15 shots to Uzbekistan's 8, four on target to two. xG was nearly identical (1.16 to 1.11), yet Colombia's three goals from 15 shots told the story. Munoz and Campaz anchored midfield control; Diaz (8.5) was the cutting edge. A blocked chance at 64' mattered little when 65' went in. Even the soft added-time goal (xG 0.13) felt inevitable. Uzbekistan's Fayzullaev fought hard, but possession and rhythm favour the side that cycles in 12.6 seconds, not 18."
+  ],
+  "keyMoment": {
+    "minute": "65",
+    "text": "Colombia scored twice in four minutes; Uzbekistan's resistance crumbled"
+  },
+  "advice": {
+    "home": {
+      "team": "Uzbekistan",
+      "verdict": "Aggressive but unsustainable",
+      "points": [
+        "Only 34 per cent possession left reactive; aggressive 4.4 high-press phases couldn't sustain",
+        "One goal from eight shots; Colombia's 3-from-15 efficiency gap insurmountable",
+        "18-second ball recovery vs. Colombia's 12.6 meant pressure dissipated before counters formed"
+      ]
+    },
+    "away": {
+      "team": "Colombia",
+      "verdict": "Possession rhythm overcame press intensity",
+      "points": [
+        "15 shots vs. Uzbekistan's 8, four on target to two; volume decisive",
+        "12.6-second ball recovery—five seconds faster—prevented sustained Uzbek counterattacking pressure",
+        "Diaz's 8.5 rating provided cutting edge when 60th-minute Uzbek goal briefly shifted momentum"
+      ]
+    }
+  },
+  "statLine": "Ball recovery in 12.6 seconds versus 18.0: rhythm as ruthlessness"
+}

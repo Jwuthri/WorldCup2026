@@ -1,0 +1,32 @@
+{
+  "headline": "De Ketelaere Dismantles American Press",
+  "story": [
+    "Belgium came to Seattle with a plan that disdained possession: sit deep in their 4-2-3-1, absorb USA's aggressive pressing—eight high-press phases—and break with ruinous intent. It worked from the ninth minute. After missing a gilt-edged chance moments prior, they struck instantly and never relinquished the initiative. USA pressed relentlessly through Malik Tillman and company, forcing 41 turnovers. But Belgium's shape proved impervious. The expected-goals gulf told the tale: Belgium 1.99, USA 0.33 from an evening when the home side simply could not convert their chaos into goals.",
+    "Charles de Ketelaere's extraordinary evening—a 9.8 rating—was the architect. He orchestrated Belgium's 15 shots to USA's seven, seven on target against two. They found the net five times from an xG of 1.99, with clinical finishing. USA equalized improbably at 31 on 0.07 xG, likely a deflection. Two minutes later Belgium restored order. When USA crafted a genuine chance at 45 (0.26 xG), they were already two down and chasing futilely—Belgium extended to 3-1 at 57 and finished 4-1 in injury time."
+  ],
+  "keyMoment": {
+    "minute": "33",
+    "text": "De Ketelaere restored Belgium's lead, breaking USA's momentum and ending narrative uncertainty."
+  },
+  "advice": {
+    "home": {
+      "team": "USA",
+      "verdict": "Eight high-press phases created turnovers but Belgium's shape proved impervious.",
+      "points": [
+        "Forced 41 turnovers with eight high-press phases but failed to disrupt Belgium's 4-2-3-1 shape—needed tighter compactness.",
+        "Missing the big chance at 45 minutes (0.26 xG) while trailing 2-1 was fatal; that was the moment to close the gap.",
+        "Only 2 shots on target from 7 attempts despite 51% possession; lacked clinical finishing against Belgium's ruthlessness."
+      ]
+    },
+    "away": {
+      "team": "Belgium",
+      "verdict": "De Ketelaere's brilliance and clinical finishing proved decisive; the 33rd-minute response killed momentum.",
+      "points": [
+        "Charles de Ketelaere's 9.8 rating orchestrated a masterclass across every phase, deciding this match conclusively.",
+        "Five goals from 1.99 xG with 40% possession showed ruthless efficiency; survived USA's possession advantage potentially disrupting rhythm.",
+        "The 33rd-minute response after USA's equalizer restored control and ended any momentum shift toward the home side."
+      ]
+    }
+  },
+  "statLine": "Belgium's finishing was ruthless: five goals from seven on-target shots versus USA's one from two, the gulf of clinical precision."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Control Is Not Destiny",
+  "story": [
+    "Germany dictated almost everything: 65% possession, 21 shots to Paraguay's seven, 5.9 high-press phases to 0.6, a 1.25 to 0.61 xG advantage. For 90 minutes in Boston, it was Bundesliga football suffocating a minnow. Paraguay compressed, harried, and somehow kept it level. Then, when the moment came—a goalkeeper's distribution, a set piece, a scramble in the box—one goal went in. For each side, once.",
+    "The stats suggested a rout. Germany pressed relentlessly, forced turnovers, controlled recovery time, but could not finish. Paraguay's ball-recovery time of 20.1 seconds told the story of a team camping in its own half. Then came penalties: five rounds, sudden death, and mental arithmetic nobody trains for. Paraguay held nerve where Germany did not. Three of four from the spot beat six of seven—and a team that had owned the match walked out."
+  ],
+  "keyMoment": {
+    "minute": "120",
+    "text": "Paraguay's fourth-round penalty composure defeated Germany's shootout execution after a dominant 90 minutes."
+  },
+  "advice": {
+    "home": {
+      "team": "Germany",
+      "verdict": "Overwhelmed Paraguay but lacked clinical edge when it mattered.",
+      "points": [
+        "Six shots on target but only 1.25 xG: conversion wastefulness on a 21-shot volume.",
+        "Relentless high press (5.9 phases) and forced turnovers (45) failed to yield multiple goals.",
+        "Ball recovery in 8.5 seconds showed dominance; penalty discipline collapsed under pressure."
+      ]
+    },
+    "away": {
+      "team": "Paraguay",
+      "verdict": "Survived German siege through discipline, then won the lottery.",
+      "points": [
+        "Forced 59 turnovers on 24% possession: defensive forcing overcame possession deficit.",
+        "Three of four penalties converted; Germany's shootout nerve broke despite dominance.",
+        "Lived with 20.1-second ball recovery on 0.6 high-press phases—low-block perfection for shootouts."
+      ]
+    }
+  },
+  "statLine": "Germany's sixty-five percent possession and twenty-one shots fell to Paraguay's defensive discipline: level at ninety, beaten 3-4 on penalties."
+}

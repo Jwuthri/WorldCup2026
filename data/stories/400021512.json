@@ -1,0 +1,32 @@
+{
+  "headline": "England's press finally breaks Congo's stubborn line",
+  "story": [
+    "Congo DR stunned Atlanta Stadium with a seventh-minute goal that belied the evening's arithmetic. England pressed high from the start—9.2 sustained high-press phases to Congo's 1.1—and controlled territory with 53 per cent possession and 16 shots. Yet the pattern of the match was set early: one side bent and bent, the other broke through in flashes. England squandered chances at the thirty-fifth minute and in first-half injury time, the sort that separate draws from victories.",
+    "The turning point came at the forty-second minute when Congo DR had their clearest chance: a headed opportunity worth 0.57 expected goals that struck the post. England survived. What followed was patient, relentless pressure: a forty-three-second average ball recovery (to Congo's 22.5 seconds) and systematic exploitation of Congo's inability to hold shape. Kane and his midfield assembled two goals in the final quarter—one at seventy-five minutes, the decisive blow at eighty-six—both the product of wearing opponents down rather than brilliance."
+  ],
+  "keyMoment": {
+    "minute": "42",
+    "text": "Congo DR's header hits the post. That miss cost them everything."
+  },
+  "advice": {
+    "home": {
+      "team": "England",
+      "verdict": "Suffocating press and late precision prevailed, though early wastefulness almost cost them.",
+      "points": [
+        "High press won the game: 9.2 phases forced Congo into reactive football throughout.",
+        "Ball recovery speed mattered: 13.8 seconds versus Congo's 22.5 gave England constant transitions.",
+        "Late execution: sixth goal (86') had only 0.06 xG, but it arrived on the back of total control."
+      ]
+    },
+    "away": {
+      "team": "Congo DR",
+      "verdict": "One extraordinary miss at forty-two minutes decided the tie they might otherwise have stolen.",
+      "points": [
+        "The post hurt them: 0.57 xG chance at forty-two; if scored, a very different second half beckons.",
+        "Pressing was absent: 1.1 phases against England's 9.2 meant they never contested the ball's ownership.",
+        "Recovery speed killed them: 22.5-second average left defenders perpetually scrambling after turnovers."
+      ]
+    }
+  },
+  "statLine": "England's ball recovery of 13.8 seconds compared to Congo DR's 22.5 was the single metric that separated dominance from delusion: a ten-second chasm in transition speed."
+}

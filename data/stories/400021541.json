@@ -1,0 +1,32 @@
+{
+  "headline": "Spain Doubles Down as France's Possession Turns to Dust in Dallas",
+  "story": [
+    "France pressed high and held the ball for long stretches, but Spain was playing a different match. With 47 per cent possession and eight high-press phases, the hosts looked threatening in patches; yet their eight attempts from deep areas came to nothing, and their xG of 0.48 betrayed a tournament team without a system. Spain, meanwhile, recovered the ball in 11.2 seconds on average—three seconds quicker than their exhausted opponents—and turned that tempo into purpose. When the first goal arrived at 22 minutes with xG of 0.79, the shape of the semi-final was decided.",
+    "The numbers exposed the gulf. Spain's xG of 2.21 reflected a team clinical in the moments that mattered; their second goal, from an xG of 0.52, confirmed what Tchouaméni's 6.9 rating suggested: France's midfield was fractured. Dembélé worked tirelessly (7.2), but recovery time, not effort, was the currency that mattered. Pedro Porro's masterclass at 8.1 rating—moving the ball five yards quicker than Olise, his counterpart—meant Spain controlled the transitions. By the 58th minute, Spain had already beaten France's press often enough; the second goal was merely confirmation of what the first half had proved."
+  ],
+  "keyMoment": {
+    "minute": "22",
+    "text": "Spain's opening goal shattered France's press shape; Dallas fell quiet and never recovered."
+  },
+  "advice": {
+    "home": {
+      "team": "France",
+      "verdict": "Possession meant nothing against a team quicker in recovery and cleaner in transition.",
+      "points": [
+        "xG of 0.48 across 10 shots screams lack of pattern—Dembélé's 7.2 rating shows the work wasn't there",
+        "14.0-second ball recovery left midfield exposed; Spain's 11.2-second tempo made every transition dangerous",
+        "Eight high-press phases (8.9) failed to disrupt Porro; pressing without a plan cost recovery time"
+      ]
+    },
+    "away": {
+      "team": "Spain",
+      "verdict": "Two clinical finishes from a superior recovery rate and tempo made the difference in Dallas.",
+      "points": [
+        "xG of 2.21, two goals from 0.79 and 0.52 chances: the strikers did exactly what was set up",
+        "11.2-second recovery time gave Olmo (7.5) and Porro (8.1) three extra seconds per transition—pivotal",
+        "Unai Simón (7.4) rarely tested; France's wider attacks broke down before reaching the box"
+      ]
+    }
+  },
+  "statLine": "Spain's ball recovery time of 11.2 seconds versus France's 14.0 was worth two goals: the difference between controlling transitions and drowning in them."
+}

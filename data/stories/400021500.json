@@ -1,0 +1,32 @@
+{
+  "headline": "Congo DR's Persistence Breaks Uzbekistan's Spell",
+  "story": [
+    "Uzbekistan stunned Congo DR with a miraculous 10th-minute opener—their expected goal of 0.01 suggested pure fortune. But Congo DR, operating in a 4-4-2, controlled what followed: 53 per cent possession, 19 shots, and the shape of a team that knew they would eventually overwhelm. The pressure mounted through the first hour, only to falter at the 61st minute when a glorious chance (0.25 xG) slipped past. Crucially, Congo DR didn't crack. Three goals in 23 minutes from the 68th minute onward sealed an emphatic recovery.",
+    "The numbers explain the chasm. Congo DR's expected goals of 2.11 against Uzbekistan's 0.16 reflected a suffocation: in their 4-4-2, Wissa (8.5), Elia (7.7), and Mayele (7.7) systematically dismantled a side unable to cope. Uzbekistan's ball-recovery time—13.6 seconds compared to Congo DR's brisk 10.4—meant constant dispossession under high-press phases (5.1 vs 4.3). Shomurodov (7.1) and company never gained purchase. The 68th and 78th-minute strikes came from Congo DR's superiority; the 90+1' finish, a low-xG affair (0.03), merely confirmed Uzbekistan's collapse."
+  ],
+  "keyMoment": {
+    "minute": "68",
+    "text": "Congo DR broke through in the 68th minute, converting their dominance into the lead after Uzbekistan's early fortune evaporated."
+  },
+  "advice": {
+    "home": {
+      "team": "Congo DR",
+      "verdict": "Possession, press, and patience won it; a missed 61st-minute chance nearly undid the script.",
+      "points": [
+        "Ball recovery time (10.4s vs Uzbekistan's 13.6s) meant Congo DR's press displaced opponents constantly.",
+        "Their 19 shots to Uzbekistan's 3 reflected complete control; the 53% possession proved suffocating.",
+        "xG of 2.11 vs 0.16 was a chasm—only the 61st-minute miss prevented an earlier rout."
+      ]
+    },
+    "away": {
+      "team": "Uzbekistan",
+      "verdict": "Uzbekistan's 10th-minute miracle (0.01 xG) was undeserved; everything thereafter exposed their tactical inferiority.",
+      "points": [
+        "Ball recovery of 13.6 seconds versus Congo's 10.4 meant constant dispossession; they couldn't control the game.",
+        "Only 1 shot on target from 3 total shots—formation 3-4-2-1 created no attacking threat.",
+        "xG of 0.16 tells it: they had no clear chances, just one fluky opening."
+      ]
+    }
+  },
+  "statLine": "Uzbekistan's 0.01 xG goal was theft; Congo DR's 2.11 xG and ball-recovery dominance (10.4s vs 13.6s) was the inevitable correction."
+}

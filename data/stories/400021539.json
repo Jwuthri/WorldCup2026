@@ -1,0 +1,32 @@
+{
+  "headline": "Bellingham overcomes Norwegian grit as England advances in Miami extra time",
+  "story": [
+    "Norway opened with a goal of startling fortune at 36 minutes, the ball somehow beaten home on an xG of merely 0.02. England responded with a swift equalization before the interval, refusing to panic. A stalemate then gripped the match through the standard 90 minutes, until a more convincing chance finally materialized at 93 minutes in extra time. The arc was unmistakable: early Norwegian fortune against mounting English inevitability.",
+    "England's pressing strategy proved the decisive force. At 7.9 high-press phases to Norway's 4.4, the Englishmen won 42 forced turnovers against 33, controlling tempo with recovery time of 18.1 seconds to Norway's 20. Jude Bellingham, commanding at 9.1, was supported by Bukayo Saka (7.5) and Anthony Gordon (7.2). England's xG advantage of 0.77—1.64 to Norway's 0.87—finally translated at 93 minutes. A blocked big chance at the 44-minute mark for Norway, worth 0.19 xG, represented their only viable route back into contention."
+  ],
+  "keyMoment": {
+    "minute": "93",
+    "text": "England's extra-time breakthrough on 0.44 xG, the highest-quality chance of the match, ended Norwegian resistance"
+  },
+  "advice": {
+    "home": {
+      "team": "Norway",
+      "verdict": "Courageous resistance destroyed by England's relentless press and their own clinical wastage.",
+      "points": [
+        "Blocked big chance at 44' (0.19 xG): conversion would have led 2-0 and fundamentally altered match trajectory",
+        "Managed only 4.4 high-press phases vs England's 7.9; conceded 42 turnovers to 33, lost tempo battle completely",
+        "0.87 xG yielded one early goal; failed to generate follow-up quality or volume against England's 47% possession dominance"
+      ]
+    },
+    "away": {
+      "team": "England",
+      "verdict": "Pressing mastery and Bellingham's 9.1 rating converted 1.64 xG, though early 0.02 xG conceded exposed defensive fragility.",
+      "points": [
+        "7.9 high-press phases forced 42 turnovers against Norway's 4.4 and 33; tactical superiority was absolute throughout 120 minutes",
+        "Bellingham's 9.1 rating commanded the midfield; Saka (7.5) and Gordon (7.2) thrived exploiting Norway's defensive gaps under sustained pressure",
+        "Early 0.02 xG goal survived: set-piece vulnerability evident; tighter defensive organization required against higher-seeded opponents in knockout rounds"
+      ]
+    }
+  },
+  "statLine": "England's 7.9 high-press phases to Norway's 4.4 generated 42 forced turnovers against 33; Bellingham's 9.1 rating and the 1.64 xG advantage proved an overwhelming tactical gulf."
+}

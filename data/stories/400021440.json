@@ -1,0 +1,32 @@
+{
+  "headline": "Czechia's Lucky Strike No Match for South Africa's Tide",
+  "story": [
+    "Czechia struck first with ruthless precision: a sixth-minute goal worth just 0.18 xG seized before South Africa had settled. But that moment of clinical finishing proved the sole puncture point from the hosts' deeper defensive shape. South Africa seized control of the encounter, pressing high and flooding possession with a 4-3-3, forcing 44 turnovers across the pitch. Czechia's 3-5-2 locked them into a reactive posture, and by half-time the dominance looked suffocating: 17 shots to 14, 60% possession, the template firmly sketched.",
+    "Czechia nearly made their discipline pay. In the 47th minute, a 0.15 xG chance fell blocked—the kind of reprieve that might have tilted the narrative irrevocably. But Mokoena's South Africa persisted, pressing and probing, their ball recovery time of 12.3 seconds to Czechia's 20.7 showing a team refusing to retreat. The equaliser came in the 83rd minute from a 0.79 xG opportunity, a high-quality finish that felt inevitable. The xG maths said it all: 1.36 to 1.34—a draw inscribed in the numbers from whistle to whistle."
+  ],
+  "keyMoment": {
+    "minute": "83",
+    "text": "South Africa's equalization from 0.79 xG—consequence of relentless possession and Czechia's second-half vulnerability"
+  },
+  "advice": {
+    "home": {
+      "team": "Czechia",
+      "verdict": "Early precision cannot weather waves of sustained possession",
+      "points": [
+        "Converted 0.18 xG opener but missed 0.15 xG chance at 47th—two moments, one narrative",
+        "3-5-2 invited dominance: 7 high-press phases to 4.5 and 44 turnovers forced against them",
+        "20.7-second ball recovery versus South Africa's 12.3s left perpetual reactive defending; Krejčí's 7.4 couldn't anchor"
+      ]
+    },
+    "away": {
+      "team": "South Africa",
+      "verdict": "Dominance undone by conceding first; earlier finishing would have sealed it",
+      "points": [
+        "17 shots (4 on target) to Czechia's 14 but conceded from 0.18 xG in minute 6",
+        "7 high-press phases generated superiority; Mokoena's 7.9 rating couldn't translate into goal before 83rd",
+        "12.3-second ball recovery beat Czechia's by 8 seconds; xG identical (1.34), wasting the pressure"
+      ]
+    }
+  },
+  "statLine": "South Africa dominated 60% possession and 17 shots yet matched Czechia's xG at 1.34–1.36—two teams equally undeserving of the opening goal."
+}

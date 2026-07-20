@@ -1,0 +1,32 @@
+{
+  "headline": "Ghana's Late Knife Through Panama's Wall",
+  "story": [
+    "Ghana suffocated Panama in Toronto with a masterclass in compact defending, ceding 56 per cent possession while forcing 49 turnovers and pressing in five distinct phases. Panama controlled the tempo but found their host immovable: Lawrence Ati-Zigi's steadiness under fire and Jonas Adjetey's positioning meant the 11 shots yielded only four on target. Ghana, meanwhile, absorbed pressure with a 22.4-second ball recovery—nearly double Panama's tempo—and waited. The script flipped entirely in the 90th minute.",
+    "When Ghana's moment came at 90+5, it carried an expected value of 0.97—a clinical finish that Panama's 0.77 xG could not match. Two Panama chances emerged too late: at 90+9, consecutive efforts of 0.24 xG each were saved, the finishing rushed and the goalkeeper alert. Caleb Yirenkyi's 7.9 rating drove Ghana's intensity; Amir Murillo's 7.2 for Panama could not override a fundamental imbalance—one side organised, one overstretched. Extra time punished possession without purpose."
+  ],
+  "keyMoment": {
+    "minute": "90+5",
+    "text": "Ghana's goal: the only shot that mattered, arriving when Panama's resistance cracked."
+  },
+  "advice": {
+    "home": {
+      "team": "Ghana",
+      "verdict": "Smothered Panama's passing game and struck when it counted—but nearly paid for inviting 56% possession.",
+      "points": [
+        "High-press discipline (5.4 phases) forced turnovers; maintain this shape against teams that dominate the ball.",
+        "22.4-second recovery time is your fortress; any quicker and you risk being overrun by rapid transitions.",
+        "0.97 xG on one shot: clinical efficiency. Protect that—don't trade control for late chances against sharper opponents."
+      ]
+    },
+    "away": {
+      "team": "Panama",
+      "verdict": "Possession without penetration; controlled the game but left Yirenkyi and Adjetey unpunished.",
+      "points": [
+        "11 shots, 4 on target: 36% accuracy is wasteful. Improve conversion or Panama's possession phases become liability.",
+        "0.77 xG versus Ghana's 0.98 tells the story; tighter finishing on those two 90+9 chances would have changed everything.",
+        "12.2-second ball recovery beat Ghana's 22.4 but you never capitalised; faster transitions mean nothing without a killer finish."
+      ]
+    }
+  },
+  "statLine": "Ghana's single shot on target found the net in the 90th minute; Panama's four shots and 56 per cent possession found only draws in a tournament that punishes profligacy."
+}

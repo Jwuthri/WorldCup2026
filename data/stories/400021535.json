@@ -1,0 +1,32 @@
+{
+  "headline": "Switzerland Survives Colombia's Wasteful Onslaught",
+  "story": [
+    "Colombia imposed possession and offensive intent from the start, monopolising 56% of the ball and launching 15 attempts in a relentless assault on Switzerland's discipline. Yet the Swiss held firm in a compact shape, forcing 49 turnovers and recovering possession with sharp urgency every 13.6 seconds. Neither side broke through a deadlocked 90 minutes—a familiar dance of one team's dominance meeting another's resolute defence.",
+    "Colombia's 0.97 xG to Switzerland's 0.58 told the story of creation without conversion. Though the Colombians fashioned more dangerous openings and forced 52 turnovers, they could muster only three on-target efforts from 15 attempts—a wasteful conversion that proved fatal. Switzerland's poise under sustained pressure, forged through calculated high-press resistance (7.2 phases to Colombia's 6.0), carried them to clinical penalties where they won 4-3."
+  ],
+  "keyMoment": {
+    "minute": "90",
+    "text": "Full-time stalemate sends match to penalties, where Switzerland's composure prevails 4-3."
+  },
+  "advice": {
+    "home": {
+      "team": "Switzerland",
+      "verdict": "Defensive solidity and shootout nerve saw off Colombia's toothless dominance.",
+      "points": [
+        "Forced 49 turnovers and recovered possession every 13.6 seconds—negated Colombia's possession advantage.",
+        "Two shots on target from seven attempts: efficiency, not volume, won the shootout.",
+        "Risk survived: 0.58 xG was vulnerable to one Colombian finish; penalties rewarded composure."
+      ]
+    },
+    "away": {
+      "team": "Colombia",
+      "verdict": "Wasteful finishing in open play sent penalties to fortune's lottery.",
+      "points": [
+        "Fifteen shots yielded three on-target; one more finish settles it inside 90 minutes.",
+        "0.97 xG translated to zero goals—conversion rate was the fatal deficit.",
+        "Recovery time 16.6s cost possession rhythm; sharper transitions could have exploited space."
+      ]
+    }
+  },
+  "statLine": "Colombia fired 15 times for 0.97 xG; Switzerland absorbed it all and won 4-3 on penalties—nullification's ultimate vindication."
+}

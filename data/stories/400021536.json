@@ -1,0 +1,32 @@
+{
+  "headline": "France's Clinical Patience Outlasts Morocco",
+  "story": [
+    "France controlled the quarter-final through midfield superiority and relentless pressing, dominating an encounter that never truly threatened to slip away. Despite equal possession shares, the shape was entirely France's: 22 shots to Morocco's five, five high-press triggers to four, and 8.4 seconds faster average ball recovery. Morocco defended dutifully for an hour, then the dam broke—two goals in six minutes (60', 66') on low expected-goal chances that felt inevitable given France's overwhelming creation.",
+    "The numbers explained everything. France's 3.52 expected goals against Morocco's 0.16 was less a match than a masterclass in control: Dembélé (8.6) and Mbappé (8.2) terrorised a backline that had no answer to their movement. Bounou (7.0) worked tirelessly in Morocco's goal, bailing out a defence that weathered 22 shots. France squandered bigger chances—a 0.79-xG save in the 28th minute, a 0.48 miss in the 56th, another 0.65 miss in the 88th—yet the two that counted sufficed to close a quarter-final that was never a contest."
+  ],
+  "keyMoment": {
+    "minute": "60",
+    "text": "France's opening goal—the release that converted dominance into victory"
+  },
+  "advice": {
+    "home": {
+      "team": "France",
+      "verdict": "Dominance in chance creation and clinical second-half finishing made Morocco's resistance untenable.",
+      "points": [
+        "22 shots to Morocco's 5 created unsustainable pressure; one team couldn't handle offensive volume",
+        "Dembélé (8.6) and Mbappé (8.2) versus Morocco's best (Diaz 6.8) exposed class gap on wing",
+        "Missed 0.79 and 0.65-xG chances; either converted makes Morocco's retreat catastrophically exposed"
+      ]
+    },
+    "away": {
+      "team": "Morocco",
+      "verdict": "Starved of possession and creation, they lacked the attacking spark to threaten France.",
+      "points": [
+        "0.16 xG and 5 shots: offensive plan never threatened, only endured (until it collapsed)",
+        "One on-target shot required precise finishing; that single chance defined their attacking output",
+        "High press phases (4.1) below France's (5.0); midfield press failed to generate turnovers upfield"
+      ]
+    }
+  },
+  "statLine": "France's 3.52 expected goals to Morocco's 0.16 wasn't merely a quarter-final scoreline—it was an artillery strike against a cavalry charge that never materialised."
+}

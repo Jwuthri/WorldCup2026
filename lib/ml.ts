@@ -3,23 +3,17 @@ import fs from "node:fs";
 import path from "node:path";
 import { getCards, type Card } from "./cards";
 import { getTeams } from "./teams";
+import { getPlayerDirectory } from "./data";
 
 /** Output of scripts/ml.py (npm run ml). Ids join to cards/teams at render. */
 type MlJson = {
-  players: Record<string, { x: number; y: number; cluster: number }>;
+  players: Record<string, { cluster: number }>;
   similar: Record<string, [string, number][]>;
   teamStyles: Record<string, number>;
   labels: {
-    archetypes: { id: number; label: string; blurb: string }[];
+    archetypes: { id: number; label: string; blurb: string; traits?: string[] }[];
     teamStyles: { id: number; label: string; blurb: string }[];
   } | null;
-  xgModel: {
-    n: number;
-    coefs: Record<string, number>;
-    intercept: number;
-    calib: { range: string; n: number; fifa: number; ours: number; scored: number }[];
-    disagreements: { player: string; minute: string; fifa: number; ours: number; goal: number }[];
-  };
 };
 
 export const getMl = cache((): MlJson | null => {
@@ -54,28 +48,45 @@ export function teamStyleOf(abbr: string): { label: string; blurb: string } | nu
   return cluster == null ? null : ml.labels?.teamStyles.find((s) => s.id === cluster) ?? null;
 }
 
-export type MapPoint = {
+export type TribeMember = {
   id: string;
-  x: number;
-  y: number;
   cluster: number;
   name: string;
   team: string;
   abbr: string;
   pos: Card["pos"];
   overall: number;
+  photo: string | null;
+  twins: { id: string; name: string; pct: number }[]; // top 3, for the finder
 };
 
-export const mapPoints = cache((): MapPoint[] => {
+/** every clustered player, joined to card + photo, sorted best-first */
+export const tribeMembers = cache((): TribeMember[] => {
   const ml = getMl();
   if (!ml) return [];
   const cards = getCards();
-  const out: MapPoint[] = [];
+  const dir = getPlayerDirectory();
+  const out: TribeMember[] = [];
   for (const [id, p] of Object.entries(ml.players)) {
     const c = cards.get(id);
-    if (c) out.push({ id, x: p.x, y: p.y, cluster: p.cluster, name: c.name, team: c.team, abbr: c.abbr, pos: c.pos, overall: c.overall });
+    if (!c) continue;
+    out.push({
+      id,
+      cluster: p.cluster,
+      name: c.name,
+      team: c.team,
+      abbr: c.abbr,
+      pos: c.pos,
+      overall: c.overall,
+      photo: dir[id]?.photo ?? null,
+      twins: (ml.similar[id] ?? []).slice(0, 3).map(([tid, sim]) => ({
+        id: tid,
+        name: cards.get(tid)?.name ?? "",
+        pct: Math.round(sim * 100),
+      })).filter((t) => t.name),
+    });
   }
-  return out;
+  return out.sort((a, b) => b.overall - a.overall);
 });
 
 /** teams of each style family, for the map page */

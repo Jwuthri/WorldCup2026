@@ -1,0 +1,32 @@
+{
+  "headline": "England's Lethal Finish Ends Mexico's Possession Masterclass",
+  "story": [
+    "England were ruthless and, when it mattered, invisible. In a first half that belonged entirely to Mexico's swarming press and slick passing, Gareth Southgate's side absorbed everything the hosts threw at them and picked them apart on two occasions before the break, going 2-0 up through attacks of startling simplicity. Mexico dragged one back before half-time, reasserting themselves with possession and intensity. But then came the rupture: Jarell Quansah's red card at 54 minutes turned the match into an endurance test. For any ordinary team playing against a team that would dominate the next 36 minutes, this would be a death sentence.",
+    "England scored again on 60 minutes from a chance worth 0.79 expected goals—clinical finishing from a high-quality opportunity—while Mexico, despite their 59 per cent possession and 20 attempts, found themselves chasing a deficit they could not erase. Mexico pulled one back at 69 minutes with a chance of similar quality, but the decisive miss came at 80 minutes when Julian Quinones spurned a big chance that would have forced extra time. England's cold efficiency was the difference: five of their six shots on target tells the story more honestly than possession figures ever could. Jude Bellingham's 9.4 rating did not come from controlling the ball, but from controlling the tempo."
+  ],
+  "keyMoment": {
+    "minute": "54",
+    "text": "Quansah's red card forced England to defend with ten men for 36 minutes. They tightened, held firm, and struck again."
+  },
+  "advice": {
+    "home": {
+      "team": "Mexico",
+      "verdict": "Possession without penetration is a polite way to lose a World Cup knockout.",
+      "points": [
+        "Converted only 2 of 20 shots: accuracy, not volume, decides tournaments",
+        "Missed the 0.20 xG chance at 80': Quinones' miss in the final throes cost them progression",
+        "Failed to capitalize after the 54' red card: 36 minutes with numerical advantage, no second goal"
+      ]
+    },
+    "away": {
+      "team": "England",
+      "verdict": "A masterclass in efficiency. They survived the one moment that could have undone them.",
+      "points": [
+        "Five of six shots on target: lethality without waste, the opposite of Mexico's approach",
+        "Scored at 60' (0.79 xG) after Quansah's red, proving they could handle 10 men and still attack",
+        "Bellingham's 9.4 rating: tempered Mexico's press and controlled transition, their key to survival"
+      ]
+    }
+  },
+  "statLine": "England scored three goals from just six shots; Mexico scored two from twenty—a study in the chasm between possession and precision."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Norway's Ruthless Arithmetic",
+  "story": [
+    "Côte d'Ivoire dominated territorially, pressing hard with 6.7 high-press phases and forcing 14 shots, yet the Ivorians' control proved illusory. Norway, with barely half the shots (nine) but superior positional discipline, controlled the game's rhythm. Ball recovery time told the story: Norway regained possession in 14.9 seconds to Côte d'Ivoire's 17.4, allowing the Scandinavians to dictate tempo. The West Africans paid the price when Norway struck twice, the second arriving in the 86th minute, to end a spirited but ultimately wayward Ivorian campaign.",
+    "The expected goals differential (2.3 to 1.43) exposed Côte d'Ivoire's missed chances. Amad Diallo and Nicolas Pépé created openings but couldn't convert. A critical missed big chance in the 28th minute set the tone; the 74th-minute equalizer came too late. Norway, seeing efforts blocked in the 42nd minute, revealed clinical efficiency when it mattered. The 86th-minute goal (0.80 xG) finished the contest. Erling Haaland and Patrick Berg's presence defined Norway's edge: the Scandinavians understood that tournament football demands conversion, not creation."
+  ],
+  "keyMoment": {
+    "minute": "86",
+    "text": "Norway's clinical finish (0.80 xG) sealed Côte d'Ivoire's fate after territorial dominance yielded insufficient finishing."
+  },
+  "advice": {
+    "home": {
+      "team": "Côte d'Ivoire",
+      "verdict": "Territorial dominance and pressing effort were undone by clinical profligacy and Norwegian efficiency.",
+      "points": [
+        "The 28th-minute miss (0.25 xG) squandered early pressure; converting would have rewarded their 6.7 high-press phases early.",
+        "Shot accuracy lagged critically: 5 on-target from 14 attempts (36%) versus Norway's 44% (4 from 9).",
+        "Slower recovery (17.4s vs 14.9s) hobbled their press; faster transitions could have prevented the 86th-minute collapse."
+      ]
+    },
+    "away": {
+      "team": "Norway",
+      "verdict": "Clinical efficiency and possession control converted opportunities when it mattered most.",
+      "points": [
+        "xG differential (2.3 vs 1.43): converting nine shots to two goals while limiting Côte d'Ivoire to four on-target efforts.",
+        "Ball recovery pace (14.9s vs 17.4s): regaining possession faster allowed Haaland-era tempo control and rhythm.",
+        "The 86th-minute finish (0.80 xG) arrived when Côte d'Ivoire had exhausted their high-press phases (6.7) without reward."
+      ]
+    }
+  },
+  "statLine": "Côte d'Ivoire outshot Norway 14-9 but trailed 2.3-1.43 in xG: the arithmetic of advancement."
+}

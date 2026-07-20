@@ -1,0 +1,32 @@
+{
+  "headline": "Brazil Scrape Past Japan as Killer Instinct Finally Arrives",
+  "story": [
+    "Japan's game plan of compact defending and rapid counters nearly yielded a startling upset. An early goal at 29' caught Brazil unprepared. Yet the pattern quickly reasserted itself: Brazil's possession and press smothered the contest. With 62% of the ball and 6.5 high-press phases to Japan's 2.1, the home side ground down their opponent across the middle two thirds. Brazil's build-up play recovered the ball every 16.9 seconds; Japan laboured at 26. The shape of the match was Brazilian control waiting for clinical finishing.",
+    "The numbers explained the 2-1 scoreline: Brazil's expected goals of 2.12 against Japan's 0.26 reflected a chasm in chance creation. Yet Brazil nearly paid the price for profligacy. At 54' a clear-cut opportunity went begging (xG 0.32, blocked); at 58' another dissolved under pressure (xG 0.31, saved). Gabriel Magalhaes and Bruno Guimarães imposed order at centre-back and midfield throughout. Late in added time, a final thrust breached Japan's exhausted shape for the winner. Control with a fortune clause attached."
+  ],
+  "keyMoment": {
+    "minute": "90+6",
+    "text": "Brazil's added-time breakthrough proved decisive after two gilt-edged chances went begging."
+  },
+  "advice": {
+    "home": {
+      "team": "Brazil",
+      "verdict": "Dominated but danced with catastrophe; conversion finally came.",
+      "points": [
+        "High-press intensity (6.5 phases vs 2.1) won control of midfield battle",
+        "Ball recovery time of 16.9s vs Japan's 26s dictated tempo throughout",
+        "Two big chances at 54' and 58' (xG 0.32, 0.31) nearly proved fatal"
+      ]
+    },
+    "away": {
+      "team": "Japan",
+      "verdict": "Gutsy early lead squandered by unequal pressing and recovery metrics.",
+      "points": [
+        "Only 2.1 high-press phases vs Brazil's 6.5 left the midfield overrun",
+        "Ball recovery time of 26.0 seconds conceded possession dominance unchecked",
+        "Created just 0.26 xG—rare chances must be converted (not 0.12 gifts)"
+      ]
+    }
+  },
+  "statLine": "Brazil created 2.12 expected goals to Japan's 0.26, a gap reflecting utter dominance, yet required added time to overcome squandered precision."
+}

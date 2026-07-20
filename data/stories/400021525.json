@@ -1,0 +1,32 @@
+{
+  "headline": "Senegal Squander Superiority; Belgium Force Extra-Time Escape",
+  "story": [
+    "Senegal dominated for 90 minutes, leading 2-0 by the 51st minute. But Belgium's superior ball recovery (15.7 seconds versus Senegal's 22.7) and pressing intensity (3.9 high-press phases to 2.2) gradually corroded the advantage. Two quick goals in 86 and 89 minutes forced extra time. Youri Tielemans, rated 9.0, orchestrated the recovery with such tactical acuity that the tie reached the 120th minute with Belgium's mentality ascendant and Senegal's grip loosening.",
+    "Senegal's undoing was not shortage of chances but failure to finish them. A 0.91-xG shot in the 13th minute beat the goalkeeper but struck the post—an inch decides everything. Belgium scored twice on low-xG efforts (0.16, 0.14 in minutes 86 and 89) to force extra time, then sealed it via genuine 0.79-xG chance. The recovery-time gap proved decisive: Senegal's 22.7 seconds versus Belgium's 15.7 meant they could not stabilise under pressure, especially with just 2.2 high-press phases to Belgium's 3.9."
+  ],
+  "keyMoment": {
+    "minute": "120+5",
+    "text": "Belgium's winning goal, the 0.79-xG chance finally ending Senegal's dream in extra time."
+  },
+  "advice": {
+    "home": {
+      "team": "Belgium",
+      "verdict": "Pressing intensity and recovery speed turned a dead match into victory; mental fortitude won when football lost.",
+      "points": [
+        "Ball recovery of 15.7 seconds versus Senegal's 22.7 was the tactical margin; faster regain undid their advantage.",
+        "Youri Tielemans' 9.0 rating was the backbone: control midfield at this level to orchestrate possession in tight fixtures.",
+        "Two conversions on low-xG shots (0.16, 0.14) proved fortunate; cannot rely on luck against stronger opponents later."
+      ]
+    },
+    "away": {
+      "team": "Senegal",
+      "verdict": "Dominated play but lacked ruthlessness when it counted; wastefulness cost them dearly.",
+      "points": [
+        "The 0.91-xG miss in minute 13 hitting post was decisive: scoring there makes this 3-0; it changed everything.",
+        "Ball-recovery lag (22.7s versus Belgium's 15.7) exposed the defence: sharpening regain speed would neutralise Belgium's pressing threat.",
+        "The 0.34-xG miss in minute 109 during ET squandered the moment when fatigue favours the side that breaks first."
+      ]
+    }
+  },
+  "statLine": "Senegal created 2.09 expected goals to Belgium's 1.74, but a 0.91-xG chance hitting the post in the 13th minute and Belgium's superior recovery speed (15.7 to 22.7 seconds) decided 120 minutes."
+}

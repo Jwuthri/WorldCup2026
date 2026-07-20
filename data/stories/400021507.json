@@ -1,0 +1,32 @@
+{
+  "headline": "Harry Kane and England's Efficiency Doomed Defiant Croatia",
+  "story": [
+    "England dominated with Kane's 12th-minute clinical strike: the goal that set tone and shape. Bellingham and Rice stamped English tempo on play despite 49 per cent possession. Croatia's high-press intensity (13.2 phases) created threat, but England's 36 forced turnovers spoke to sides absorbing pressure and converting it to attacks. Croatia stole two scrappy goals from single-digit xG chances to create half-time parity. The 47th-minute English restart killed the momentum—a goal that signalled quality would tell.",
+    "The xG gulf was vast: 3.33 to 0.82, shots 22 to 10, on target 11 to five. Kane (8.8 rating) and Bellingham's relentless pressing cost Croatia. Yet England wasted two big chances rated 0.60 and 0.54 xG when the game remained competitive; a third at 0.26 went begging. That these misses didn't matter reflects England's depth—three more clear opportunities besides—chance creation that outlasted Croatian resilience despite marginally superior recovery time (17.1 to 18.0 seconds)."
+  ],
+  "keyMoment": {
+    "minute": "47",
+    "text": "England's third goal reasserted control after half-time, neutralising Croatia's parity and confirming tactical dominance."
+  },
+  "advice": {
+    "home": {
+      "team": "England",
+      "verdict": "Superior pressing depth and clinical finishing overwhelmed Croatian grit.",
+      "points": [
+        "22 shots (11 on target) combined with Kane's 8.8 rating created constant threat.",
+        "36 forced turnovers—matching Croatia's 35—powered relentless English attacks and tactical dominance.",
+        "Missed big chances (0.60, 0.54 xG) in crucial moments; sharper opponents exploit those gaps."
+      ]
+    },
+    "away": {
+      "team": "Croatia",
+      "verdict": "High-press intensity and scrappy finishing created parity but couldn't sustain it.",
+      "points": [
+        "13.2 high-press phases matched England's energy; 35 turnovers forced but only 10 shots attempted.",
+        "Scored twice from xG of 0.04 and 0.14 combined—lucky finishing that belied 10-shot total.",
+        "Ball recovery (17.1 seconds) marginally better than England's 18.0; fatigue undermined pressing at 47 minutes."
+      ]
+    }
+  },
+  "statLine": "England's 3.33 xG yielded six goals while Croatia's 0.82 xG produced two—a chasm reflecting clinical precision against fortunate opportunism."
+}

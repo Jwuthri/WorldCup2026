@@ -1,0 +1,32 @@
+{
+  "headline": "France's Pressing Mastery Dismantles Swedish Resistance",
+  "story": [
+    "France controlled the tempo from start to finish, their 4-2-3-1 setup dominating possession at 54 per cent while Sweden, attempting a 4-4-2, found themselves perpetually on the back foot. The decisive factor was France's pressing intensity: 4.6 high-press phases to Sweden's 1.1 wore down their opponents with relentless waves of attack. Sweden's only defensive strategy became compact blocks, but their slower ball recovery time—20.8 seconds to France's 14.5—meant quick transitions repeatedly exposed them. The breakthrough came at forty-five minutes, setting the tone for what followed.",
+    "The numbers rendered Sweden's resistance futile: France's 25 shots to eight, their 2.9 expected goals against Sweden's 0.71, quantified a technical gulf that the 3-0 scoreline understated. Mbappe (9.4 rating) and Olise (9.0) orchestrated attacks with precision while Sweden's best player, Svanberg (7.0), managed only scraps. France's ball recovery advantage—six seconds faster per cycle—transformed transitions into sustained attacking pressure. Tellingly, France missed a 0.55 xG chance at seventy-one and a 0.33 xG chance at eighty-two; by then the contest was already decided, and Sweden's sole big chance arriving at eighty-nine came far too late."
+  ],
+  "keyMoment": {
+    "minute": "53",
+    "text": "France's second goal (0.62 xG) ended any pretence of Swedish resistance; Mbappe and Olise had already seized control."
+  },
+  "advice": {
+    "home": {
+      "team": "France",
+      "verdict": "Dominant through superior pressing and transitions; risk lay in profligacy with big chances late on.",
+      "points": [
+        "Ball recovery 14.5s vs Sweden's 20.8s turned transitions into systematic attacking advantage",
+        "Pressing dominance (4.6 high phases vs 1.1) dictated France's tempo throughout ninety minutes",
+        "Survived missing chances worth 0.55 xG and 0.33 xG—clinical finishing would have been more convincing"
+      ]
+    },
+    "away": {
+      "team": "Sweden",
+      "verdict": "Overwhelmed by technical superiority; tactics offered no answer to France's pressing or recovery speed.",
+      "points": [
+        "Single clear chance at 89 minutes (0.26 xG)—needed ruthless precision with limited opportunities created",
+        "Recovery time of 20.8s left them perpetually chasing transitions France manufactured at will",
+        "Press entirely ineffective (1.1 phases vs 4.6)—4-4-2 formation invited sustained dominance without resistance"
+      ]
+    }
+  },
+  "statLine": "France's 2.9 xG to Sweden's 0.71, achieved across 25 shots to eight, quantified a technical mastery that 3-0 barely captured."
+}

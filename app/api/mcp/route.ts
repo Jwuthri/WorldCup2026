@@ -32,6 +32,16 @@ const TEXT_TOOLS: Record<string, [z.ZodRawShape, (input: any) => string | null]>
   get_team: [{ team: z.string().describe("Team name or abbreviation") }, teamLink],
   get_team_schedule: [{ team: z.string().describe("Team name or abbreviation") }, teamLink],
   get_player: [{ name: z.string() }, () => `${SITE}/players`],
+  similar_players: [{ name: z.string().describe("Player name (partial ok)") }, () => `${SITE}/map`],
+  get_team_strength: [{ team: z.string().describe("Team name or abbreviation") }, teamLink],
+  head_to_head: [
+    { team_a: z.string(), team_b: z.string() },
+    (i) => {
+      const a = resolveTeam(String(i?.team_a ?? "")), b = resolveTeam(String(i?.team_b ?? ""));
+      return a && b ? `${SITE}/compare?a=${a.abbr}&b=${b.abbr}` : null;
+    },
+  ],
+  get_referee: [{ match_id: z.string().optional().describe("Optional id from list_matches") }, () => `${SITE}/whistle`],
   leaderboard: [
     {
       metric: z.enum(["goals", "assists", "xg", "avg_rating", "top_speed", "distance", "saves", "passes_completed"]),
@@ -39,7 +49,19 @@ const TEXT_TOOLS: Record<string, [z.ZodRawShape, (input: any) => string | null]>
     },
     () => `${SITE}/awards`,
   ],
+  get_standings: [
+    { group: z.string().optional().describe("e.g. 'A', 'Group H' — omit for all groups") },
+    () => `${SITE}/tournament`,
+  ],
+  get_awards: [{}, () => `${SITE}/awards`],
 };
+
+// coverage guard: every non-chart tool in TOOL_DEFS must be registered here,
+// or it silently won't reach MCP clients (the #1 drift bug of a hand-kept map)
+const UNCOVERED = TOOL_DEFS.map((t) => t.name).filter(
+  (n) => n !== "render_chart" && !(n in TEXT_TOOLS)
+);
+if (UNCOVERED.length) console.warn(`[mcp] tools missing from TEXT_TOOLS: ${UNCOVERED.join(", ")}`);
 
 function buildServer(): McpServer {
   const server = new McpServer(
