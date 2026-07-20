@@ -16,6 +16,7 @@ import MatchTheater, {
   type TPanelSection,
 } from "@/components/MatchTheater";
 import DuelBars, { type DuelRow } from "@/components/DuelBars";
+import ShotReplay from "@/components/ShotReplay";
 import MatchColumn, { readColumn } from "@/components/MatchColumn";
 import Heatmap from "@/components/Heatmap";
 import { matchTerritory, hasHeat } from "@/lib/heatmap";
@@ -303,6 +304,13 @@ export default async function MatchPage({ params }: { params: Promise<{ id: stri
 
       <div className="mt-8">
         <MatchTheater home={tHome} away={tAway} shots={shots} pulse={pulse} maxMinute={maxMinute} />
+        <div className="mt-4">
+          <ShotReplay
+            shots={b.shots}
+            home={{ name: cal.home.name, abbr: cal.home.abbr, color: home.color }}
+            away={{ name: cal.away.name, abbr: cal.away.abbr, color: away.color }}
+          />
+        </div>
         <p className="mt-4 flex flex-wrap justify-center gap-3 text-center">
           <Link
             href={`/match/${cal.id}/3d`}

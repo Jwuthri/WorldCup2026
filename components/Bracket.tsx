@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Reveal from "./Reveal";
 import { flagUrl, type CalMatch } from "@/lib/data";
 
 function Mini({ m }: { m: CalMatch }) {
@@ -37,7 +38,7 @@ export default function Bracket({ matches }: { matches: CalMatch[] }) {
     .map((s) => ({ stage: s, list: ko.filter((m) => m.stage === s) }));
   return (
     <div className="overflow-x-auto pb-2">
-      <div className="flex min-w-max gap-4">
+      <Reveal className="flex min-w-max gap-4" stagger={120}>
         {cols.map((c) => (
           <div key={c.stage} className="flex w-56 flex-col">
             <p className="eyebrow mb-2">{c.stage} <span className="text-faint">({c.list.length})</span></p>
@@ -52,7 +53,7 @@ export default function Bracket({ matches }: { matches: CalMatch[] }) {
             )}
           </div>
         ))}
-      </div>
+      </Reveal>
     </div>
   );
 }

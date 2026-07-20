@@ -47,7 +47,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/territory" className="hover:text-chalk">Territory</Link>
               <Link href="/whistle" className="hover:text-chalk">The whistle</Link>
               <Link href="/map" className="hover:text-chalk">The tribes</Link>
-              <Link href="/mundle" className="hover:text-chalk">Mundle</Link>
               <Link href="/compare" className="hover:text-chalk">Compare</Link>
               <Link href="/connect" className="hover:text-chalk">Connect your AI</Link>
             </nav>

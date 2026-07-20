@@ -1,5 +1,6 @@
 import { flagUrl } from "@/lib/flags";
 import type { Card } from "@/lib/cards";
+import HoloCard from "./HoloCard";
 
 const FRAMES = {
   gold: { edge: "linear-gradient(160deg,#8a6d1f,#e9d18a 30%,#caa53d 55%,#f3e3ab 80%,#8a6d1f)", num: "var(--gold)" },
@@ -12,6 +13,7 @@ export default function PlayerCard({ card, size = "lg", vtName }: { card: Card; 
   const f = FRAMES[card.tier];
   const big = size === "lg";
   return (
+    <HoloCard tier={card.tier}>
     <div
       className={`relative rounded-2xl p-[3px] ${big ? "w-[320px]" : "w-[240px]"}`}
       style={{ background: f.edge, boxShadow: "0 20px 60px -20px rgba(0,0,0,.8)" }}
@@ -76,5 +78,6 @@ export default function PlayerCard({ card, size = "lg", vtName }: { card: Card; 
         <p className="eyebrow relative mt-4 text-center opacity-70">Mundial·26 · real-data card</p>
       </div>
     </div>
+    </HoloCard>
   );
 }

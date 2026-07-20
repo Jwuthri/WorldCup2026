@@ -7,6 +7,9 @@ import {
   flagUrl,
 } from "@/lib/data";
 import Bracket from "@/components/Bracket";
+import ResultsTicker from "@/components/ResultsTicker";
+import TickNumber from "@/components/TickNumber";
+import Reveal from "@/components/Reveal";
 import { getLuck } from "@/lib/luck";
 
 export const metadata = { title: "Tournament — MUNDIAL·26" };
@@ -86,11 +89,13 @@ export default function Home() {
         </section>
       )}
 
+      <ResultsTicker />
+
       {/* tournament numbers */}
       <section className="mb-14 grid grid-cols-2 gap-3 sm:grid-cols-5">
         {tiles.map((t) => (
           <div key={t.label} className="rounded-lg border border-pitchline bg-surface p-4 text-center">
-            <p className="data text-2xl text-chalk sm:text-3xl">{t.value}</p>
+            <p className="data text-2xl text-chalk sm:text-3xl"><TickNumber text={t.value} /></p>
             <p className="eyebrow mt-1">{t.label}</p>
             {t.sub && <p className="mt-0.5 text-xs text-dim">{t.sub}</p>}
           </div>
@@ -145,7 +150,7 @@ export default function Home() {
         <p className="mb-5 text-sm text-dim">
           Twelve groups of four — the top two went through, joined by the eight best third-placed sides.
         </p>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <Reveal className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" stagger={55}>
           {Object.keys(standings)
             .sort()
             .map((g) => (
@@ -177,7 +182,7 @@ export default function Home() {
                 </ul>
               </div>
             ))}
-        </div>
+        </Reveal>
       </section>
 
       {/* fortune */}

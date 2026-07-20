@@ -74,7 +74,6 @@ request), [lib/aiTools.ts](lib/aiTools.ts) (shared tool layer, also used by `/as
 | `/team/[abbr]` | Team identity (percentile profile vs all 48 teams), results, squad — e.g. `/team/ESP` |
 | `/map` | **The tribes**: all 523 regular outfielders sorted into 8 k-means style archetypes — face walls, plain-word traits, and a "who plays like X" finder. Team style families below. Fortune index (10k xG Monte Carlo per group match) shows on `/tournament` + team pages. |
 | `/compare` | Two cards + stat radar, shareable via URL params — plus **the rematch machine**: simulate any hypothetical team matchup (`?ta=FRA&tb=ARG`), Poisson-from-xG + Elo, 10k runs, backtested |
-| `/mundle` | **Mundle** — the daily guessing game: one mystery player from the top 200, six guesses, real-data clues (team/confederation, position, tribe, rating), emoji-share results. New player at midnight UTC. |
 | `/ask` | Tactical Q&A over the data (needs the API key above) |
 | `/connect` | Visitor-facing guide to the MCP server — connect the database to their own Claude/ChatGPT |
 
