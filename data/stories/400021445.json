@@ -1,0 +1,32 @@
+{
+  "headline": "South Africa's fortress: Korea's possession goes unrewarded",
+  "story": [
+    "Korea Republic came to Monterrey seeking to impose control, and for long periods they did—61 per cent possession, 5.7 high-pressure phases, the ball at their feet for most of the afternoon. But South Africa, deployed in a disciplined 4-2-3-1, never panicked. They recovered the ball in 24.3 seconds on average, forced 40 turnovers to Korea's 28, and waited. That patience was rewarded in the 63rd minute when a swift counter-attack produced the game's only goal: low expected value (0.09 xG), maximum effect.",
+    "Korea's dominance was real, their 0.74 xG matching superior play: a missed chance at 7' (0.21 xG), saved efforts at 60' and 90+3' (0.17, 0.36). But they never broke through. South Africa's Thapelo Maseko (8.0 rating) orchestrated suffocating defence, with Mbokazi (7.8) and Mudau (7.7) imposing flank discipline. Korea's Kim Min-Jae, Han-beom Lee, and Young-woo Seol, all 6.9–7.0, found no space. The match was decided not by possession, but by transitions."
+  ],
+  "keyMoment": {
+    "minute": "63",
+    "text": "South Africa converts a 0.09 xG chance; clinical finishing overcomes Korea's possession dominance."
+  },
+  "advice": {
+    "home": {
+      "team": "South Africa",
+      "verdict": "A masterclass in defensive discipline and transition football; they survived Korea's late siege.",
+      "points": [
+        "Forced 40 turnovers to Korea's 28—the midfield battle won through intensity, not possession.",
+        "Recovery time of 24.3 seconds bought them the space to break; slow transitions would have buried them.",
+        "Maseko's 8.0 rating anchored the defence; one lapse at 90+3' nearly cost them a 0.36 xG concession."
+      ]
+    },
+    "away": {
+      "team": "Korea Republic",
+      "verdict": "Possession and pressure alone do not win matches; clinical finishing would have changed everything.",
+      "points": [
+        "Three quality chances (0.21, 0.17, 0.36 xG) summing to 0.74 xG went begging—conversion was the missing link.",
+        "28 forced turnovers vs South Africa's 40 revealed a midfield out-battled in transition; Korea's 3-4-2-1 lacked cover.",
+        "5.7 high-press phases without reward suggest the press lacked coordination; Kim Min-Jae (7.0) could not turn dominance into clean sheets."
+      ]
+    }
+  },
+  "statLine": "South Africa won with 30 per cent possession and a 0.09 xG goal, while Korea's 61 per cent control and 0.74 xG went unrewarded—a reminder that football is not played in possession metres."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Brazil's press, Scotland's silence: 0-3 tells the true story",
+  "story": [
+    "Brazil imposed themselves immediately, with an early goal inside seven minutes setting an ominous tone. Vinicius Júnior and his teammates pressed relentlessly—4.5 high-press phases against Scotland's meek 2.3—suffocating any Scottish rhythm. The second goal came just before halftime, delivered when Scotland's best hope of containment had already evaporated. By the hour mark, a third goal confirmed what the stats had already foretold: Scotland, in 4-2-3-1 formation, were simply outclassed. Possession (51-43) meant little when Brazil's defensive shape was impenetrable.",
+    "The xG gulf told the story: 3.78 to 0.69, a chasm. Scotland's sluggish ball recovery (23.3 seconds versus Brazil's 19.2) combined with Brazil's superior press to create a perfect storm of disruption. McTominay (7.0) and Ferguson (7.1) fought hard in midfield, but Brazil's coordinated pressing suffocated them. Scotland's Shankland, rated 6.9, barely posed a threat. Brazil's attacking trio—Júnior (8.8), Alisson (8.3), and Cunha (8.3)—simply played at another level. One clear miss at 81' (xG 0.88) briefly suggested vulnerability, but Brazil's dominance was too complete."
+  ],
+  "keyMoment": {
+    "minute": "45+3",
+    "text": "Brazil's second goal before halftime; the moment Scotland's slim hopes evaporated"
+  },
+  "advice": {
+    "home": {
+      "team": "Scotland",
+      "verdict": "Outpressed and ineffective; Brazil's dominance was inevitable given the tactical mismatch",
+      "points": [
+        "Early vulnerability (7'): conceding so quickly stole any Scottish hope; resilient defending in opening 15 minutes was critical",
+        "Pressing intensity (2.3 vs 4.5 phases): Brazil's press suffocated Scotland; higher Scottish press might have disrupted Brazil's build-up",
+        "Ball recovery gap (23.3s vs 19.2s): slow recovery allowed Brazil's press to reset; quicker transitions were essential"
+      ]
+    },
+    "away": {
+      "team": "Brazil",
+      "verdict": "Relentless press and early strikes: Brazil's tactical superiority proved overwhelming",
+      "points": [
+        "Early strikes (7', 45+3): Brazil scored from high-xG chances (0.95, 0.77) before Scotland settled; early psychological advantage was decisive",
+        "Press domination (4.5 vs 2.3 phases): Brazil's relentless, coordinated press systematically dismantled Scotland's structure; this tactical dominance was decisive",
+        "Missed chance at 81' (xG 0.88): this slip would have cost most sides; Scotland's collapse meant Brazil's miss was consequence-free"
+      ]
+    }
+  },
+  "statLine": "Brazil generated 3.78 expected goals to Scotland's 0.69—a chasm that made the 3-0 scoreline almost merciful"
+}

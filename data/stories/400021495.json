@@ -1,0 +1,32 @@
+{
+  "headline": "Argentina's possession fortress overwhelms Jordan's disorganised defence",
+  "story": [
+    "Argentina suffocated Jordan from the opening minutes, controlling 68 per cent of possession and dictating play with a suffocating press that forced 42 turnovers. Jordan's three-at-the-back formation offered little resistance to the Argentine midfield's rhythmic movement. By the 31st minute, Messi and Lo Celso had already moved the ball into lethal positions twice; Jordan's sole response was isolation and panic, their 28 per cent possession leaving them reactive, scrambling to recover loose balls in 32.9 seconds to Argentina's brisk 10 seconds.",
+    "Argentina's xG of 2.52 to Jordan's 0.96 told the whole story—precision against desperation. Yet Argentina shot themselves in the foot twice: a 28th-minute effort struck the post, and a 90+1 opportunity went begging. Jordan's single goal, courtesy of a 0.52 xG chance at 55 minutes, was merely punctuation to an Argentine masterclass that had already decided the outcome. Argentina's 80th-minute third was a low-xG finish (0.08) off a tired Jordan defence, the match long over by then."
+  ],
+  "keyMoment": {
+    "minute": "31",
+    "text": "Argentina's second goal sealed the contest; Jordan had no answer to the press."
+  },
+  "advice": {
+    "home": {
+      "team": "Jordan",
+      "verdict": "Outmuscled at every press phase; possession hunger must increase before facing elite sides.",
+      "points": [
+        "High-press phases (3.7) were 54% of Argentina's (7.8)—can't defend by conceding midfield.",
+        "Only 1 on-target shot from 5 attempts; must sharpen conversion or create fewer, better chances.",
+        "Ball recovery in 32.9 seconds versus Argentina's 10—transition defence collapsed; tighten shape."
+      ]
+    },
+    "away": {
+      "team": "Argentina",
+      "verdict": "Possession dominance and press intensity won the day, though finishing cost them late.",
+      "points": [
+        "68 per cent possession and 42 forced turnovers controlled the match; press intensity (7.8 phases) set the tone.",
+        "Post-hit at 28 minutes and 90+1 miss showed wasteful final-third execution; Messi (8.2 rating) salvaged the result.",
+        "Conceded one chance (0.52 xG) at 55 minutes—defensive organisation wavered briefly but recovered to kill the game."
+      ]
+    }
+  },
+  "statLine": "Argentina's 10-second ball-recovery time—32.9 seconds faster than Jordan's—translated to 42 forced turnovers and complete midfield control."
+}

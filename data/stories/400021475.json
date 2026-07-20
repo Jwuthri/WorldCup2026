@@ -1,0 +1,32 @@
+{
+  "headline": "Japan's Press Dismantled Tunisia in Four Acts",
+  "story": [
+    "Japan struck inside four minutes and never looked back, setting a tempo Tunisia couldn't sustain. The defining metric was intensity: Japan's 3.6 high-press phases overwhelmed Tunisia's fragile 1.9, creating a pace the North Africans simply couldn't absorb. By half-time, Japan led 2-0 with 55% possession against Tunisia's 36%; the visitors had mustered just two shots. The match's shape was irreversibly settled before the break.",
+    "Japan's dominance crystallised in the numbers. Their ball recovery time of 13.7 seconds against Tunisia's 22.1 gave them an eight-second edge that proved fatal in a game decided by tempo. Ayase Ueda (9.3 rating) and Ko Itakura (8.5) controlled midfield, with Daichi Kamada (7.8) providing rhythm. Tunisia mustered 0.02 expected goals across 90 minutes; Japan finished four, clinical conversions of their 1.36 xG advantage."
+  ],
+  "keyMoment": {
+    "minute": "4",
+    "text": "Japan's early goal set an unrecoverable precedent—Tunisia chased shadows thereafter."
+  },
+  "advice": {
+    "home": {
+      "team": "Tunisia",
+      "verdict": "Overmatched at every layer; Group F will demand sharper execution.",
+      "points": [
+        "High-press disparity (1.9 vs 3.6 phases) meant no sustained offensive pressure; need chances created per match.",
+        "Ball recovery at 22.1 seconds left them perpetually chasing; eight-second gap to Japan proved fatal.",
+        "Zero on-target shots, 0.02 xG: didn't create or threaten—must add a playmaker who unpicks defences."
+      ]
+    },
+    "away": {
+      "team": "Japan",
+      "verdict": "Ruthless execution and pressing intelligence justified pre-tournament billing.",
+      "points": [
+        "Press intensity at 3.6 phases dismantled Tunisia's rhythm; replicate this template against stronger sides.",
+        "Ball recovery in 13.7 seconds enabled control; maintain this eight-second edge via transition drills.",
+        "Survived early sloppiness (two big chances missed, 0.35 combined xG) but clinical finishing sealed it—don't expect that mercy twice."
+      ]
+    }
+  },
+  "statLine": "Japan's eight-second ball recovery advantage (13.7 to 22.1 seconds) translated into four goals and complete dismantling of Tunisia's Group F opener."
+}

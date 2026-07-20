@@ -1,0 +1,32 @@
+{
+  "headline": "Mbappé breaks Senegal's resolve as France delivers the inevitable",
+  "story": [
+    "France's control never translated to dominance until the 66th minute. For an hour, they suffocated Senegal with 49% possession and 5.1 high-press phases, forcing turnovers at will, yet watched clear chances slip away at the feet of wasteful strikers in the 53rd and 57th minutes. When Mbappé finally found the net, the breakthrough felt less like genius than arithmetic—the xG reckoning (1.62 to 0.39) finally settling its score.",
+    "Senegal's resistance crumbled because they could neither match France's press (4.8 phases to 5.1) nor execute when opportunity came. A saved chance at 45+6 minutes and a post at 25 minutes left them with no margin. Recovery time—19.2 seconds versus France's 16.8—meant they were perpetually caught chasing. Mbappé's team added a second in the 82nd; Senegal's stoppage-time consolation served only to emphasize how thoroughly France controlled the tempo."
+  ],
+  "keyMoment": {
+    "minute": "66",
+    "text": "Mbappé broke the deadlock, turning 40 minutes of territorial pressure into a lead Senegal could not recover."
+  },
+  "advice": {
+    "home": {
+      "team": "France",
+      "verdict": "Superior possession and pressing won out, but wasteful finishing in open play nearly cost them.",
+      "points": [
+        "Your 16.8-second recovery time was the match's decisive edge—press this tempo advantage in harder groups.",
+        "Eight shots on target versus Senegal's two reflects dominance, but 1.62 xG from 11 shots shows profligacy: sharpen conversion.",
+        "Senegal's late goal (0.10 xG) exposed defensive slack when you eased off—maintain intensity when already ahead."
+      ]
+    },
+    "away": {
+      "team": "Senegal",
+      "verdict": "Outpaced in every phase; two big chances wasted and you never recovered.",
+      "points": [
+        "Your 19.2-second recovery versus France's 16.8 meant perpetual chase-mode—speed transitions or face tournament elimination.",
+        "4.8 high-press phases to France's 5.1 was narrow, yet 54 forced turnovers shows you tried: execution failed, not effort.",
+        "A 0.39 xG from six shots is criminal economy. The post at 25 minutes and saved chance at 45+6 were your only openings; you need more shots and better finishing."
+      ]
+    }
+  },
+  "statLine": "France's 1.62 expected goals against Senegal's 0.39 was the widest xG gulf in the opening weekend—a match decided by geography and press intensity."
+}

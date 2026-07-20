@@ -1,0 +1,32 @@
+{
+  "headline": "Netherlands wasteful, Japan steal a point from chaos",
+  "story": [
+    "Netherlands commanded Dallas with 55% possession and a suffocating press (2.0 high-press phases, forcing 33 turnovers), but squandered a gilt-edged 36th-minute chance. Japan, reduced to 37% possession and dawdling recovery times of 22.3 seconds, surrendered territory at will. Yet the match pivoted on clinical finishing: Gravenberch and van Dijk's dominance at midfield and rear went unrewarded when low-probability strikes found the net—Netherlands' second goal arrived from just 0.02 xG at the 64th mark. Japan, seemingly overwhelmed, equalised twice: first from chaos at 57', then Nakamura's composed defence cracked when a 0.14 xG chance sailed past at 89'.",
+    "The numbers tell a damning story for Ronald Koeman. Netherlands' 0.63 xG return of two goals masked the 36th-minute miss (0.17 xG)—had Summerville or another converted there, the shape changed entirely. Japan's arithmetic was equally peculiar: 0.34 xG became two goals, a variance that Keito Nakamura (7.8 rating) absorbed through positioning rather than perfect marking. The pace of this match, driven by Netherlands' ball-recovery speed (14.2 seconds versus Japan's laboured 22.3), suggested control. Instead, both sides finished as if playing with eyes closed. Japan's 3-4-2-1 never imposed threat but lasted through Daichi Kamada's workrate in midfield, whilst van Dijk's 7.9 rating went unmolested until chaos opened late."
+  ],
+  "keyMoment": {
+    "minute": "89",
+    "text": "Japan's late equaliser from 0.14 xG, a chance materialised from defensive frailty"
+  },
+  "advice": {
+    "home": {
+      "team": "Netherlands",
+      "verdict": "Dominance squandered; clinical finishing must improve immediately.",
+      "points": [
+        "Miss the 36' sitter (0.17 xG) and you don't control the scoreline—higher standards required",
+        "Score twice from 0.63 xG yet concede from 0.34; the 2.0 high-press phases justify intensity, not complacency",
+        "Gravenberch's 8.0 rating means midfield mastery; ensure forwards are equally sharp"
+      ]
+    },
+    "away": {
+      "team": "Japan",
+      "verdict": "Resilient but can't bank on 0.34 xG returning two goals again.",
+      "points": [
+        "22.3-second recovery under 55% possession is unsustainable; sharper pressing reduces their workload",
+        "Nakamura's 7.8 rating held the line despite chaos—but relying on defensive heroics rather than shape is perilous",
+        "Late chances (0.14 xG) won't always arrive at 89'; need to generate threats earlier"
+      ]
+    }
+  },
+  "statLine": "Japan converted twice from 0.34 expected goals, whilst Netherlands' 0.63 xG yield produced two goals and one glaring miss—a study in finishing variance."
+}

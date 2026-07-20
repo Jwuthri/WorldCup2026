@@ -1,0 +1,32 @@
+{
+  "headline": "Messi's Control Lesson Overwhelms Algeria's Pressing",
+  "story": [
+    "Argentina seized this contest with ruthless efficiency despite surrendering 51 per cent possession. Lionel Messi orchestrated a 4-4-2 that bent Algeria's relentless high press into ineffectual chaos. An early goal at 17 minutes set the rhythm. When Algeria recovered possession, Argentina's ball-regain speed—18.4 seconds—suffocated any momentum. By the 60th-minute second goal, the contest was already decided; the press aggression had yielded only one shot on target from seven attempts.",
+    "The xG chasm told the fuller story: Argentina's 1.58 against Algeria's 0.41. Messi's 9.8 rating vindicated every pass—his distribution broke Algeria's shape repeatedly. Algeria's tactical intensity (6.6 high-press phases) generated volume but lacked precision. When De Paul and Nicolas Gonzalez combined in midfield, they exposed the void behind the press. A 76th-minute third goal confirmed Argentina had simply been the more cogent side."
+  ],
+  "keyMoment": {
+    "minute": "60",
+    "text": "Second goal (xG 0.63) exposed the futility of Algeria's relentless pressing."
+  },
+  "advice": {
+    "home": {
+      "team": "Argentina",
+      "verdict": "Messi's efficiency transcended possession; Argentina dominated through press compactness.",
+      "points": [
+        "Ball recovery at 18.4s was three seconds faster than Algeria's—press exhaustion reversed.",
+        "Forced 46 turnovers: vertical passes through midfield dismantled the high-press structure.",
+        "9.8 Messi rating: when one player operates at that level, possession becomes secondary."
+      ]
+    },
+    "away": {
+      "team": "Algeria",
+      "verdict": "Relentless pressing without payoff: intensity didn't breed precision.",
+      "points": [
+        "Ball recovery of 20.2s left them chasing shadows; Messi exploited the open field.",
+        "Seven shots yielded only one on target: press chaos became attacking desperation.",
+        "Four-three-three midfield was overrun; De Paul controlled the tempo Argentina needed."
+      ]
+    }
+  },
+  "statLine": "Pressing paradox: Algeria's 6.6 high-press phases generated seven shots and one on target. Argentina's 1.58 xG and Messi's 9.8 rating yielded three."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Saibari's mastery sinks Scotland before they could breathe",
+  "story": [
+    "Morocco opened with a goal at the 2nd minute and never looked threatened. With 55 per cent possession and a more aggressive high press (7.4 phases to Scotland's 6.1), Saibari and Brahim Diaz controlled the tempo throughout. Scotland defended in deep formation, rarely venturing forward. Morocco won the ball significantly faster—17.2 seconds recovery versus Scotland's 25.5—suffocating any Scottish build-up play. By half-time, the match was decided despite Morocco's attacking imprecision.",
+    "Scotland's weakness was clinical precision. Zero shots on target despite 0.74 expected goals—a damning indictment of accuracy. Hendry (6.7) and Hanley (6.6) fought admirably in defence, but the midfield created nothing. Morocco squandered more than they converted: big chances at 36' and 38' (xG 0.30 and 0.17 respectively) went begging, and Scotland found one genuine opening at 45+1' that their toothless attack could not finish. Fortune favoured Morocco's early precision."
+  ],
+  "keyMoment": {
+    "minute": "2",
+    "text": "Morocco's goal set the tone: early strike from 0.13 xG decided the group match."
+  },
+  "advice": {
+    "home": {
+      "team": "Scotland",
+      "verdict": "Pressed too late, finished never; ceded midfield before half-time.",
+      "points": [
+        "Ball recovery time 25.5s: eight seconds slower than Morocco (17.2s), ceded field and tempo.",
+        "Zero shots on target despite 0.74 xG: Hendry (6.7) defended well but midfield creation failed.",
+        "Formation (4-4-1-1) never pressed: Saibari (7.9) and Diaz (7.7) ran the game unchallenged."
+      ]
+    },
+    "away": {
+      "team": "Morocco",
+      "verdict": "Saibari and Diaz's midfield mastery sealed it; wasteful finishing nearly cost the win.",
+      "points": [
+        "Early goal (2') from 0.13 xG: converted low-probability chance while high press (7.4) overwhelmed.",
+        "Ball recovery 7.3s faster (17.2s vs 25.5s): won physical battle, starved Scotland possession.",
+        "Missed big chances (0.30 and 0.17 xG at 36', 38'): nearly let Scotland back in."
+      ]
+    }
+  },
+  "statLine": "Scotland managed zero shots on target from six attempts despite 0.74 expected goals—the precise measure of why Morocco's early strike proved decisive."
+}

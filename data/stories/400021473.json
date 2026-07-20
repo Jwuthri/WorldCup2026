@@ -1,0 +1,32 @@
+{
+  "headline": "Netherlands buried Tunisia's early promise with suffocating control",
+  "story": [
+    "Tunisia stunned Netherlands with a third-minute goal and briefly suggested they might resist the Dutch machine. But Netherlands equalized within four minutes and thereafter imposed a possession stranglehold that Tunisia could never escape. The shape of the match was determined not by a single flash but by relentless attrition: Netherlands' high-press engine (9.7 phases to 0.8) forced Tunisia into ever-tighter defensive postures until their structure simply fractured.",
+    "The statistics exposed what happened. Netherlands' expected-goals advantage (1.79 to 0.76) barely captured their true dominance; the real gulf was ball recovery time. Netherlands regained possession in 12.6 seconds against Tunisia's 29.8—a 17-second differential meaning relentless Dutch probing while Tunisia gasped between phases. Mastouri and Mejbri fought bravely, but Van Dijk and Brobbey's press movement ensured Tunisia's 5-4-1 became a prison. The pivot was Tunisia's failure to convert a 0.17-xG chance in the second minute; going 2-0 up would have shifted the match's entire psychology."
+  ],
+  "keyMoment": {
+    "minute": "62",
+    "text": "Netherlands' second goal arrived after Tunisia's defensive structure had entirely given way to Dutch momentum."
+  },
+  "advice": {
+    "home": {
+      "team": "Tunisia",
+      "verdict": "Capitulated to press intensity and recovery disadvantage.",
+      "points": [
+        "Ball recovery of 29.8s versus Netherlands' 12.6s guaranteed possession loss; must accelerate defensive circulation.",
+        "Missed big chance at minute 2 (xG 0.17) cost the match psychologically; clinical finishing non-negotiable.",
+        "High-press exposure (0.8 phases vs 9.7) shows defensive formation too rigid; needed proactive midfield disruption."
+      ]
+    },
+    "away": {
+      "team": "Netherlands",
+      "verdict": "Possession and press machine overcame early shock, but defensive fragility at 7' exposed vulnerability.",
+      "points": [
+        "Ball recovery efficiency at 12.6s created unending attacking platforms; this speed and discipline won decisively.",
+        "High-press phases (9.7) systematically dismantled Tunisia's defensive shape; relentless press is the foundation.",
+        "Early concession at 7' (xG 0.45) signals positioning lapses; must tighten immediate reaction to forward movement."
+      ]
+    }
+  },
+  "statLine": "Netherlands recovered the ball in 12.6 seconds to Tunisia's 29.8—a 17-second chasm that transformed possession into relentless territorial dominance."
+}

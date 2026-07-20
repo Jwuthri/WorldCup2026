@@ -1,0 +1,32 @@
+{
+  "headline": "Haaland and Norway's Press Left Iraq Stranded in Boston",
+  "story": [
+    "Norway arrived in Boston and simply overwhelmed their hosts. From the opening phases, Iraq faced a wall of high pressure—Norway logged 12.1 high-press sequences to Iraq's 6.4—and when possession was lost, the Iraqis took 22.8 seconds to recover it, an eternity against a side moving at 13.7-second tempo. Norway struck in the 29th minute, and though Iraq grabbed an unlikely goal at 39' (xG 0.08), Norway snuffed out any hope with a second at 43'. The game was decided within an hour. Norway's third arrived in the 76th minute, and Iraq's two late consolations in stoppage time merely flattered a scoreline that was never in doubt.",
+    "The numbers tell the whole story. Norway created an xG of 2.41 to Iraq's 1.2, but more damning: five shots on target to one, with Haaland (8.4 rating) and Odegaard (7.2) orchestrating the dominance. Iraq's Ali Al-Hamadi (6.7) found no space to operate, and when given chances—one blocked at 45+3'—lacked the precision to punish Norway's goalkeeper. Even Erling Haaland's ruthlessness couldn't mask two saved big chances (43' and 83', xG 0.29 and 0.25 combined), yet the gulf in intensity, recovery pace, and press discipline made Norway's superiority absolute."
+  ],
+  "keyMoment": {
+    "minute": "43",
+    "text": "Norway's second goal restored order after Iraq's shock equalizer and ended the match as a contest."
+  },
+  "advice": {
+    "home": {
+      "team": "Iraq",
+      "verdict": "Tempo and recovery time was the barrier—22.8s was simply too slow against Norway's press.",
+      "points": [
+        "Ball recovery at 22.8s allowed Norway to dominate between plays; must accelerate to 15s or less.",
+        "Only one shot on target from 11 attempts: finishing accuracy was poor against goalkeeper saves.",
+        "35% possession was too passive; needed more aggressive possession phases to relieve pressure."
+      ]
+    },
+    "away": {
+      "team": "Norway",
+      "verdict": "Controlled the game through elite pressing and tempo; survived despite missing two clear big chances.",
+      "points": [
+        "High-press sequences (12.1) and 13.7s recovery time created the platform for victory.",
+        "Five shots on target from 11 shots showed clinical execution; could have been 5-1 without two saves.",
+        "Risk: late goals (90+6') conceded while 4-0 up—tightening defensive shape in the final moments would have mattered in closer contests."
+      ]
+    }
+  },
+  "statLine": "Norway converted five of 11 shots on target while restricting Iraq to one; the 4-1 scoreline understates the control differential."
+}

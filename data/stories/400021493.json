@@ -1,0 +1,32 @@
+{
+  "headline": "Senegal demolishes Iraq in 11-on-10 rout",
+  "story": [
+    "Senegal's high press suffocated Iraq from the opening minute, and when Rebin Sulaka received his marching orders at 13 minutes, the contest was finished before it began. Pape Gueye, rated 9.9, orchestrated a masterclass in modern football: relentless pressing (9.4 high-press phases to Iraq's 1.5), ball recovery in 9 seconds compared to Iraq's 18, forced turnovers that left the opposition gasping. Iraq retreated into capitulation, managing just 31 per cent possession and a single shot on target. Senegal barely needed to break a sweat.",
+    "The numbers obliterated any pretence of competition: 2.7 expected goals to Iraq's 0.21, 27 shots to 6, 11 on target to 1. Ismaila Sarr (8.7) and Iliman Ndiaye (8.5) operated like foxes in a henhouse once the numerical disadvantage took hold. Even Senegal's finishing stuttered—a 0.36 xG chance missed at 51 minutes, another saved at 79—yet the gulf was so vast that clinical execution became almost irrelevant. Iraq's midfield and defence offered nothing; their players spent the entire afternoon retrieving the ball from uncomfortable positions."
+  ],
+  "keyMoment": {
+    "minute": "13",
+    "text": "Rebin Sulaka sent off for Iraq; the match ceased to be a contest."
+  },
+  "advice": {
+    "home": {
+      "team": "Senegal",
+      "verdict": "Suffocating press and ball recovery won it; missed chances could have cost them against stronger opponents.",
+      "points": [
+        "9.4 high-press phases exploited Iraq's inability to build play; maintain that intensity in knockout stages.",
+        "9.0-second ball recovery time forced 38 turnovers; this speed is a competitive weapon.",
+        "Two big chances went begging (0.36 and 0.24 xG); efficiency matters more when opponents tighten."
+      ]
+    },
+    "away": {
+      "team": "Iraq",
+      "verdict": "The red card was decisive, but Iraq created virtually nothing before or after it.",
+      "points": [
+        "0.21 xG indicates zero attacking threat; tactical setup was too passive from kick-off.",
+        "18.1-second ball recovery time shows constant chase; compression required to stem the press.",
+        "Sulaka's dismissal (13') ended the match, but 6 shots in 90 minutes is unacceptable."
+      ]
+    }
+  },
+  "statLine": "Senegal's 2.7 expected goals to Iraq's 0.21, combined with Pape Gueye's 9.9 rating, painted a match never in doubt after the 13th-minute red card."
+}

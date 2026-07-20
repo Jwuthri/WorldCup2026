@@ -1,0 +1,32 @@
+{
+  "headline": "Uruguay Waste Their Chances Against Stubborn Cabo Verde",
+  "story": [
+    "Uruguay dominated from kickoff—55% possession, 17 shots to Cabo Verde's 12—but invited trouble through lack of ruthlessness. An early gift to the visitors at 21 minutes (0.04 xG) set the tone: vulnerability beneath the surface. Uruguay recovered to lead 2-1 by halftime, but that cushion evaporated when Cabo Verde equalized on 61 minutes. The visitors, pressing rarely and recovering slowly, nonetheless held firm through disciplined defending and dangerous counter-attacks.",
+    "Uruguay's superiority on paper proved hollow: 2.23 xG to 0.54 should have been a rout, yet Maximiliano Araujo's 8.0 rating and the team's dominance could not overcome profligacy in front of goal. Missed big chances at the 14th and 90th minutes (0.25 and 0.17 xG respectively) might have sealed it. Cabo Verde's Kevin Lenini, rated 8.3, orchestrated a suffocating defensive compact that forced 46 turnovers despite surrendering possession, leaving Uruguay frustrated."
+  ],
+  "keyMoment": {
+    "minute": "61",
+    "text": "Cabo Verde's equalizer: the moment Uruguay's possession grip finally broke and a draw became inevitable."
+  },
+  "advice": {
+    "home": {
+      "team": "Uruguay",
+      "verdict": "Possession mastery squandered by missed clear chances and defensive lapses after halftime.",
+      "points": [
+        "Missed 0.25xG at 14' and 0.17xG at 90': either converts and this is a comfortable win.",
+        "Araujo's brilliance (8.0 rating) undermined by Valverde's 6.7 showing; midfield control wavered after 45th minute.",
+        "Only 8.2 high press phases despite 55% possession: should have suffocated Cabo Verde's outlets."
+      ]
+    },
+    "away": {
+      "team": "Cabo Verde",
+      "verdict": "Disciplined defence salvaged a point but clinical finishing might have earned three.",
+      "points": [
+        "Kevin Lenini's 8.3 rating anchored fortress defence: forced 46 turnovers, recovered every 14.4 seconds under siege.",
+        "Four shots on target but only 0.54xG: rare half-chances in 33% possession must be converted ruthlessly.",
+        "Just 2.2 high press phases: needed earlier, sharper intensity to disrupt Uruguay's midfield and force turnovers."
+      ]
+    }
+  },
+  "statLine": "Uruguay created 2.23 expected goals to Cabo Verde's 0.54, yet left Miami with a draw—profligacy rewarding resilience."
+}

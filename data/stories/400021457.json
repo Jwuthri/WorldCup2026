@@ -1,0 +1,32 @@
+{
+  "headline": "Brazil's early ferocity ends Haiti's tournament dream before halftime",
+  "story": [
+    "Brazil's attacking dominance was established in the opening 23 minutes, when Matheus Cunha and Vinicius Júnior's movement exploited Haiti's 5-4-1 deep defensive line. Three goals in the first 45 minutes—at 23, 36, and 45+3—left the contest settled before the interval. Haiti offered little resistance and less precision, their high-press phases (6.1) generating no quality chances while Brazil controlled at 49% possession.",
+    "The gulf between the teams was captured in expected goals: Brazil's 1.42 to Haiti's 0.26, a chasm explained by clinical finishing and a three-second advantage in ball-recovery time (16.9s versus 18.9s). Cunha's 8.4 rating and Vinicius Júnior's 8.2 reflected their dominance; Wilson Isidor's 6.9 offered no answer. Brazil squandered chances in the 29th minute (saved) and 90+1 (missed), yet such profligacy mattered little against opponents who never mustered a threat."
+  ],
+  "keyMoment": {
+    "minute": "36",
+    "text": "Second goal made it 2-0 and rendered Haiti's tactical experiment entirely futile with 54 minutes remaining."
+  },
+  "advice": {
+    "home": {
+      "team": "Brazil",
+      "verdict": "Relentless early execution created an unbridgeable gulf.",
+      "points": [
+        "Three goals before half-time (23', 36', 45+3') from 1.42 xG converted at decisive moments.",
+        "Cunha (8.4) and Vinicius Júnior (8.2) dominated their markers; 49% possession sufficient for control.",
+        "Ball-recovery speed (16.9s vs Haiti's 18.9s) enabled transitions; survived missed chances (29', 90+1') through early cushion."
+      ]
+    },
+    "away": {
+      "team": "Haiti",
+      "verdict": "Defensive structure overwhelmed; high press wasted energy without reward.",
+      "points": [
+        "6.1 high-press phases yielded only 0.26 xG; tactical mismatch between 5-4-1 and pressing intensity.",
+        "Ball recovery 18.9s—3.1 seconds slower than Brazil—left transitions vulnerable to Brazilian quick play.",
+        "Conceded thrice before halftime when defensive organization should peak; Wilson Isidor (6.9) isolated and unsupported."
+      ]
+    }
+  },
+  "statLine": "Brazil converted 1.42 xG into three goals before halftime; Haiti's 0.26 xG and seven shots yielded zero reward."
+}

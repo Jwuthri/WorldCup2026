@@ -1,0 +1,32 @@
+{
+  "headline": "Freeman's Performance Crowns USA's Convincing Seattle Win",
+  "story": [
+    "USA's 3-5-2 formation proved emphatically superior to Australia's compact 5-4-1 in Seattle. Controlling 56% possession, the Americans moved the ball with rhythm and precision through a midfield anchored by Tillman and Ream, systematically forcing Australia into deeper and deeper retreats. The Australians, meanwhile, generated no attacking threat from their five-man defensive structure. By half-time, USA had established complete territorial dominance and were simply suffocating their opponents through superior movement and technical range.",
+    "Freeman's rating of 8.2 reflected decisive contribution to USA's creation of dangerous chances, though poor conversion haunted the Americans. An xG of 1.58 to 0.31 revealed the gulf—USA squandered opportunities at the 15th minute (xG 0.26) and 51st (xG 0.15) before finally converting. Australia's sole registered chance came at the 62nd minute, too late and too improbable. Recovery time differences (USA 10.5 seconds to Australia's 15.9) compounded the Australians' predicament."
+  ],
+  "keyMoment": {
+    "minute": "43",
+    "text": "USA's 43rd-minute goal, clinical finish from service into Australia's exposed backline"
+  },
+  "advice": {
+    "home": {
+      "team": "USA",
+      "verdict": "Dominance backed by efficiency; technical superiority proved decisive.",
+      "points": [
+        "Freeman (8.2) and Ream (7.4) controlled possession (56%) to starve Australia of attacking space and rhythm",
+        "Converted chance at 43' (xG 0.34); recovery speed (10.5 seconds) enabled sustained territorial dominance throughout",
+        "3-5-2 formation mobility exposed Australia's 5-4-1 defensively; Tillman (7.4) dictated midfield transitions at will"
+      ]
+    },
+    "away": {
+      "team": "Australia",
+      "verdict": "Tactically outmatched and physically outpaced; hope evaporated by half-time.",
+      "points": [
+        "Volpato and Irankunda (both 6.7-rated) starved by possession; generated just 0.31 xG from five shots",
+        "5-4-1 offered no penetration; recovery time lag (15.9s vs USA's 10.5s) forced permanent defensive compression",
+        "Metcalfe's 6.9 rating sole bright spot; sole genuine chance arrived at 62', too late to matter"
+      ]
+    }
+  },
+  "statLine": "USA's 1.27 xG advantage the starkest measure of their attacking superiority in a tactical mismatch."
+}

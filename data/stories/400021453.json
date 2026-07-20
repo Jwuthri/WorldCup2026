@@ -1,0 +1,32 @@
+{
+  "headline": "Haiti Pressed, Scotland Punished",
+  "story": [
+    "Haiti announced their tournament ambitions with a commanding display in Boston: 52% possession, 15 shots, sustained high pressing designed to suffocate Scotland's deep-sitting defense. But the match pivoted in the 28th minute, when Scotland broke through with a low-xG opportunity (0.14) that would prove decisive. Scotland offered little else—just nine shots and 1.1 high-press phases—and relied entirely on ruthlessness in transition to hold what they'd snatched.",
+    "The numbers revealed efficiency defeating dominance. Scotland's xG (0.91) exceeded Haiti's (0.7) on nine shots to Haiti's 15. In the decisive 28th minute, Scotland missed a big chance (0.58 xG) before converting a low-xG opportunity (0.14). Haiti's swift ball recovery (14.9 seconds to Scotland's 21.5) and 29 forced turnovers proved their press worked, yet they squandered crucial moments: a blocked chance (0.28 xG) in the 34th, and a saved chance (0.31 xG) in stoppage time. John McGinn (7.7) and Aaron Hickey (7.4) anchored Scotland's defense, while Hannes Delcroix (7.1) could not impose order on Haiti's attack."
+  ],
+  "keyMoment": {
+    "minute": "28",
+    "text": "Scotland's low-xG breakthrough settled a match where dominance met ruthlessness"
+  },
+  "advice": {
+    "home": {
+      "team": "Haiti",
+      "verdict": "Pressed high and controlled the match, but lacked precision in front of goal.",
+      "points": [
+        "Only 2 of 15 shots on target—13% conversion rate cannot compete for three points",
+        "High press (4.7 phases) generated 29 forced turnovers; failed to convert chances",
+        "Swift ball recovery (14.9s) won the midfield battle but yielded no reward"
+      ]
+    },
+    "away": {
+      "team": "Scotland",
+      "verdict": "Won with deep discipline and clinical ruthlessness against a superior opponent.",
+      "points": [
+        "xG advantage (0.91 vs 0.7) on nine shots—efficiency over volume secured points",
+        "Minimal pressing (1.1 phases) absorbed Haiti's dominance and forced 35 turnovers",
+        "Survived a 0.58 xG miss at the 28th minute; clinical when the game opened"
+      ]
+    }
+  },
+  "statLine": "Haiti's 15 shots yielded just 2 on target and zero goals, while Scotland's nine shots and superior expected goals produced one clinical finish to decide a Group C contest between dominance and ruthlessness."
+}

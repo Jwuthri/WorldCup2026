@@ -1,0 +1,32 @@
+{
+  "headline": "Pépé's Precision Ends Curaçao's Pressure",
+  "story": [
+    "Côte d'Ivoire arrived with possession and purpose, holding 55% of the ball from a measured 4-2-3-1 formation that controlled tempo. Curaçao pushed high with five-back, four-mid aggression, attempting 5.2 high-press phases to disrupt play, but their 38% possession told the real story. An early goal at the seventh minute—decisive and clinical—shifted the entire burden onto the hosts. By the time a second arrived in the 64th minute, the match had become a procession, with Côte d'Ivoire managing without strain.",
+    "The numbers explain it. Curaçao took 11 shots but only two found the target—a wastefulness that proved terminal against ruthless opposition. Côte d'Ivoire's three on-target efforts included two conversions, the second at 0.13 xG showing ruthless efficiency. Nicolas Pépé (8.4 rating) and Yan Diomande (7.9) were composed throughout. Curaçao's slower ball recovery time (18.1 seconds versus 16.7) exposed their reactive defending. Côte d'Ivoire squandered big chances at the 18th and 89th minutes; their margin for error barely dented the outcome."
+  ],
+  "keyMoment": {
+    "minute": "7",
+    "text": "Early goal from Côte d'Ivoire shifted Curaçao from probing hosts into desperate pursuers."
+  },
+  "advice": {
+    "home": {
+      "team": "Curaçao",
+      "verdict": "Pressure without precision and slow transitions proved insufficient.",
+      "points": [
+        "Eleven shots, two on target (18%)—conversion rate catastrophic against clinical opponents.",
+        "Ball recovery time 18.1s vs 16.7s exposed reactive, vulnerable defending.",
+        "Five-defender shape limited attack; possession deficit (38%) meant defending consumed every ounce of energy."
+      ]
+    },
+    "away": {
+      "team": "Côte d'Ivoire",
+      "verdict": "Possession control and clinical finishing overwhelmed Curaçao's aggression.",
+      "points": [
+        "67% conversion on on-target shots (2 from 3) vastly outpaced Curaçao's zero from two.",
+        "55% possession enabled midfield control; faster recovery (16.7s) prevented defensive collapse.",
+        "Missed big chances at 18' and 89'—efficiency survived wasteful spells, room for tightness."
+      ]
+    }
+  },
+  "statLine": "Curaçao fired 11 shots yielding two on target and nothing; Côte d'Ivoire's measured seven shots (three on target, two goals) proved decisively superior."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Morocco's Late Miss Spares Brazil from Defeat",
+  "story": [
+    "Brazil showed intensity with 7.2 high-press phases and forced 41 turnovers, but Morocco controlled the narrative through quality. Morocco's press was less frequent (4.1 phases) yet efficient—they recovered the ball 16.8 seconds faster on average and forced 50 turnovers. Morocco struck first at 21' from a high-xG opportunity (0.64); Brazil, having squandered a 0.60-xG chance fourteen minutes earlier, equalized improbably at 32' from just 0.08 xG. The teams ended deadlocked, Brazil unable to build on possessional dominance, Morocco unable to convert their superior chance creation.",
+    "Vinicius Júnior (7.7) and Raphinha (7.1) led Brazil's attacking charge across 12 shots, but only five reached the target. Brahim Diaz (7.8) carved Morocco's precision game: just three shots on target from fourteen overall, yet 1.33 xG to Brazil's 0.99. Morocco threatened the death with a 0.23-xG chance at 90+9' that Brazil's keeper saved. Marquinhos and company absorbed Morocco's first-half pressure, then held firm late to secure a draw that undervalued their opponents' control."
+  ],
+  "keyMoment": {
+    "minute": "32",
+    "text": "Brazil's 0.08-xG goal from seemingly nowhere rescued them from a first-half collapse."
+  },
+  "advice": {
+    "home": {
+      "team": "Brazil",
+      "verdict": "Would have won by clinical early finishing—you survived late but squandered the opening.",
+      "points": [
+        "Your 0.60-xG miss at 14' invited Morocco's 0.64-xG reply; clinical execution at both ends decides tight draws.",
+        "Vinicius and Raphinha's 7.2 high-press phases created 41 turnovers, yet Morocco's faster recovery (16.8s to 18.0s) stole possession.",
+        "Five shots on target from twelve wasted your platform; against 1.33-xG creation, you needed ruthlessness you lacked."
+      ]
+    },
+    "away": {
+      "team": "Morocco",
+      "verdict": "Would have won by avoiding Brazil's fluke or converting your late chance—neither broke your way.",
+      "points": [
+        "Brazil's 0.08-xG goal at 32' was a theft; you created 1.33 xG but only scored once—finishing cost you.",
+        "Fifty forced turnovers and superior recovery (16.8s to Brazil's 18.0s) dominated midfield; Brahim Diaz's 7.8 merited victory.",
+        "The 90+9' chance (0.23 xG) was your reprieve; a goal there ends this differently, a save ends it as now."
+      ]
+    }
+  },
+  "statLine": "Morocco's 1.33-xG creation to Brazil's 0.99 should have won; instead, a 0.08-xG fluke and a 0.23-xG miss at 90+9' decided nothing except the cost of imprecision."
+}

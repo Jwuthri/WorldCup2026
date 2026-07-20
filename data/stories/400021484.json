@@ -1,0 +1,32 @@
+{
+  "headline": "Spain's Suffocation Survives Wasteful Finishing",
+  "story": [
+    "Spain's suffocating dominance—57 per cent possession against Uruguay's 33—lacked the usual Spanish flourish. They recovered possession efficiently (12.9 seconds) and probed, but never destroyed. Uruguay's 4-1-4-1 absorbed the pressure, and at 42 minutes, Spain converted a modest chance (0.14 xG) when superior volume should have yielded more. The South Americans' eight high-press phases showed defensive commitment; Spain's controlled aggression proved the difference, even if the margin never widened beyond one.",
+    "Spain should have killed it. In the 63rd minute, a clear chance (0.17 xG) was missed. Then, with six minutes remaining, one tested the post (0.38 xG)—the match's highest-quality opportunity, spurned. Uruguay finished with just one shot on target from 0.22 xG. Laporte (7.8 rating) marshalled an immaculate defence, while Llorente (7.4) and Simón (7.3) controlled tempo. A late red card for Canobbio (90+4) was punctuation, not plot. Spain's efficiency was imperfect but final."
+  ],
+  "keyMoment": {
+    "minute": "42",
+    "text": "Spain's only moment of clinical finishing in an otherwise suffocating possession display."
+  },
+  "advice": {
+    "home": {
+      "team": "Uruguay",
+      "verdict": "Discipline held. One lapse and lack of outlet proved fatal.",
+      "points": [
+        "One shot on-target from 33 per cent possession unsustainable: need higher offensive yield or tactical shift.",
+        "Ball recovery lag (16.7s vs 12.9s) killed transition opportunity; convert faster or stop forcing turnovers fruitlessly.",
+        "53 forced turnovers wasted: execution breakdown after winning ball negated all defensive virtue."
+      ]
+    },
+    "away": {
+      "team": "Spain",
+      "verdict": "Possession and precision combined to decide it. Nearly undone by waste.",
+      "points": [
+        "Ball recovery dominance (12.9s vs 16.7s) allowed play dictation; superior frequency created the goal opportunity.",
+        "Early breakthrough (42') meant no need for second: possession control sufficed once ahead.",
+        "Risk survived: the 0.38 xG at 86' tested the post. Uruguay stay alive if more clinical."
+      ]
+    }
+  },
+  "statLine": "Spain's five-fold xG advantage (1.12 to 0.22) compressed into a single goal—possession deciding what profligacy could not destroy."
+}

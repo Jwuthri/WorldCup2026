@@ -1,0 +1,18 @@
+{
+  "archetypes": [
+    { "id": 0, "label": "Ball hunters", "blurb": "Press first, ask later — elite pressure and forced-turnover volume, minimal build-up duty." },
+    { "id": 1, "label": "Ball-playing anchors", "blurb": "High pass volume at high completion, line-breaking from deep; their rare shots are set-piece headers." },
+    { "id": 2, "label": "Box predators", "blurb": "Top of the food chain for xG, shots and threat — they live between the posts and the penalty spot." },
+    { "id": 3, "label": "Touchline burners", "blurb": "Pace, width and crosses — receive in behind and attack the byline." },
+    { "id": 4, "label": "Midfield metronomes", "blurb": "Volume passers who never stop offering — the tempo-setters covering the most grass." },
+    { "id": 5, "label": "Dead-ball architects", "blurb": "Corners, free kicks and whipped deliveries — the set-piece and cross-volume specialists." },
+    { "id": 6, "label": "Quiet engines", "blurb": "Few touches, safe ball, high speed — the shift-runners who stretch play off the radar." },
+    { "id": 7, "label": "Chaos dribblers", "blurb": "Take-ons, carries and pockets — the ones who break structure with the ball glued to their boot." }
+  ],
+  "teamStyles": [
+    { "id": 0, "label": "Possession architects", "blurb": "High completed-pass volume, patient build-up, chances without chasing." },
+    { "id": 1, "label": "High-press gamblers", "blurb": "Enormous pressing numbers and enormous shots conceded — chaos as a strategy." },
+    { "id": 2, "label": "Low-block survivors", "blurb": "Below average in every attacking metric — organized, compact, waiting." },
+    { "id": 3, "label": "Vertical aggressors", "blurb": "Line breaks, runs in behind and shot volume — fastest route to goal wins." }
+  ]
+}

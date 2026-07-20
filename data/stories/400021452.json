@@ -1,0 +1,32 @@
+{
+  "headline": "Hakimi strides past Haiti's shattered dream",
+  "story": [
+    "Morocco's press was suffocating from the first whistle. Achraf Hakimi ran Haiti ragged down the flank, while the midfield—with Bilel El Khanouss at its heart—compressed space relentlessly. A Morocco goal arrived in the 10th minute. Haiti's shape held for patches, but their 31 per cent possession afforded no sustained threat. At the 39th minute, on high expected goals (0.94), Morocco doubled the lead right before the interval, establishing total control of the match.",
+    "Wilson Isidor's miss in the 10th minute—a 0.93 xG chance, gift-wrapped by Morocco's early sloppiness—proved decisive. Had it gone in, Haiti's afternoon transformed. Instead, Morocco's 22 shots to Haiti's 9, their 2.12 xG to 0.67, and most damning their eight-second faster possession recovery (11.4 to 15.4 seconds) told the story of a team utterly overwhelmed. Soufiane Rahimi orchestrated the finishing; Hakimi's 9.7 rating reflected Haiti having no answer. Two goals after the interval sealed what was decided in quarter-hour."
+  ],
+  "keyMoment": {
+    "minute": "39",
+    "text": "Morocco's second goal on 0.94 xG established two-goal control before half-time; Haiti never recovered."
+  },
+  "advice": {
+    "home": {
+      "team": "Morocco",
+      "verdict": "Relentless possession and press won the day; survived Haiti's early danger.",
+      "points": [
+        "Hakimi's 9.7 rating showed class on the flank—22 shots total vs Haiti's 9 proved dominance",
+        "11.4-second recovery time meant press worked; 38 forced turnovers strangled opponents",
+        "Converted the two highest xG chances (0.94, 0.90) when it mattered most—clinical finishing"
+      ]
+    },
+    "away": {
+      "team": "Haiti",
+      "verdict": "Isidor's 0.93 xG miss at 10' was the match; outshot, outpossessed, undone.",
+      "points": [
+        "Wilson Isidor's early 0.93 xG miss changed everything—that chance never materialized again",
+        "31 per cent possession gave no platform for sustained attacks; 50 forced turnovers showed overwhelm",
+        "Scored on 0.03 xG at 43' (Javedan chance) but remained static threat—Morocco controlled all six goals"
+      ]
+    }
+  },
+  "statLine": "Haiti's solitary goal came from 0.03 expected goals; Morocco's six from 2.12—a gulf disguised by the scoreline."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Ayari's Clinical Swedes Undo Tunisia's Pressing Illusion",
+  "story": [
+    "Sweden's demolition took shape early, with goals at 7' and 30' - both low-xG finishes that suggested something more clinical than the underlying metrics. Yasin Ayari led the charge (8.7 rating) as Tunisia pressed hard (3.3 high-press phases versus Sweden's 1.6), hoping to suffocate the play. Tunisia's Omar Rekik and Montassar Talbi set a compact five-at-the-back, but when Tunisia pulled a goal back in the 43rd minute, the narrative briefly shifted. The real reckoning came at 59': a 0.36-xG chance that broke Tunisia's resistance.",
+    "Sweden's 5-1 victory masked the asymmetry in underlying dominance. From 2.09 xG, they converted ruthlessly; Gyokeres (8.6) and Isak (8.4) made each half-chance count. Tunisia's pressing intensity (3.3 phases) yielded only 41 forced turnovers - level with Sweden's 42 - but their recovery time (17.2s) was sluggish compared to Sweden's 15.0s, leaving them exposed on turnovers. Tunisia's one bright spot came at 56' when Hannibal Mejbri (6.3) squandered a 0.15-xG chance. Without that conversion, the scoreline told the only truth: Sweden's finishing buried Tunisia's tactical ambition."
+  ],
+  "keyMoment": {
+    "minute": "59",
+    "text": "Gyokeres converts the decisive 0.36-xG chance, transforming Tunisia's pressing gamble into a rout."
+  },
+  "advice": {
+    "home": {
+      "team": "Sweden",
+      "verdict": "Clinical edge finished what possession couldn't guarantee - but 47% ownership showed narrower control than the scoreline suggests.",
+      "points": [
+        "Ayari's 8.7 rating: dominated every phase - pressing release, chance creation, ruthless finishing",
+        "Gyokeres/Isak combined 16.8 rating: converted low-xG chances (0.04-0.09) into goals; two-man press trap worked",
+        "Early damage (7', 30' at 0.04-0.05 xG each): psychological blow that Tunisia never recovered from"
+      ]
+    },
+    "away": {
+      "team": "Tunisia",
+      "verdict": "Pressing without purpose - 3.3 high-press phases generated only 41 turnovers and left recovery time (17.2s) too sluggish.",
+      "points": [
+        "Mejbri's missed 0.15-xG chance at 56': their best moment, squandered; Rekik (6.9) couldn't prevent the collapse",
+        "High press (3.3 phases) vs Sweden's 1.6: more intensity, zero conversion - tactical effort without output",
+        "Recovery time 17.2s vs Sweden's 15.0s: pressed aggressively but couldn't reset fast enough before counters punished"
+      ]
+    }
+  },
+  "statLine": "Sweden's 5-1 scoreline from 2.09 xG against Tunisia's 0.34 xG embodied the gap between pressing ambition (3.3 phases, high press) and clinical execution (five goals converted)."
+}

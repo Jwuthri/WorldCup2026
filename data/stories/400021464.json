@@ -1,0 +1,32 @@
+{
+  "headline": "Pressing and Precision: Germany Overwhelms Curaçao 7-1",
+  "story": [
+    "Germany's dominance was established in minutes. An early goal in the sixth minute set the tone; Curaçao briefly equalized through Livano Comenencia in the 21st, but Germany's 58 per cent possession and eight high-press phases indicated one outcome. The gap in ball recovery—11.4 seconds to Curaçao's 18.1—meant Germany controlled every rebound and transition. By half-time, Germany led 3-1, the shape of the match already determined: territorial suffocation.",
+    "Deniz Undav and Felix Nmecha, rated 9.0 and 8.7 respectively, led the assault. Germany's 4.17 expected goals were ruthlessly converted, while Curaçao's 0.4 reflected their surrender. Germany fired 26 shots to eight; only two of Curaçao's reached the target. Four big chances—a missed chance at 63 minutes, a save at 12, a block at 45, another miss at 32—underlined the disparity. The second half finished the job; four more goals made the scoreline a statement of pure dominance."
+  ],
+  "keyMoment": {
+    "minute": "45+5",
+    "text": "Germany's goal before half-time, with 0.79 expected value, ended Curaçao's resistance."
+  },
+  "advice": {
+    "home": {
+      "team": "Germany",
+      "verdict": "Undav's brilliance and aggressive pressing won decisively; the only concern was four missed big chances.",
+      "points": [
+        "Ball recovery speed (11.4 seconds) was nearly seven seconds faster than Curaçao's (18.1), feeding relentless attacking transitions.",
+        "Eight high-press phases to Curaçao's two overwhelmed their midfield and created 46 forced turnovers.",
+        "Conversion rate was ruthless: 4.17 xG yielded seven goals (168 per cent), though four big chances were missed or blocked."
+      ]
+    },
+    "away": {
+      "team": "Curaçao",
+      "verdict": "A complete mismatch in press intensity and recovery speed meant Curaçao were outrun from the start.",
+      "points": [
+        "Ball recovery took 18.1 seconds—nearly seven seconds slower than Germany—condemning Curaçao to chasing possession rather than controlling it.",
+        "Only two high-press phases to Germany's eight allowed the hosts to build attacks unmolested; without early pressure, Curaçao invited suffocation.",
+        "Livano Comenencia's goal (21') provided false hope; with xG of 0.4 versus Germany's 4.17, Curaçao needed a stifling defensive shape."
+      ]
+    }
+  },
+  "statLine": "Germany's expected-goals tally of 4.17 versus Curaçao's 0.4, paired with an 8.6-to-2.0 high-press phase advantage, rendered the 7-1 outcome inevitable."
+}

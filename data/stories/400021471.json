@@ -1,0 +1,32 @@
+{
+  "headline": "Japan's Chances Squandered as Sweden Steal Unlikely Draw",
+  "story": [
+    "Japan commanded Dallas with measured intensity, their 3-4-2-1 formation conferring midfield control through Maeda and Suzuki. The 56th-minute goal arrived cleanly: a 0.60 xG opportunity dispatched as it should be. But six minutes later, Sweden's aggressive pressing (4.9 high-press phases against Japan's 3.3) conjured an improbable response—a 0.02 xG goal that defied logic. The narrative inverted: Japan, now chasing, pressed forward while Sweden defended the fortune they'd somehow inherited.",
+    "Japan's numerical advantage in quality (1.22 to 0.56 expected goals) masked a clinical deficiency. Three shots on target could have been four; at 83', a gilt-edged 0.31 xG chance was spurned. Sweden's reply relied on volume and luck: 11 shots but only five on target, their 0.56 xG return from possession-light play. Elanga (7.9) orchestrated Sweden's salvage; Maeda (7.7) commanded Japan's attack but could not overcome their wastefulness."
+  ],
+  "keyMoment": {
+    "minute": "62",
+    "text": "Sweden score from 0.02 xG, an improbable equaliser that defies possession and chance creation"
+  },
+  "advice": {
+    "home": {
+      "team": "Japan",
+      "verdict": "Dominance evaporates without ruthless finishing.",
+      "points": [
+        "Clinical finishing: 0.31 xG miss at 83' was the match; score and Japan wins",
+        "Defensive discipline: Sweden's 0.02 xG goal shouldn't land; tighten shape on scrambles",
+        "Pressing intensity: 3.3 high-press phases vs Sweden's 4.9 surrendered initiative in midfield"
+      ]
+    },
+    "away": {
+      "team": "Sweden",
+      "verdict": "Pressing produced fortune, not dominance; efficiency squandered it.",
+      "points": [
+        "Shot quality: 11 shots, 5 on target, 0.56 xG reflects poor decision-making under pressure",
+        "Finishing: 0.19 xG miss at 79' would have made Sweden's pressing count",
+        "Conversion advantage: One scrambled goal from 4.9 high-press phases reveals underexecution"
+      ]
+    }
+  },
+  "statLine": "Japan's 1.22 expected goals to Sweden's 0.56 tells the story: one team created, the other capitalized on chaos and pressing intensity."
+}

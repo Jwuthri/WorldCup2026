@@ -1,0 +1,32 @@
+{
+  "headline": "Neither breaks through as Iran and New Zealand draw in LA",
+  "story": [
+    "A pulsing Group G opener where Iran's volume met New Zealand's precision—neither prevailed. The Iranians dominated possession and shots (17 total), yet shot with staggering inaccuracy (4 on target). New Zealand, operating in a 4-2-3-1 shape, was surgical: 8 on target from 14 attempts. Twice the visitors took leads; twice Iran clawed back. The turning point arrived at 81 minutes: New Zealand missed a clear 0.45 xG chance that would have settled the contest. Instead, the afternoon ended as it began: even.",
+    "The numbers justify the stalemate. Iran's xG advantage (1.85 to 1.47) meant nothing against New Zealand's ruthlessness in front of goal. Elijah Just (9.0 rating) orchestrated the visitors' transitions perfectly; Ramin Rezaeian (8.7) and Mehdi Taremi (7.1) carried Iran's attacks. Both teams recovered possession identically (12.9 seconds) and forced similar turnovers (46-47). New Zealand's more aggressive pressing (5.2 phases vs Iran's 3.8) created space but no breakthrough. Dominance without finishing produces draws—a symmetry both teams will study hard."
+  ],
+  "keyMoment": {
+    "minute": "81",
+    "text": "New Zealand's clear-cut miss—the moment victory slipped away"
+  },
+  "advice": {
+    "home": {
+      "team": "IR Iran",
+      "verdict": "Precision defeats volume; shooting at 24% accuracy is self-sabotage.",
+      "points": [
+        "Conversion: 4 on target from 17 shots (24%) costly; 30% efficiency yields a winner.",
+        "Press tempo: 3.8 high-press phases vs New Zealand's 5.2 surrendered initiative early.",
+        "Rezaeian (8.7): excellent fullback creates; strikers must finish his crosses to win games."
+      ]
+    },
+    "away": {
+      "team": "New Zealand",
+      "verdict": "Elite efficiency (57%) nearly stole it; the 81st minute cost them dearly.",
+      "points": [
+        "Efficiency: 8 on target from 14 (57%) elite; one more goal in 90 wins.",
+        "Just (9.0): orchestrated transitions brilliantly; his midfield control nearly won the game.",
+        "81' clear chance (0.45 xG): miss it, draw; convert it, victory—fine margins."
+      ]
+    }
+  },
+  "statLine": "Iran's 17 shots yielded four on target; New Zealand's eight from 14 could not break through—matched futility and precision producing a draw."
+}

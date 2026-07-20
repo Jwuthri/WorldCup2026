@@ -1,0 +1,32 @@
+{
+  "headline": "Three goals, no reply: Mexico's efficiency buries Czechia",
+  "story": [
+    "Possession balanced near-equally at 46 to 45 percent, yet Mexico dictated tempo throughout. They pressed higher—7.7 phases against Czechia's 6.6—and recovered faster (15.2 seconds to 17.6), wresting control despite the statistical parity. Czechia's 3-4-2-1 formation generated little attacking threat. Mexico's breakthrough came in the 55th minute; a second goal six minutes later effectively settled the contest. By then, Czechia's 13 shots had yielded only a single effort on target.",
+    "The underlying numbers proved damning. Mexico's xG of 2.1 towered over Czechia's 0.44; five shots on target to one crystallized the gulf between ruthlessness and impotence. Jorge Sanchez (8.4) and Mateo Chavez (8.2) orchestrated Mexico's control through superior possession recovery. Czechia's talisman performers—Doudera (6.7) and Cerv (6.6)—could not impose themselves. A third goal from just 0.21 xG in the 90th minute was mere formality, confirming what the preceding hour had already decided."
+  ],
+  "keyMoment": {
+    "minute": "55",
+    "text": "Mexico's opening goal broke Czechia's resistance and established the tactical template."
+  },
+  "advice": {
+    "home": {
+      "team": "Czechia",
+      "verdict": "Outpaced in transition, profligate in attack, structurally exposed.",
+      "points": [
+        "Shot accuracy: 1 on target from 13 attempts (0.44 xG) demanded clinical execution Czechia lacked.",
+        "Recovery lag: 17.6-second average bled possession in midfield where Mexico hunted it.",
+        "Formation fragility: 3-4-2-1 exposed fullbacks; Mexico's 15.2-second recovery exploited the imbalance."
+      ]
+    },
+    "away": {
+      "team": "Mexico",
+      "verdict": "Ruthlessly efficient; danger persisted through Czechia's volume despite clear structural superiority.",
+      "points": [
+        "Conversion precision: 5 on target from 11 shots (xG 2.1) finished what Czechia wasted.",
+        "Tempo control: 15.2-second recovery and 7.7 high-press phases dictated every passage.",
+        "Midfield mastery: Sanchez (8.4) and Chavez (8.2) orchestrated; Czechia's 13 shots created persistent danger."
+      ]
+    }
+  },
+  "statLine": "Five shots on target versus one: Mexico's efficiency (5 of 11) dwarfed Czechia's profligacy (1 of 13), distilling a 0.44 xG to 2.1 xG gulf into raw finishing."
+}

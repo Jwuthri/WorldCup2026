@@ -1,0 +1,338 @@
+{
+"MEX": {
+"elo": 1913,
+"worldRank": 12,
+"eloCode": "MX",
+"intlName": null,
+"wcSeed": 12
+},
+"RSA": {
+"elo": 1559,
+"worldRank": 73,
+"eloCode": "ZA",
+"intlName": null,
+"wcSeed": 44
+},
+"KOR": {
+"elo": 1723,
+"worldRank": 40,
+"eloCode": "KR",
+"intlName": null,
+"wcSeed": 32
+},
+"CZE": {
+"elo": 1680,
+"worldRank": 50,
+"eloCode": "CZ",
+"intlName": null,
+"wcSeed": 34
+},
+"CAN": {
+"elo": 1729,
+"worldRank": 38,
+"eloCode": "CA",
+"intlName": null,
+"wcSeed": 30
+},
+"BIH": {
+"elo": 1605,
+"worldRank": 63,
+"eloCode": "BA",
+"intlName": null,
+"wcSeed": 39
+},
+"USA": {
+"elo": 1747,
+"worldRank": 31,
+"eloCode": "US",
+"intlName": null,
+"wcSeed": 26
+},
+"PAR": {
+"elo": 1814,
+"worldRank": 24,
+"eloCode": "PY",
+"intlName": null,
+"wcSeed": 22
+},
+"QAT": {
+"elo": 1411,
+"worldRank": 99,
+"eloCode": "QA",
+"intlName": null,
+"wcSeed": 48
+},
+"SUI": {
+"elo": 1928,
+"worldRank": 11,
+"eloCode": "CH",
+"intlName": null,
+"wcSeed": 11
+},
+"BRA": {
+"elo": 1993,
+"worldRank": 7,
+"eloCode": "BR",
+"intlName": null,
+"wcSeed": 7
+},
+"MAR": {
+"elo": 1901,
+"worldRank": 14,
+"eloCode": "MA",
+"intlName": null,
+"wcSeed": 14
+},
+"HAI": {
+"elo": 1517,
+"worldRank": 81,
+"eloCode": "HT",
+"intlName": null,
+"wcSeed": 46
+},
+"SCO": {
+"elo": 1745,
+"worldRank": 32,
+"eloCode": "SQ",
+"intlName": null,
+"wcSeed": 27
+},
+"AUS": {
+"elo": 1795,
+"worldRank": 25,
+"eloCode": "AU",
+"intlName": null,
+"wcSeed": 23
+},
+"TUR": {
+"elo": 1852,
+"worldRank": 20,
+"eloCode": "TR",
+"intlName": null,
+"wcSeed": 18
+},
+"GER": {
+"elo": 1908,
+"worldRank": 13,
+"eloCode": "DE",
+"intlName": null,
+"wcSeed": 13
+},
+"CUW": {
+"elo": 1438,
+"worldRank": 91,
+"eloCode": "CW",
+"intlName": null,
+"wcSeed": 47
+},
+"NED": {
+"elo": 1971,
+"worldRank": 8,
+"eloCode": "NL",
+"intlName": null,
+"wcSeed": 8
+},
+"JPN": {
+"elo": 1888,
+"worldRank": 15,
+"eloCode": "JP",
+"intlName": null,
+"wcSeed": 15
+},
+"CIV": {
+"elo": 1727,
+"worldRank": 39,
+"eloCode": "CI",
+"intlName": null,
+"wcSeed": 31
+},
+"ECU": {
+"elo": 1871,
+"worldRank": 17,
+"eloCode": "EC",
+"intlName": null,
+"wcSeed": 17
+},
+"SWE": {
+"elo": 1731,
+"worldRank": 37,
+"eloCode": "SE",
+"intlName": null,
+"wcSeed": 29
+},
+"TUN": {
+"elo": 1562,
+"worldRank": 71,
+"eloCode": "TN",
+"intlName": null,
+"wcSeed": 42
+},
+"ESP": {
+"elo": 2259,
+"worldRank": 1,
+"eloCode": "ES",
+"intlName": null,
+"wcSeed": 1
+},
+"CPV": {
+"elo": 1619,
+"worldRank": 59,
+"eloCode": "CV",
+"intlName": null,
+"wcSeed": 38
+},
+"BEL": {
+"elo": 1948,
+"worldRank": 10,
+"eloCode": "BE",
+"intlName": null,
+"wcSeed": 10
+},
+"EGY": {
+"elo": 1742,
+"worldRank": 34,
+"eloCode": "EG",
+"intlName": null,
+"wcSeed": 28
+},
+"KSA": {
+"elo": 1596,
+"worldRank": 65,
+"eloCode": "SA",
+"intlName": null,
+"wcSeed": 40
+},
+"URU": {
+"elo": 1841,
+"worldRank": 21,
+"eloCode": "UY",
+"intlName": null,
+"wcSeed": 19
+},
+"IRN": {
+"elo": 1764,
+"worldRank": 29,
+"eloCode": "IR",
+"intlName": null,
+"wcSeed": 24
+},
+"NZL": {
+"elo": 1534,
+"worldRank": 77,
+"eloCode": "NZ",
+"intlName": null,
+"wcSeed": 45
+},
+"FRA": {
+"elo": 2070,
+"worldRank": 4,
+"eloCode": "FR",
+"intlName": null,
+"wcSeed": 4
+},
+"SEN": {
+"elo": 1816,
+"worldRank": 23,
+"eloCode": "SN",
+"intlName": null,
+"wcSeed": 21
+},
+"IRQ": {
+"elo": 1561,
+"worldRank": 72,
+"eloCode": "IQ",
+"intlName": null,
+"wcSeed": 43
+},
+"NOR": {
+"elo": 1951,
+"worldRank": 9,
+"eloCode": "NO",
+"intlName": null,
+"wcSeed": 9
+},
+"ARG": {
+"elo": 2173,
+"worldRank": 2,
+"eloCode": "AR",
+"intlName": null,
+"wcSeed": 2
+},
+"ALG": {
+"elo": 1756,
+"worldRank": 30,
+"eloCode": "DZ",
+"intlName": null,
+"wcSeed": 25
+},
+"AUT": {
+"elo": 1821,
+"worldRank": 22,
+"eloCode": "AT",
+"intlName": null,
+"wcSeed": 20
+},
+"JOR": {
+"elo": 1628,
+"worldRank": 57,
+"eloCode": "JO",
+"intlName": null,
+"wcSeed": 37
+},
+"POR": {
+"elo": 1995,
+"worldRank": 6,
+"eloCode": "PT",
+"intlName": null,
+"wcSeed": 6
+},
+"COD": {
+"elo": 1704,
+"worldRank": 45,
+"eloCode": "CD",
+"intlName": null,
+"wcSeed": 33
+},
+"ENG": {
+"elo": 2125,
+"worldRank": 3,
+"eloCode": "EN",
+"intlName": null,
+"wcSeed": 3
+},
+"CRO": {
+"elo": 1882,
+"worldRank": 16,
+"eloCode": "HR",
+"intlName": null,
+"wcSeed": 16
+},
+"GHA": {
+"elo": 1570,
+"worldRank": 68,
+"eloCode": "GH",
+"intlName": null,
+"wcSeed": 41
+},
+"PAN": {
+"elo": 1658,
+"worldRank": 52,
+"eloCode": "PA",
+"intlName": null,
+"wcSeed": 35
+},
+"UZB": {
+"elo": 1631,
+"worldRank": 56,
+"eloCode": "UZ",
+"intlName": null,
+"wcSeed": 36
+},
+"COL": {
+"elo": 2003,
+"worldRank": 5,
+"eloCode": "CO",
+"intlName": null,
+"wcSeed": 5
+}
+}

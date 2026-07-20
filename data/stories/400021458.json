@@ -1,0 +1,32 @@
+{
+  "headline": "USA's Poise Overwhelms Paraguay After Early Jolt",
+  "story": [
+    "Paraguay stunned the stadium with a seventh-minute goal, but USA's structure quickly reasserted dominance. The Americans' high-press frequency (8.3 phases versus Paraguay's 3.9) and superior ball recovery (11.2 seconds to Paraguay's 17.4) meant control was never truly contested. With 59 per cent possession, Reyna and Tillman ran the tempo while Paraguay laboured in recovery. USA converted further chances before and after half-time to secure the win.",
+    "USA's dominance was quantified through chance creation: 1.88 expected goals against Paraguay's marginal 0.6. Balogun's 8.2 rating typified USA's midfield control, while Enciso and Mauricio (7.1 and 7.2) couldn't match the intensity. A missed big chance in the 43rd minute (xG 0.27) marred USA's efficiency only slightly; the gulf in expected goals reflected a performance of complete structural command."
+  ],
+  "keyMoment": {
+    "minute": "31",
+    "text": "USA's first goal equalised a shocking deficit and began their inevitable takeover."
+  },
+  "advice": {
+    "home": {
+      "team": "USA",
+      "verdict": "Possession and press intensity overcame early shock to dominate decisively.",
+      "points": [
+        "High-press frequency (8.3 phases) disrupted Paraguay's build-up play constantly.",
+        "Ball recovery superiority (11.2s vs 17.4s) created sustained attacking pressure.",
+        "Early goal conceded (7') never derailed a clear control advantage."
+      ]
+    },
+    "away": {
+      "team": "Paraguay",
+      "verdict": "Early breakthrough squandered in the face of USA's structural dominance.",
+      "points": [
+        "Ball recovery time (17.4s vs 11.2s) meant insufficient attacking build phases.",
+        "High-press phases (3.9 vs 8.3) failed to disrupt USA's possession rhythm.",
+        "Chance creation (0.6 xG vs 1.88) was fundamentally outmatched by USA."
+      ]
+    }
+  },
+  "statLine": "USA's 11.2-second ball recovery time versus Paraguay's 17.4 seconds created the foundation for a 1.88-to-0.6 expected-goal gulf."
+}

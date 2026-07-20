@@ -1,0 +1,32 @@
+{
+  "headline": "France's press suffocated Norwegian hopes from kickoff",
+  "story": [
+    "France seized control in Boston with alarming speed. Two goals before the 21st minute—the 7th and 20th—established complete dominance. Aasgaard's immediate response at the 21st briefly suggested a contest, but France's superior press intensity and possession left Norway perpetually chasing. A third at the 32nd minute extinguished hope; a fourth in added time merely made the margin reflect the reality. France's ball recovery speed (12.7 seconds versus Norway's 17.9) meant they never lost the ebb and flow.",
+    "Norway out-created France on the xG ledger—1.45 to 1.05—yet paid for profligacy and poor execution under France's relentless press. Dembélé's transcendent 9.9 rating and Mbappé's 8.7 converted scarcity into dominance; Aasgaard (7.5) and Schjelderup (7.3) found few openings. Critically, Norway's 50th-minute 0.79-xG chance was saved—had that dropped, momentum could have shifted. Instead, Norway's forced turnovers (38) versus France's 43, combined with 17.9-second ball recovery against France's 12.7, meant relentless suffocation."
+  ],
+  "keyMoment": {
+    "minute": "50",
+    "text": "Norway's 0.79-xG chance saved. Had it dropped, momentum swung back to the contest."
+  },
+  "advice": {
+    "home": {
+      "team": "Norway",
+      "verdict": "Suffocated by France's press; errors compounded the defeat.",
+      "points": [
+        "Ball recovery 17.9 seconds versus France's 12.7 cost constant field position.",
+        "High-press phases 3.8 versus France's 7.1 left them outmatched from kickoff.",
+        "50th-minute 0.79-xG chance saved—that was the match's pivot point right there."
+      ]
+    },
+    "away": {
+      "team": "France",
+      "verdict": "Early blows and relentless press delivered routine victory.",
+      "points": [
+        "Two goals in first 20 minutes (7', 20') from 18 shots set tone.",
+        "Press intensity 7.1 phases forced 43 turnovers; Norway's 17.9s recovery fatal.",
+        "Risk: won on 1.05 xG versus Norway's 1.45—clinical but vulnerable model."
+      ]
+    }
+  },
+  "statLine": "France won 4-1 on 1.05 expected goals to Norway's 1.45: press perfection (7.1 phases) converted scarcity into dominance."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Relentless Algeria Exhausts Stubborn Jordan in San Francisco",
+  "story": [
+    "Jordan arrived in San Francisco as the minnows, and so it seemed at 36 minutes when they somehow snatched the lead. But what followed was a masterclass in possession suffocation. Algeria controlled 62 per cent of the ball, forcing seven high-press sequences to Jordan's one-point-eight, and their recovery rate of 9.1 seconds left the opponents gasping. When Benbouali and company finally levelled in the 69th minute, the script flipped: Jordan had exhausted their resistance, and Algeria's machine ground relentlessly forward.",
+    "The numbers were brutal and foretold the end. Algeria's expected goals reached 2.05 against Jordan's paltry 0.38—a chasm that xG exists to measure. Jordan's early goal came from 0.14 xG (fortune favoured the brave), but their one big chance, in the first minute at 0.25 xG, was skied. By contrast, when Gouiri's finish arrived in the 82nd minute, it carried 0.40 xG: clinical, inevitable, match-clinching. Four other clear-cut moments went begging for Algeria, yet they had more than enough in hand."
+  ],
+  "keyMoment": {
+    "minute": "69",
+    "text": "Benbouali's equaliser broke Jordan's resistance after an hour of containment. Algeria never looked back."
+  },
+  "advice": {
+    "home": {
+      "team": "Jordan",
+      "verdict": "Conceded possession but couldn't capitalise on rare chances; exhaustion cost them dearly.",
+      "points": [
+        "Missed a 0.25 xG big chance in minute 1—ruthlessness in the final third would have changed everything.",
+        "Ball recovery time of 17.7 seconds left them fatally exposed once Algeria's press cranked up to 7.2 phases per half.",
+        "3-4-2-1 formation lacked midfield bodies to shield a defence under siege; tighter shape would have lasted longer."
+      ]
+    },
+    "away": {
+      "team": "Algeria",
+      "verdict": "Dominant possession and press strangled Jordan; conversion rate alone prevented a rout.",
+      "points": [
+        "2.05 xG versus 2 goals: four chances unmarked (33', 66', 89' saved or missed at 0.42, 0.23, 0.19). Ruthlessness in transition could bury teams faster.",
+        "High press of 7.2 phases and 9.1-second recovery were suffocating; Mahrez (7.4) and Gouiri (7.6) had space on the turn, but no serious breakdown.",
+        "Without a red card, Algeria's aggression worked; teams with pace and discipline could have punished the 62-per-cent possession model on the counter."
+      ]
+    }
+  },
+  "statLine": "Algeria's 2.05 expected goals to Jordan's 0.38—a five-fold gap that meant the 2-1 scoreline was the merciful result, not the dominant one."
+}

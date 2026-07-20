@@ -1,0 +1,32 @@
+{
+  "headline": "Cabo Verde's Finishing Fails Where Saudi Discipline Prevails",
+  "story": [
+    "Cabo Verde dominated Houston with intent and numbers—48 per cent possession, 15 shots, an xG of 1.37—yet Saudi Arabia's 4-4-2 suffocated them into sterility. The visitors pressed with surgical precision across eight high-pressure phases, forcing Cabo Verde's ball recovery time below thirteen seconds. João Paulo and Vozinha orchestrated attacks without reward; the shape was control, the shape was chance creation, but nowhere was there a killer instinct.",
+    "The 75th minute crystallised Cabo Verde's night. João Paulo? No—an unnamed attacker with 0.63 expected goals saw his effort saved, the moment that would have read as inevitable victory. Saudi Arabia barely threatened (0.35 xG, seven shots, three on target), yet three defensive touches per shot spoke to their efficiency. Abdulelah Al-Amri's ratings matched João Paulo's at 7.5, yet one team's day ended in frustration, the other in survival."
+  ],
+  "keyMoment": {
+    "minute": "75",
+    "text": "High-xG Cabo Verde chance saved. Unuttered finish cost the group lead."
+  },
+  "advice": {
+    "home": {
+      "team": "Cabo Verde",
+      "verdict": "Dominated but squandered—conversion, not creation, was the absence.",
+      "points": [
+        "Convert high-xG moments: 1.37 expected but zero delivered; 75' save was the reckoning.",
+        "Exploit Saudi's narrow 4-4-2: 15 shots vs their 7 reveals unused width against two strikers.",
+        "Sharpen recovery pressure: 12.2s ball recovery was faster than Saudi's 13.5s; press the advantage."
+      ]
+    },
+    "away": {
+      "team": "Saudi Arabia",
+      "verdict": "Rode a discipline and escape—pressing won, but finish will demand conversion.",
+      "points": [
+        "Pressed eight high-phase sequences, starving Cabo Verde at build-up; repeat this suffocation.",
+        "Efficiency survived scarcity: three on-target shots vs their seven, yet xG of 0.35 held the line.",
+        "Risk: Cabo Verde's 15 shots expose the counter-threat; deep shape survived this time only."
+      ]
+    }
+  },
+  "statLine": "Cabo Verde mustered 1.37 expected goals across 15 attempts yet failed to break Saudi Arabia's eight high-pressure sequences and clinical 3-on-7 shot conversion."
+}

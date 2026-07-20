@@ -1,0 +1,32 @@
+{
+  "headline": "Egypt's Press Overwhelms New Zealand's Brief Resistance",
+  "story": [
+    "New Zealand's bright start—an early goal on just 0.13 expected goals—proved a mirage. Egypt methodically suffocated the hosts through superior press (5.2 high-press phases to two) and possession control at 50%, forcing turnovers (51 to 39) while their sharper recovery time (12.9 seconds) repeatedly caught New Zealand flat-footed. By the 67th minute, the Egyptians had gone ahead, having equalized minutes earlier. The match became settled when New Zealand couldn't capitalise on two clear-cut chances—both 0.53 xG—in stoppage time.",
+    "Egypt's 2.1 expected goals to New Zealand's 0.71 barely captured their supremacy; Mohamed Salah's 9.2 rating and Mostafa Ziko's 8.7 reflected attacking dominance that New Zealand's stoutest defender, Marko Stamenic at 7.7, could not withstand. The Egyptians converted three goals across the match, the final arriving on just 0.05 xG. New Zealand's best chance came late: two 0.53 xG efforts in the 90th minute that were saved, moments after their single early success of the evening."
+  ],
+  "keyMoment": {
+    "minute": "90+8",
+    "text": "Two 0.53 xG chances saved; New Zealand's final grasp at a draw dissolved in stoppage time."
+  },
+  "advice": {
+    "home": {
+      "team": "New Zealand",
+      "verdict": "Left behind by Salah's brilliance and Egypt's relentless press intensity.",
+      "points": [
+        "Missed two 0.53 xG chances in stoppage time; clinical finishing there could have forced extra time.",
+        "Only 2.0 high-press phases vs Egypt's 5.2; earlier disruption would have eased the defensive burden.",
+        "39% possession too passive; more ball retention would have reduced Egypt's attacking opportunities significantly."
+      ]
+    },
+    "away": {
+      "team": "Egypt",
+      "verdict": "Salah's 9.2 rating and relentless pressing converted dominance into three-goal victory.",
+      "points": [
+        "Mohamed Salah's 9.2 rating; his brilliance in open play dictated the match's rhythm.",
+        "5.2 high-press phases to New Zealand's 2.0; relentless pressure generated 51 turnovers and overwhelmed.",
+        "12.9-second recovery time vs 16s; sharper transitions from defense to attack exploited New Zealand's fatigue."
+      ]
+    }
+  },
+  "statLine": "Egypt's 2.1 xG and Salah's 9.2 rating crushed New Zealand's 0.71; five high-press phases generated 51 turnovers in a masterclass of suffocation."
+}

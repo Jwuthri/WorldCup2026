@@ -1,0 +1,32 @@
+{
+  "headline": "Spain's Relentless Wastefulness Lets Cabo Verde Off",
+  "story": [
+    "Spain controlled this entirely. Pedri orchestrated the midfield, Cucurella drove the left flank, and the visitors rarely threatened the Laporte-anchored defence. Spain pressed 10.3 high-press phases, forcing 53 turnovers in Cabo Verde's half. The home team fired 27 shots—seven on target—and registered 2.26 expected goals. Yet Cabo Verde, compact and disciplined in their 4-1-4-1, scraped a draw through sheer imperviousness. The shape was always Spain attacking; the puzzle was never breaking through.",
+    "Four clear chances went begging: a post at 39', a block at 40', a save at 56', and a miss at 45+4'. Vozinha, the visiting keeper, delivered a 9.0 performance, made the crucial 56th-minute stop, and steadied the ship. Spain's 66% possession and relentless press couldn't overcome their own profligacy. Cabo Verde's ball-recovery time of 24.8 seconds meant they were slow to transition, yet their defensive shape held. Sometimes you need just one moment; Spain's wasteful shooting meant Cabo Verde got to leave with pride and a point."
+  ],
+  "keyMoment": {
+    "minute": "56",
+    "text": "Vozinha's save denied Spain again—the moment their dominance required a goal."
+  },
+  "advice": {
+    "home": {
+      "team": "Spain",
+      "verdict": "Controlled but profligate—pressing created chaos, but finishing proved elusive.",
+      "points": [
+        "Four big chances missed (39', 40', 56', 45+4')—clinical conversion wins tournaments.",
+        "2.26 xG with 27 shots: volume without incision is just noise.",
+        "Possess and press, but they still needed ruthlessness in the box."
+      ]
+    },
+    "away": {
+      "team": "Cabo Verde",
+      "verdict": "Disciplined retreat, exceptional goalkeeper work—a smash-and-grab point.",
+      "points": [
+        "Vozinha's 9.0 rating: the 56th-minute save was the difference between draw and defeat.",
+        "24.8-second recovery time slowed Spain's transitions; compact shape suffocated creativity.",
+        "0.13 xG but zero conceded—defensive solidity overcame complete possession surrender."
+      ]
+    }
+  },
+  "statLine": "Spain created 2.26 expected goals from 27 shots; Vozinha's 9.0-rated performance and Cabo Verde's immovable shape ensured a scoreless stalemate."
+}

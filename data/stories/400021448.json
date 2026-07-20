@@ -1,0 +1,32 @@
+{
+  "headline": "Bosnia's press breaks Qatar's nerve in Seattle slugfest",
+  "story": [
+    "Bosnia controlled the game without controlling possession. At 49-43%, the margin seemed academic until you watched how they used it: six high-press phases to Qatar's five, forcing turnovers at will, and crucially, forcing Qatar's ball recovery time to balloon to 21.1 seconds. By the 80th minute, Qatar's defence was corroded. Kerim Alajbegovic and Ermin Mahmic orchestrated a suffocating display, and the goals—two scored on just 0.06 and 0.05 xG—came from a team executing a relentless game plan.",
+    "Qatar's 1.17 xG suggested they should have won comfortably. Edmilson Junior and Hasan Al-Haydos pressed hard, but Akram Afif's contribution (6.8 rating) faded as Bosnia's midfield strangled them. The warning came in stoppage time when a big chance hit the post, a last-gasp reminder that a tighter match existed. Instead, two low-probability finishes from Bosnia and Qatar's inability to breathe under pressure left them chasing ghosts. Possession means nothing when you're too rushed to use it."
+  ],
+  "keyMoment": {
+    "minute": "80",
+    "text": "Bosnia's third goal: the press had finally broken Qatar's back."
+  },
+  "advice": {
+    "home": {
+      "team": "Bosnia and Herzegovina",
+      "verdict": "Suffocation won it. Keep pressing teams into mistakes.",
+      "points": [
+        "High-press phases (6.7) forced Qatar's ball recovery to 21.1s—desperation, not control.",
+        "Two goals on 0.11 combined xG proved ruthless efficiency beats xG. Convert margins matter.",
+        "Survived Qatar's xG advantage (1.17 to 0.77) by making them too rushed to finish cleanly."
+      ]
+    },
+    "away": {
+      "team": "Qatar",
+      "verdict": "Pressure destroyed the build-up. Better finishing alone won't fix the pace problem.",
+      "points": [
+        "Ball recovery at 21.1s vs Bosnia's 14.6s: Bosnia's press was too tight, too organised.",
+        "Wasted the xG edge (1.17 vs 0.77) and the post shot (45+3') on a team that converted low-probability chances.",
+        "Akram Afif (6.8 rating) faded as midfield congestion grew—no time to influence play under constant harassment."
+      ]
+    }
+  },
+  "statLine": "Qatar finished with 1.17 xG and lost 3-1 to a team that scored on 0.11 xG combined, a stark lesson in how pressing breaks the precision that possession demands."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Paraguay's Two-Minute Coup Withstands Türkiye's Onslaught",
+  "story": [
+    "Türkiye controlled this match from the third minute onward. Paraguay scored in the second—a flash of clinical ruthlessness that stunned the San Francisco crowd—and then retreated into a defensive shell. The home side pressed forward relentlessly, accumulating 32 shots and 68% possession, but Paraguay's shape held firm. The arrival of a red card for Paraguay at 45+3 should have turned this decisively in Türkiye's favor, yet even with ten men, they would not break through.",
+    "Expected goals exposed the gulf: Türkiye's 2.13 against Paraguay's 0.36. Yet Paraguay's goalkeeper and defensive unit earned every plaudit, denying Türkiye multiple clear-cut chances across ninety minutes, including one worth 0.44 xG late in the game. Julio Enciso's 7.9 rating embodied Paraguay's attacking threat, while their defensive discipline—reflected in an 18.4-second ball recovery time—strangled Türkiye's rhythm. Türkiye's own 7.1-second recovery pace could not compensate for a lack of clinical finishing in a match that will haunt their campaign."
+  ],
+  "keyMoment": {
+    "minute": "2",
+    "text": "Paraguay's second-minute goal from 0.03 xG set tone for Türkiye's labored afternoon of plenty and little to show."
+  },
+  "advice": {
+    "home": {
+      "team": "Türkiye",
+      "verdict": "Dominance without efficiency was their undoing.",
+      "points": [
+        "Missed 0.44 xG chance in 89th minute—the one that would have forced Paraguay into genuine distress.",
+        "32 shots and 2.13 xG revealed poor conversion efficiency—the real deficit was in the final third.",
+        "Conceding in second minute forfeited control of match narrative and tempo from the start."
+      ]
+    },
+    "away": {
+      "team": "Paraguay",
+      "verdict": "A smash-and-grab that survived both good fortune and a numerical disadvantage.",
+      "points": [
+        "Julio Enciso's 7.9 rating delivered: one clinical intervention in a match of few chances.",
+        "Played final 45 minutes with ten men yet conceded nothing—defensive discipline won the day.",
+        "0.03 xG goal was fortunate, but fortune rewarded bravery and a composed defensive shape."
+      ]
+    }
+  },
+  "statLine": "Türkiye's 32 shots and 2.13 expected goals could not overcome Paraguay's one lethal intervention and ten-man discipline."
+}

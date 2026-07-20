@@ -1,0 +1,32 @@
+{
+  "headline": "Switzerland's Mastery Thwarted by Qatar's Immovable Defence",
+  "story": [
+    "Switzerland arrived with a blueprint for dominance and executed it ruthlessly—59% possession, 26 shots, 7 on target. They struck early, converting a high-quality chance in the 17th minute. From there, the script stalled. Qatar, deploying a disciplined 4-3-3, refused to splinter. They forced 42 turnovers, stayed compact through constant defensive transitions, and matched Switzerland's intensity despite occupying 29% of the ball. The game remained locked in a tactical stalemate.",
+    "Switzerland's xG advantage of 3.14 to 0.52 proved worthless: a 1-1 draw. Breel Embolo, rated 8.0, couldn't deliver despite 26 shots aimed at him or played through him. Two misses in the second half—at 45 + 3' and 48' (combined 0.51 xG)—crystallised their wastefulness. Qatar's Pedro Miguel (7.2) and Akram Afif (6.8) held firm. In the end, Switzerland's high press (8.5 phases) created openings they couldn't finish, while Qatar's slow recovery time (18.4s) remained untested by direct play."
+  ],
+  "keyMoment": {
+    "minute": "48",
+    "text": "Breel Embolo's miss at 0.26 xG—one of two second-half wasted chances—sealed the draw."
+  },
+  "advice": {
+    "home": {
+      "team": "Qatar",
+      "verdict": "Earned a point through discipline but must threaten more",
+      "points": [
+        "Only 0.5 high press phases: passive defending kept them alive but must press earlier",
+        "Early chance at 2' (0.31 xG) saved: conversion would have opened the match",
+        "29% possession is a ceiling; control tempo and possession in next matches"
+      ]
+    },
+    "away": {
+      "team": "Switzerland",
+      "verdict": "Profligacy proved fatal against a compact, organised opponent",
+      "points": [
+        "Two second-half misses (45 + 3', 48') totalling 0.51 xG: killer conversion is non-negotiable",
+        "High press (8.5 phases) created chaos but Qatar's 42 forced turnovers neutralised it",
+        "Breel Embolo (8.0) isolated; needed more direct balls over Qatar's slow 18.4s recovery"
+      ]
+    }
+  },
+  "statLine": "Switzerland's 3.14 xG—nearly six times Qatar's 0.52—yielded only a 1-1 draw, a masterclass in finishing failure."
+}

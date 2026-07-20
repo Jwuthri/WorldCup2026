@@ -1,0 +1,32 @@
+{
+  "headline": "Belgium's Waste Costs Them in Seattle",
+  "story": [
+    "Belgium controlled Seattle from the opening whistle, dominating possession with 52 per cent and pressing with an intensity Egypt could not match—6.3 high-press phases to 1.9. But their fluency in the middle third did not translate to efficiency in the box. Egypt struck twice, in the 20th minute and 66th, on chances the numbers suggested they had no right to convert. Against the run of play, twice. The statistical dominance meant nothing.",
+    "Belgium's expected goals of 1.07 surpassed Egypt's 0.81, yet Tielemans and De Bruyne could not find the net. Chances came and went: a big opportunity in the 45th minute wasted, another at 83 minutes saved, a third at 87 minutes missed entirely. Egypt's single clear chance—at 48 minutes with an expected goal of 0.21—was blocked. They defended with minimal press and a sluggish ball recovery time of 18.1 seconds, yet Salah's team stole what Belgium created."
+  ],
+  "keyMoment": {
+    "minute": "87",
+    "text": "Belgium's final miss: the chance that would have been the winner"
+  },
+  "advice": {
+    "home": {
+      "team": "Belgium",
+      "verdict": "One clinical finish from their dominance would have won the game.",
+      "points": [
+        "The 0.27 xG chance at 83 minutes was the chance to win it; they had to finish when margins are this tight",
+        "High press at 6.3 phases generated possession (52%) and chances but converted none; efficiency under pressure separates winners",
+        "Expected goals of 1.07 versus Egypt's 0.81 shows the quality created; poor finishing turned advantage into regret"
+      ]
+    },
+    "away": {
+      "team": "Egypt",
+      "verdict": "Another goal from rare chances would have sealed a famous victory.",
+      "points": [
+        "The 48-minute chance at 0.21 xG was the one they should have buried; clinical finishes when chances arrive matter",
+        "Minimal high press (1.9 phases) and sluggish recovery (18.1 seconds) left them vulnerable; they survived by execution",
+        "Two goals on 38% possession and 0.81 xG shows ruthless finishing; Salah and Ashour kept Belgium's intensity at bay"
+      ]
+    }
+  },
+  "statLine": "Belgium's six-fold advantage in high-press phases (6.3 to 1.9) and superior expected goals (1.07 to 0.81) translated into zero points, Egypt stealing the draw through clinical finishing."
+}

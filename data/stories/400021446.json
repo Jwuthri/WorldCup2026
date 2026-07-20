@@ -1,0 +1,32 @@
+{
+  "headline": "Swiss Steamroller Breaks Bosnia Down After Muharemovic's Red",
+  "story": [
+    "Switzerland dominated possession throughout, holding 58% and recovering the ball in 12.9 seconds—crucial rhythm control against Bosnia's defensive 4-4-2. The visitors held firm for 73 minutes, but the numbers always favoured the home side: 1.85 xG to 0.3, 13 shots to 5. Bosnia's compact shape meant chances were rare; Switzerland had one blocked at 62'. The first goal at 74' cracked the dam. Tarik Muharemovic's 80th-minute red card then shattered Bosnia's structure entirely.",
+    "With Bosnia reduced to 10 men, their 4-4-2 form collapsed. Switzerland's dominance crystallised in three goals over the final stretch—at 84', 90', and 90+7'. Bosnia's recovery time (18.4 seconds versus Switzerland's 12.9) became fatally slow as the pressing intensified. Manzambi (8.2) and Vargas (8.1) flourished in the newly opened space. Džeko and Demirovic, starved of service, could not mount late resistance. Bosnia's consolation at 90+3' was merely noise. The match turned on structure: high press forced the dismissal, then numerical advantage tore Bosnia apart."
+  ],
+  "keyMoment": {
+    "minute": "80",
+    "text": "Muharemovic's dismissal strips Bosnia of defensive shape; Switzerland's barrage begins"
+  },
+  "advice": {
+    "home": {
+      "team": "Switzerland",
+      "verdict": "Dominance converted late; high press forced the error that won it.",
+      "points": [
+        "Ball recovery speed (12.9s v. 18.4s) controlled the midfield and suffocated Bosnia's outlets",
+        "Scored just once before 74' despite 1.85 xG—clinical finishing in the final 17 minutes masked earlier wastefulness",
+        "Red card was the gift, but high-press intensity (10.2 phases) forced the error that earned it"
+      ]
+    },
+    "away": {
+      "team": "Bosnia and Herzegovina",
+      "verdict": "Muharemovic's dismissal destroyed disciplined rearguard resistance.",
+      "points": [
+        "4-4-2 was sound until the dismissal; numerical disadvantage made defensive compression impossible with 10 men",
+        "Recovery lag (18.4s v. 12.9s) meant Switzerland's press turned possession into immediate threats",
+        "0.3 xG: Džeko isolated, Demirovic unused—attack starved of ammunition before structure broke"
+      ]
+    }
+  },
+  "statLine": "Switzerland's xG advantage of 1.85 to 0.3 was vast, yet the match turned on a 80th-minute red card that freed them to score four goals in 17 minutes."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Canada Presses Qatar Into Submission; Red Cards Seal the Rout",
+  "story": [
+    "Canada suffocated Qatar with eight high-press phases to Qatar's 0.4. Dominating 66% possession in a relentless 4-4-2, Johnston and Saliba turned the ball over 31 times. Qatar's 21-second ball recovery versus Canada's 8.4 told the tale before the whistles. Red cards for Homam Ahmed (33') and Assim Madibo (51') made it arithmetic rather than sport: nine men against a four-man press, two early Canadian goals already scored.",
+    "Canada's xG of 3.9 versus Qatar's 0.2 remained a lie of omission—Qatar never fired. Only two shots, zero on target. Jonathan David (9.8 rating) was untouchable, clinical against an increasingly fractured defence. Even in chaos, Canada squandered chances: xG 0.62 missed at 90+8, xG 0.48 blocked at 38. Six goals from 33 shots reflected both clinical efficiency and Qatar's 20% possession desperately seeking oxygen."
+  ],
+  "keyMoment": {
+    "minute": "33",
+    "text": "Homam Ahmed sent off. From ten men, Qatar's collapse became inevitable; second red at 51' sealed nine."
+  },
+  "advice": {
+    "home": {
+      "team": "Canada",
+      "verdict": "High-press perfection overcame Qatar; sloppy finishing late was the only scare.",
+      "points": [
+        "Eight high-press phases versus Qatar's 0.4: they never pressed, never competed for the ball",
+        "31 forced turnovers against a 21-second ball-recovery time: constant, inescapable suffocation",
+        "Jonathan David's 9.8 rating proved clinical when spaces opened; one of the match's best"
+      ]
+    },
+    "away": {
+      "team": "Qatar",
+      "verdict": "Two red cards at 33' and 51' ended any contest; but press mismatch meant defeat from kickoff.",
+      "points": [
+        "Ball recovery of 21 seconds—13 seconds slower than Canada's 8.4-second press cycle—meant constant pressure",
+        "High-press phases of 0.4 versus Canada's 8: never pressed, never won the midfield back",
+        "xG 0.2 on two shots, zero on target: couldn't create, couldn't threaten even at 11 men"
+      ]
+    }
+  },
+  "statLine": "Qatar's 21-second ball recovery versus Canada's 8.4 seconds: the chasm that decided everything before the first red fell."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Türkiye's Discipline Outlasts USA's Blitz",
+  "story": [
+    "USA threw a sucker punch in the third minute, converting a low-probability chance (0.08 xG) to stun the home crowd. Türkiye didn't panic. Within seven minutes they levelled through sharper finishing (0.61 xG), then seized control of the midfield. By the 31st minute, Baris Yilmaz's side had taken the lead through a high-quality effort (0.89 xG). USA's press was suffocating—8.7 high-press phases to Türkiye's 4.9—yet they couldn't disrupt the shape. The match became a study in inverse dominance: one team chasing, the other managing.",
+    "USA's pressure bore dangerous fruit again at 49 minutes with another improbable finish (0.05 xG). Thereafter they generated 18 shots to Türkiye's eight, seven on target to two, and conjured three big chances in quick succession around the hour mark (0.47, 0.36, 0.24 xG). Yet Berhalter's side found no answer. Türkiye's 12.2-second ball recovery time—a full 2.5 seconds faster than the Americans—allowed them to blunt the press and strike on the break. In stoppage time, when USA's legs had gone, Arda Güler's side sealed it to escape Los Angeles with three points earned through cold, methodical finishing rather than fortune."
+  ],
+  "keyMoment": {
+    "minute": "31",
+    "text": "Yilmaz's high-quality finish gave Türkiye a 2-1 lead they would not relinquish."
+  },
+  "advice": {
+    "home": {
+      "team": "Türkiye",
+      "verdict": "Tactical discipline and sharp finishing overcame American pressure and out-shot opposition.",
+      "points": [
+        "Recovery speed was decisive: 12.2s vs USA's 14.7s killed the high press",
+        "Clinical finishing: 1.71 xG became three goals; every shot mattered",
+        "Late mentality: stoppage-time composure proved the margin—USA's press had faded"
+      ]
+    },
+    "away": {
+      "team": "USA",
+      "verdict": "18 shots and missed big chances cost them; tactical suffocation never became suffocation.",
+      "points": [
+        "Three big chances in 10 minutes (62–63') but 0.47, 0.36, 0.24 xG all wasted",
+        "High press (8.7 phases) generated possession but no control; 48% ownership but only 7 on target",
+        "Defensive fragility on transition cost two low-probability goals (0.08, 0.05 xG); Türkiye's press recovery was too quick"
+      ]
+    }
+  },
+  "statLine": "USA had more than double Türkiye's shots (18 to 8) and nearly identical expected goals (1.78 to 1.71), yet lost 3-2—a study in chance conversion trumping volume."
+}

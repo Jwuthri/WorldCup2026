@@ -1,0 +1,32 @@
+{
+  "headline": "Australia Smothers Turkish Ambition",
+  "story": [
+    "Australia suffocated Türkiye with a disciplined 5-4-1 block. Ceding 63 per cent possession and 30 shots, the Australians compressed space ruthlessly, leaving Calhanoglu and Güler starved of room. The first goal arrived at 27 minutes—worth just 0.40 xG—and killed Türkiye's tempo entirely. By the 75th minute, when a second arrived at 0.03 xG, the visitors' ambitions lay exhausted.",
+    "Türkiye's 1.66 expected goals outweighed Australia's 0.99, yet the numbers lied. Paul Okon-Engstler (8.2) and Patrick Beach (8.1)—Australia's defensive anchors—proved unbreachable. Türkiye pressed relentlessly (10.6 phases to Australia's 1.1) but lacked composure; only seven of 30 shots found the target. When Australia attacked, finishing proved clinical: goals at 27 and 75 minutes sealed the result. Türkiye's clearest chance—a 0.17 xG effort saved in the 78th minute—came too late to matter."
+  ],
+  "keyMoment": {
+    "minute": "27",
+    "text": "Australia's opening goal silenced Türkiye's press and rewrote the script entirely."
+  },
+  "advice": {
+    "home": {
+      "team": "Australia",
+      "verdict": "Defensive discipline and clinical execution outran Turkish possession.",
+      "points": [
+        "5-4-1 strangled Türkiye's attack: 30 shots, 7 on-target. Formation compression was decisive.",
+        "Survived early miss (0.51 xG, 17') but finished ruthlessly: 2 goals, 0.03 xG combined.",
+        "Forced 35 turnovers on 27% possession—suffocation over possession speed."
+      ]
+    },
+    "away": {
+      "team": "Türkiye",
+      "verdict": "Possession without finishing is merely prolonged agony.",
+      "points": [
+        "30 shots, 7 on-target: finishing was the difference. One conversion changes the script entirely.",
+        "10.6 press phases exhausted your team; Australia forced 35 turnovers from 27% possession—intensity backfired.",
+        "Calhanoglu and Güler (rated 8.2, 7.8) never found decisive moments—midfield brilliance didn't translate."
+      ]
+    }
+  },
+  "statLine": "Türkiye's 30 shots and 1.66 xG were silenced by Australia's defensive suffocation and 0.99 xG resolve."
+}

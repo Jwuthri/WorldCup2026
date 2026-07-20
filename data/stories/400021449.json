@@ -1,0 +1,32 @@
+{
+  "headline": "Canada's dominance meets its match in defensive discipline",
+  "story": [
+    "Canada arrived in Toronto with possession in mind and pressed relentlessly from the opening whistle, notching 5.5 high-press phases compared to Bosnia's 2.2. But Bosnia's defensive shape held firm; they absorbed the pressure with superior ball recovery discipline and struck first in the 21st minute. What followed was a story of Canadian frustration: an early chance at 17 minutes (0.27 xG) saved, then a blocked effort at 53 (0.26 xG). Bosnia's edge in defensive positioning, anchored by Muharemovic's 8.1 rating, frustrated Canada's 53 per cent possession until Larin's late equaliser in the 78th minute finally broke through.",
+    "The numbers expose the gulf between control and conversion. Canada's 1.49 xG versus Bosnia's 0.76 tells the true story of dominance, yet they walked away with one point. Cyle Larin (8.0) led the charge but couldn't convert until that 78th-minute scramble—a goal worth only 0.07 xG, suggesting clinical desperation rather than buildup play. Bosnia's ball recovery time of 12.0 seconds, against Canada's brisk 8.5, reveals a team content to absorb and survive. Neither side will be satisfied: Canada for wasting possession, Bosnia for lacking any cutting edge—their low xG total proves they relied entirely on defensive solidity, not attacking threat."
+  ],
+  "keyMoment": {
+    "minute": "78",
+    "text": "Larin's equaliser from a congested box: Canada's clinical desperation finally rewarded."
+  },
+  "advice": {
+    "home": {
+      "team": "Canada",
+      "verdict": "Possession dominated but precision lacked; two clear-cut chances at 0.27 and 0.26 xG went begging.",
+      "points": [
+        "Clinical finishing cost them: 0.53 xG in big chances missed in first hour.",
+        "High-press intensity (5.5 phases) worked defensively; ball recovery of 8.5s fastest pressed advantage.",
+        "Late goal (0.07 xG) hints at missed structure: need cleaner build-up, not scramble finishes."
+      ]
+    },
+    "away": {
+      "team": "Bosnia and Herzegovina",
+      "verdict": "Defensive resilience carried them through, but generating nothing on the counter will not suffice.",
+      "points": [
+        "Muharemovic's 8.1 rating anchored defence; 12.0s ball recovery time defensive discipline showed.",
+        "0.76 xG total exposes dependency on defence: one missed chance at 59 (0.18 xG) squandered only opportunity.",
+        "Early goal (0.64 xG at 21 min) was crucial; low-press strategy (2.2 phases) unsustainable against better attacks."
+      ]
+    }
+  },
+  "statLine": "Canada registered 1.49 xG on 53 per cent possession yet drew against a Bosnia side that managed only 0.76 xG from a deep defensive base, illustrating the difference between control and conversion in modern football."
+}

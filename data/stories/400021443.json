@@ -1,0 +1,32 @@
+{
+  "headline": "Mexico's dominance rendered discipline irrelevant",
+  "story": [
+    "Mexico struck within nine minutes and rarely relinquished control, their 4-1-4-1 suffocating South Africa's five-man rearguard from the outset. The hosts' possession reached 57 per cent within the opening quarter; South Africa, wedged into a defensive shape, managed only three shots across ninety minutes. A blocked chance at 52 minutes proved the only genuine repulse to Mexico's rhythm before the second goal arrived at 67, by which point the contest's outline had long been established. Julian Quinones orchestrated from midfield with surgical precision, rated 8.6, while Raul Jimenez provided the focal point.",
+    "The statistical chasm told the true story. Mexico's 1.78 expected goals to South Africa's 0.1 reflected not variance but systematic suppression—the visitors' 22.4-second ball recovery time versus Mexico's 14.4 seconds, their 5.9 high-press phases against Mexico's 8.7. Yet discipline abandoned both teams late: two red cards in fifteen minutes reduced South Africa to nine by the 84th minute, before Cesar Montes was dismissed at the death. Mexico won not merely through superiority but through South Africa's complete collapse under mounting pressure, their attacking impotence rendering them defenseless when numerical disadvantage arrived."
+  ],
+  "keyMoment": {
+    "minute": "49",
+    "text": "Sphephelo Sithole's dismissal converted dominance into rout—South Africa playing the final 41 minutes with ten men"
+  },
+  "advice": {
+    "home": {
+      "team": "Mexico",
+      "verdict": "Control survived a chaotic finish; expect sharper opposition next.",
+      "points": [
+        "Quinones' 8.6 rating set the tempo—maintain his midfield authority in demanding fixtures",
+        "Ball recovery at 14.4 seconds won turnovers (31 forced): prioritize pressing intensity as opponents improve",
+        "57 per cent possession left you exposed late—tighter shape needed when leading against better sides"
+      ]
+    },
+    "away": {
+      "team": "South Africa",
+      "verdict": "Discipline evaporated; structure alone cannot overcome limited attacking threat.",
+      "points": [
+        "0.1 xG across ninety minutes: attacking plan was non-existent; Mbokazi alone (7.0) insufficient",
+        "22.4-second recovery time cost possession—transition speed gaps define Group A survival",
+        "Red cards at 49 and 84 minutes compounded inability to press (5.9 phases): indiscipline punished what poor shape already lost"
+      ]
+    }
+  },
+  "statLine": "Mexico's 1.78 expected goals dwarfed South Africa's 0.1, yet the visitors' twin red cards—reducing them to nine men by the 84th—rendered statistical disadvantage almost moot."
+}

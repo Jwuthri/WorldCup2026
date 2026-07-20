@@ -1,0 +1,32 @@
+{
+  "headline": "Norway's surgical efficiency cuts through Senegal's possession blitz",
+  "story": [
+    "Senegal arrived with a gameplan—aggressive pressing, ball dominance, suffocating Norway into errors. For 47 minutes, it worked. Then Norway's clinical edge took over. Two goals in five minutes after half-time, a third ten minutes later, and Norway had seized a 3-1 lead while Senegal's 51% possession and 7.8 high-press phases yielded nothing. The momentum reversed entirely in that spell. Senegal rallied with a late goal, but Norway had already translated scraps into gold.",
+    "The numbers reveal the gulf. Senegal created 2.05 xG from 16 shots—only four on target. Norway managed just 1.5 xG but buried three. Haaland's dominance (8.8 rating) was the difference: he terrorised a Senegal side that pressed frantically (36 forced turnovers) but left themselves exposed on the counter. Senegal's 4-2-3-1 midfield, designed for control and pressing, couldn't deal with Norway's devastating pace on the break. A missed big chance at 90+9' (xG 0.46) summed up their day—possession without precision."
+  ],
+  "keyMoment": {
+    "minute": "58",
+    "text": "Norway's third goal (xG 0.30) breaks the match open, Senegal's press strategy in tatters"
+  },
+  "advice": {
+    "home": {
+      "team": "Norway",
+      "verdict": "Clinical opportunism and Haaland's lethality beat the press.",
+      "points": [
+        "Haaland's 8.8 rating: the lethal focal point in transition, justifying the 4-3-3 width",
+        "Three goals from 1.5 xG: ruthless efficiency despite sitting deep (only 3.9 press phases)",
+        "Early second-half sequence: two goals in five minutes (48', 53', 58') broke Senegal's midfield rhythm permanently"
+      ]
+    },
+    "away": {
+      "team": "Senegal",
+      "verdict": "Dominance crumbled because finishing didn't match ambition.",
+      "points": [
+        "Only 4 on-target from 16 shots: wastefulness cost the match (2.05 xG, 2 goals)",
+        "90+9' miss (xG 0.46): last-gasp chance—conversion reverses the scoreline entirely",
+        "7.8 high-press phases exposed the defence on the counter; 51% possession wasted without ruthlessness"
+      ]
+    }
+  },
+  "statLine": "Senegal dominated with 51% possession and 16 shots; Norway won with 40% possession and three lethal finishes from 1.5 expected goals."
+}

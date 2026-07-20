@@ -1,0 +1,32 @@
+{
+  "headline": "Uruguay's Siege Undone by Saudi Arabia's Discipline",
+  "story": [
+    "Uruguay imposed its will for ninety minutes, hoarding 63 per cent possession and forcing Saudi Arabia into a defensive crouch that never wavered. The Saudis offered almost nothing in possession—just 27 per cent—but their discipline was suffocating. With only 1.3 high-press phases to Uruguay's 6.4, they conceded the ball willingly, invited pressure onto their own half, and broke lines with the urgency of a side content to bury the draw.",
+    "Yet the numbers exposed both teams' wastefulness. Uruguay fired 27 shots, ten on target, yet mustered only 1.5 xG—suggesting hurried attempts from range rather than clear openings. Saudi Arabia's 3 on-target efforts from 7 shots hinted at clinical finishing when chances arose, but they created few. At 19.2 seconds to recover the ball, the Saudis were methodical; Uruguay pressed relentlessly at 12.9 seconds, yet neither translated dominance into goals. A draw that neither side will celebrate."
+  ],
+  "keyMoment": {
+    "minute": "90",
+    "text": "Both teams' wastefulness ensured neither would claim victory."
+  },
+  "advice": {
+    "home": {
+      "team": "Saudi Arabia",
+      "verdict": "One goal on the break would have stolen the match from Uruguay's possession-heavy grip.",
+      "points": [
+        "44 forced turnovers created tempo; 19.2s recovery was methodical but left counterattacks unexploited.",
+        "Three on-target from seven attempts showed clinical finishing; press higher to reduce Uruguay's space.",
+        "1.3 high-press phases versus Uruguay's 6.4 ceded all midfield control; aggression wins group matches."
+      ]
+    },
+    "away": {
+      "team": "Uruguay",
+      "verdict": "27 shots for zero goals: possession without precision, dominance without reward.",
+      "points": [
+        "1.5 xG from 27 shots reveals hurried finishing; more patient build-up and precision required.",
+        "10 on-target efforts and 63% possession versus Saudi Arabia's compact 27% shows control without penetration.",
+        "6.4 high-press phases exhausted without payoff; midfield dominance never converted to clear-cut chances."
+      ]
+    }
+  },
+  "statLine": "Uruguay's 27 shots from 63% possession generated only 1.5 xG: control became futility."
+}

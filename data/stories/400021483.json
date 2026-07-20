@@ -1,0 +1,32 @@
+{
+  "headline": "Spain's Clinical Atlanta Opening Ends in Rout",
+  "story": [
+    "Spain announced their intent within fourteen minutes. Three goals dispatched Saudi Arabia's defensive hopes before the stadium had found its rhythm. Mikel Oyarzabal led the assault from his elevated rating, with Lamine Yamal's youth unsettling a 5-4-1 shape that had no answer to Spain's positional pressure. Saudi Arabia, stuck at thirty per cent possession, offered little until a 49th-minute response—a reminder that scorelines can flatter, but not by much here.",
+    "The numbers explain the outcome with brutal clarity. Spain's 3.2 expected goals against Saudi Arabia's 0.11 told the story of a match played at different intensities. Ball recovery times—9.5 seconds for Spain versus 20.4 for Saudi Arabia—exposed the gap between champions and visitors. Oyarzabal's 9.5 rating and Yamal's 8.0 reflected dominance that transcended the scoreline. Even Spain's misses (0.44 xG in the 65th minute, two further saves) underscored their margin of control."
+  ],
+  "keyMoment": {
+    "minute": "24",
+    "text": "Spain's third goal (0.49 xG) made it 3-0, rendering the contest effectively over."
+  },
+  "advice": {
+    "home": {
+      "team": "Spain",
+      "verdict": "Early intensity and clinical finishing proved decisive; second-half complacency offered unnecessary danger.",
+      "points": [
+        "Early goal-rate (three in 24 minutes) demonstrated dominance Saudi Arabia never matched.",
+        "Ball recovery time of 9.5 seconds versus Saudi Arabia's 20.4 defined the tempo entirely.",
+        "Eight shots on target from 22 attempts justified the 3.2 xG superiority."
+      ]
+    },
+    "away": {
+      "team": "Saudi Arabia",
+      "verdict": "Passive setup and glacial recovery times exposed them to Spain's relentless tempo.",
+      "points": [
+        "Matching Spain's 8.4 high-press phases (they managed 3.4) might have disrupted buildup play.",
+        "Recovery time of 20.4 seconds left gaps; tightening to 12-14 seconds was critical.",
+        "Three shots and 0.11 xG betray attacking poverty; more incisive play was non-negotiable."
+      ]
+    }
+  },
+  "statLine": "Spain's ball recovery time of 9.5 seconds—against Saudi Arabia's 20.4—described the gulf between them as clearly as the scoreline."
+}

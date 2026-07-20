@@ -1,0 +1,32 @@
+{
+  "headline": "Ecuador's Wasteful Dominance",
+  "story": [
+    "Ecuador dominated entirely—66 per cent possession, 27 shots, the high press applied at 4.1 phases. Curaçao sat in a 5-4-1, invited nothing, forced only 0.8 pressing situations. The blueprint was established in the opening minute: Ecuador would pin them deep; Curaçao would defend with discipline. Both teams understood the script. The question was only whether Ecuador could finish.",
+    "They couldn't. Their expected goals totalled 2.76 against Curaçao's meagre 0.63, yet the scoresheet read 0-0 when the final whistle came. Eloy Room, rated 10.0, was immaculate—he saved efforts with xG of 0.49 in the third minute, 0.32 in the twentieth, and 0.24 in the fifty-ninth, before a high-quality chance (0.37) was blocked in the sixty-sixth. Ecuador's ball-recovery advantage of 8.2 seconds to Curaçao's 20.4 gave them tempo; it gifted them nothing."
+  ],
+  "keyMoment": {
+    "minute": "59",
+    "text": "Room's save (0.24 xG) in the fifty-ninth; Ecuador's winning moment never arrives."
+  },
+  "advice": {
+    "home": {
+      "team": "Ecuador",
+      "verdict": "Dominance without a finish is a non-result.",
+      "points": [
+        "Four big chances (0.49, 0.32, 0.24, 0.37 xG) missed: clinical composure decided it.",
+        "27 shots, 15 on target, 2.76 xG: quality of finish, not volume, was the gap.",
+        "Ball-recovery edge (8.2s vs 20.4s) created space; conversion rate, not creation, failed."
+      ]
+    },
+    "away": {
+      "team": "Curaçao",
+      "verdict": "Room's perfection masked the gamble's fragility.",
+      "points": [
+        "Eloy Room's 10.0 rating: one lapse, one goal conceded, and this becomes a defeat.",
+        "Ball-recovery time (20.4s) killed counter-potential; faster transitions were non-negotiable.",
+        "Defensive discipline (5-4-1 formation) held; one clinical Ecuador finish ends it all."
+      ]
+    }
+  },
+  "statLine": "Ecuador squandered 2.76 expected goals from 27 shots; Eloy Room's 10.0 rating summoned something immeasurable."
+}

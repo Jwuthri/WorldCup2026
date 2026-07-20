@@ -1,0 +1,32 @@
+{
+  "headline": "Australia Dominates but Fails to Finish in San Francisco",
+  "story": [
+    "Australia arrived in San Francisco with the clearer attacking intent, controlling 46% possession against Paraguay's 42% in a match shaped by the South Americans' defensive 5-3-2 formation. The Australians drew 12 shots, five on target, while Paraguay compressed space and limited their output to two shots on target. By full time, Australia's superior intent and press phases (3.6 to Paraguay's 5.5) had established clear dominance.",
+    "Yet the numbers that mattered most told a different story. Australia's expected goals of 0.7 to Paraguay's 0.29 underlined their superiority, but clinical finishing never arrived. Patrick Beach (7.4) orchestrated the Australian attack, but Orlando Gill (7.6) and Omar Alderete (7.2) marshalled an immovable defence, recovering the ball in 12.4 seconds. Paraguay's defensive discipline—forcing 51 turnovers—held firm, and a goalless draw proved an unlikely but deserved point for the underdogs."
+  ],
+  "keyMoment": {
+    "minute": "75",
+    "text": "Australia pressed frantically in the final phase, but Paraguay's defensive block held firm to secure the stalemate."
+  },
+  "advice": {
+    "home": {
+      "team": "Paraguay",
+      "verdict": "Defensive masterclass, but counter-attacking threat remains underdeveloped.",
+      "points": [
+        "Orlando Gill (7.6) anchored the defence; leveraging the 51 forced turnovers for direct counter-attacks would have changed the narrative.",
+        "Expected goals of 0.29 reflects minimal threat; more direct play through Cubas (7.1) off turnovers could have punished the press.",
+        "Ball recovery in 12.4 seconds allowed defensive control; converting that possession into dangerous transitions would have stolen the game."
+      ]
+    },
+    "away": {
+      "team": "Australia",
+      "verdict": "Controlled the game, but conversion is sport's cruel equation.",
+      "points": [
+        "Twelve shots with five on target: clinical finishing from Beach (7.4) would have won this decisively.",
+        "Expected goals of 0.7 to Paraguay's 0.29—twice as much—yet the ball refused to find the net when it mattered most.",
+        "Possession (46%) and passing accuracy gave them control; breaking down the 5-3-2 required more incision, not more lateral movement."
+      ]
+    }
+  },
+  "statLine": "Australia's expected goals (0.7) were 2.4 times Paraguay's, yet both teams left San Francisco with nothing to separate them."
+}

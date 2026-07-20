@@ -1,0 +1,32 @@
+{
+  "headline": "Dutch press overwhelmed Sweden's tired legs",
+  "story": [
+    "Netherlands dismantled Sweden through relentless high pressing that Sweden's midfield simply could not escape. The Dutch initiated 7.3 high-press phases to Sweden's 3.4, suffocating possession before it became dangerous. Sweden retrieved the ball in just 15 seconds on average when the Dutch won it back—faster even than their own recovery time of 19.2—leaving the Swedes chasing ghosts. By dominating transition, Netherlands forced 47 turnovers against Sweden's 37, and the pattern was set: chaos, not control.",
+    "The 5-1 scoreline flatters the numerical dominance but understates the efficiency gap. Netherlands converted 5 goals from 2.25 xG, whilst Sweden managed only one from 1.3—a 2.2-goal variance suggesting Dutch clinical finishing against Swedish profligacy. Sweden's 16 shots to Netherlands' 10 proved meaningless; their inability to sustain attacks under pressure meant most chances arrived too late or too panicked. The pressing won the match by halftime."
+  ],
+  "keyMoment": {
+    "minute": "15",
+    "text": "Early Dutch goal after high press turnover, before Sweden adapted"
+  },
+  "advice": {
+    "home": {
+      "team": "Netherlands",
+      "verdict": "Aggressive press and ruthless finishing dismantled Sweden's structure entirely.",
+      "points": [
+        "High press (7.3 phases) forced 47 turnovers: 10 more than Sweden—domination via intensity",
+        "5 goals from 2.25 xG: clinical finishing under pressure, but Sweden still mustered 16 shots",
+        "15s ball recovery time: suffocated Sweden's tempo before attacks formed—control through speed"
+      ]
+    },
+    "away": {
+      "team": "Sweden",
+      "verdict": "Outpressed and outfinished; could not adapt to Dutch intensity or convert chances.",
+      "points": [
+        "47 turnovers conceded vs 37 forced: 10-turnover deficit buried midfield stability entirely",
+        "19.2s ball recovery time vs 15.0s: 4+ seconds slower meant chaos at transitions, no rhythm",
+        "1 goal from 1.3 xG on 16 shots: missed big chances and lacked poise when opportunity came"
+      ]
+    }
+  },
+  "statLine": "Sweden fired 16 shots to Netherlands' 10—yet conceded five goals whilst scoring one, outshot but utterly outclassed in transition."
+}

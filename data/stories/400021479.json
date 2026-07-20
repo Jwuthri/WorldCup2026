@@ -1,0 +1,32 @@
+{
+  "headline": "Two Chances, No Victory: Iran's Seattle Frustration",
+  "story": [
+    "Egypt struck in the opening minute through early dominance and swift finishing, a shock that suggested control. Iran equalised within fourteen minutes, establishing a surface parity that statistics soon contradicted. Egypt dominated possession at fifty-four percent, forcing fifty-two turnovers with a high-press intensity three times superior to their opponents, yet Iran's subsequent attacking threat—2.24 expected goals to Egypt's paltry 0.92—hinted at a darker reality beneath the surface.",
+    "In the eleventh minute, Iran manufactured a 0.79 xG chance only for Egypt's goalkeeper to save; later, deep in stoppage time, another Iranian attacker's 0.30 xG effort struck the post. The individual brilliance of Egypt's highest-rated player at 8.2 proved crucial, but Iran owned the underlying metrics. Their slower ball recovery at 16.5 seconds versus Egypt's 12.2 meant they spent too much time defending, unable to translate attacking superiority into a second goal."
+  ],
+  "keyMoment": {
+    "minute": "90+7",
+    "text": "Iran's attacker struck the post in the dying moments; they couldn't find the winner."
+  },
+  "advice": {
+    "home": {
+      "team": "Egypt",
+      "verdict": "They got the point they didn't deserve; Iran's bluntness won them a reprieve.",
+      "points": [
+        "Oufa's 8.2 rating kept them standing; that single defender held against 2.24 xG bombardment.",
+        "Fifteen shots, 0.92 xG: finishing must improve or Group G slips away from them.",
+        "High-press regime (3.6 phases) forced 52 turnovers but ball recovery (12.2s) still too slow."
+      ]
+    },
+    "away": {
+      "team": "IR Iran",
+      "verdict": "Perfect attacking display, catastrophic finishing—the cruel mathematics of World Cup football.",
+      "points": [
+        "The 0.79 xG save in the 11th was the moment; clinical finishing wins matches.",
+        "2.24 xG to 0.92 should mean landslide; one goal from two good chances is wasteful.",
+        "Ball recovery time of 16.5s (Egypt's 12.2s) suggests passive defending; press higher next time."
+      ]
+    }
+  },
+  "statLine": "Iran produced 2.24 xG to Egypt's 0.92, created two clear chances that slipped away, and left Seattle with nothing—a masterclass in unfinished business."
+}

@@ -1,0 +1,32 @@
+{
+  "headline": "Belgium's Profligacy Spares Iran",
+  "story": [
+    "Belgium dominated from the opening whistle: 59 per cent possession, 23 shots to Iran's seven, a 4-2-3-1 formation built for control against Iran's defensive 5-4-1. For 66 minutes they pressed and probed, with Tielemans at 7.5 rating conducting midfield traffic and De Cuyper at 7.8 providing width. Then came the turning point—Nathan Ngoy's red card at the hour mark. Down to ten men, Belgium's attacking blueprint unravelled precisely when they needed clinical execution most.",
+    "Three big chances squandered—0.35 xG at 59 minutes, 0.19 at 86, 0.17 earlier—left Belgium's expected goals at merely 1.48. Beiranvand (8.2) and Kanaani (8.3) anchored Iran's defensive resolve. Ngoy's 66th-minute red card shifted the match's trajectory irreversibly. Though Iran's press recovery averaged 18.5 seconds against Belgium's 10.5, they still recorded 43 forced turnovers, reflecting disciplined defending. Belgium's profligacy in front of goal, compounded by the dismissal, cost them victory."
+  ],
+  "keyMoment": {
+    "minute": "66",
+    "text": "Nathan Ngoy's red card eliminates Belgium's numerical advantage and destroys their attacking blueprint"
+  },
+  "advice": {
+    "home": {
+      "team": "Belgium",
+      "verdict": "Dominance without discipline and clinical finishing amounts to nothing.",
+      "points": [
+        "Missed three big chances yielding 0.35, 0.19, and 0.17 xG combined—profligacy before the red card",
+        "Ngoy's 66th-minute dismissal eliminated any path to convert superiority into three points",
+        "Pressed aggressively (4.0 phases) but recovered slowly at 10.5s—a gap Iran managed well"
+      ]
+    },
+    "away": {
+      "team": "IR Iran",
+      "verdict": "Defensive discipline and goalkeeper heroics salvaged a point against relentless pressure.",
+      "points": [
+        "5-4-1 formation absorbed 23 shots with Beiranvand's 8.2 rating saving the 0.35 xG chance",
+        "30 per cent possession yet 43 forced turnovers—recovery time of 18.5s proved reliable",
+        "Kanaani's 8.3 reading ensured defensive solidity throughout 90 minutes of Belgian onslaught"
+      ]
+    }
+  },
+  "statLine": "Belgium's 1.48 expected goals on 59 per cent possession went unconverted; Nathan Ngoy's 66th-minute red card ended any chance of converting dominance into a victory."
+}

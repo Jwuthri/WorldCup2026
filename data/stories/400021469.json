@@ -1,0 +1,32 @@
+{
+  "headline": "Germany's late show overwhelms Ivorian grit in Toronto opener",
+  "story": [
+    "Côte d'Ivoire stormed to an early goal at the half-hour, punching above their possession share with a clinical opening. But Germany's pressing structure, evidenced by 8.6 high-press phases to Ivory Coast's 1.8, began to suffocate the contest after that. Deniz Undav and Joshua Kimmich orchestrated a midfield reassertion. By the 68th minute, Germany had equalized from higher xG chances (0.63 vs the Ivorians' opening 0.30). The late goal—90+4'—broke Ivory Coast's resistance entirely.",
+    "Germany's dominance resided not in possession stats (50-41%, nearly level) but in ball-recovery tempo. At 13.7 seconds to Côte d'Ivoire's 19.4, that half-second sprint proved pivotal across 16 shots to nine, seven on target to two. The xG chasm—2.47 to 1.27—exposed Ivory Coast's reactive shape: they squandered high-quality chances at 51' and faced repeated blockages (30', 50'). Germany missed a 0.30 xG chance themselves at 45+7', a close call they could afford. Nadiem Amiri's 7.5 rating and Kimmich's composure in transition sealed it."
+  ],
+  "keyMoment": {
+    "minute": "90+4",
+    "text": "Late clincher breaks Côte d'Ivoire's resolve and confirms Germany's superiority."
+  },
+  "advice": {
+    "home": {
+      "team": "Germany",
+      "verdict": "Press intensity and ball-recovery speed secured a win marred only by one 45+7' miss.",
+      "points": [
+        "High-press frequency (8.6 phases vs 1.8) dismantled Ivory Coast's transitions and forced 47 turnovers.",
+        "Recovery speed of 13.7 seconds versus Ivory Coast's 19.4s dictated tempo and chance quality throughout.",
+        "Survived early deficit and squandered 0.30 xG chance; xG margin (2.47–1.27) ultimately proved too steep."
+      ]
+    },
+    "away": {
+      "team": "Côte d'Ivoire",
+      "verdict": "Missed three clear openings and couldn't match Germany's pressing; early goal masked tactical fragility.",
+      "points": [
+        "Failed to convert high-quality chances: 0.30 xG blocked (30'), 0.20 xG missed (51'), 0.16 xG blocked (50').",
+        "Ball recovery time of 19.4 seconds versus Germany's 13.7s ceded possession initiative; limited transition opportunities.",
+        "Passive high-press strategy (1.8 phases) left Amiri and Kimmich unchallenged in midfield transitions."
+      ]
+    }
+  },
+  "statLine": "Germany's pressing frequency—8.6 high-press phases to Côte d'Ivoire's 1.8—more than quadrupled their opponent's intensity and unlocked a 2.47–1.27 xG advantage."
+}

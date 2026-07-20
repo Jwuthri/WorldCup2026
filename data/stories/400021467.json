@@ -1,0 +1,32 @@
+{
+  "headline": "Ecuador's Press Cannot Finish",
+  "story": [
+    "Ecuador controlled the match through possession (50 per cent) and aggressive pressing (5.6 high-press phases), recovering the ball in 15.7 seconds and forcing 49 turnovers. Yet they created little of genuine quality. Côte d'Ivoire, defending deeper and more compact, absorbed the pressure and stretched Ecuador on the counter, accumulating 15 shots to their opponents' 12. The match remained goalless until the 90th minute, when Côte d'Ivoire broke through with clinical precision—a low-xG finish that settled a contest shaped by possession versus efficiency.",
+    "Ecuador's undoing was straightforward: poor finishing across 12 shots yielded just one on target, and their clearest chance—a 0.34 xG opportunity in the 30th minute—hit the post. Côte d'Ivoire similarly wasted chances (four big misses), but Amad Diallo's presence in midfield and Wilfried Singo's defensive composure created the platform. With 1.88 xG converted to one goal, Côte d'Ivoire punished the precision gap. Pedro Vite's high press and Joel Ordonez's shape held for 89 minutes but cracked when it mattered most."
+  ],
+  "keyMoment": {
+    "minute": "90",
+    "text": "Côte d'Ivoire's 90th-minute goal breaks a stalemate Ecuador had dominated but failed to settle."
+  },
+  "advice": {
+    "home": {
+      "team": "Côte d'Ivoire",
+      "verdict": "Efficiency overcame Ecuador's dominance; wasteful defending proved forgivable against poor finishing.",
+      "points": [
+        "Efficiency rewarded: converted 1.88 xG to one goal while Ecuador mustered one shot on target from 12.",
+        "Defensive positioning held: 17.3-second recovery despite 42% possession starved Ecuador's rhythm and transitions.",
+        "Counter-threat decisive: 15 shots vs 12 showed directness worked; four big chances missed could have cost them."
+      ]
+    },
+    "away": {
+      "team": "Ecuador",
+      "verdict": "Pressing and possession meant nothing without clinical finishing in front of goal.",
+      "points": [
+        "Finishing standards unacceptable: 12 shots, one on target—pressing intensity must translate to clear-cut chances, not wasted volume.",
+        "Early miss was critical: 0.34 xG in the 30th (post) was the clearest opener; conversion would have changed trajectory.",
+        "Pressing exhaustion: 5.6 high-press phases and 49 forced turnovers show intensity, but without goals they tire while trailing."
+      ]
+    }
+  },
+  "statLine": "Ecuador mastered possession (50 per cent) and recovery (15.7 seconds) but could not finish 12 shots (one on target); Côte d'Ivoire's clinical threat—four on-target strikes and efficient 1.88 xG conversion—settled a 1-0 win."
+}

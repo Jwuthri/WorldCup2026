@@ -1,0 +1,32 @@
+{
+  "headline": "Swiss precision punishes Canada's late desperation",
+  "story": [
+    "Switzerland's 2-1 victory in Vancouver was a masterclass in suffocation disguised as control. Canada arrived with 9.7 high-press phases and 13 shots—hunting—but their intensity couldn't disguise a deeper fragility. The Swiss, ceding 40% possession to their visitors, recovered the ball in just 10 seconds and broke the deadlock on the stroke of half-time. By the 57th minute, a second goal had essentially ended the contest: Canada had forced themselves into exhaustion.",
+    "The numbers tell a damning story for the hosts. With xG barely separated (1.68 to 1.61), Switzerland's clinical finishing proved decisive—two goals from chances with combined xG of 0.37. Canada squandered their clear cut openings: a high-quality chance at 68 minutes blocked, then in the dying seconds, two final moments (xG 0.29 and 0.17) fell to either side of Saliba's desperate defending. Promise David's superb 8.2 rating couldn't compensate for teammates who couldn't finish. Switzerland's recovery speed, combined with Manzambi's composure, won what Canada had controlled on the surface."
+  ],
+  "keyMoment": {
+    "minute": "57",
+    "text": "Switzerland's second goal, made it 2-0 and ended Canada's contest before desperation fully set in."
+  },
+  "advice": {
+    "home": {
+      "team": "Switzerland",
+      "verdict": "Smothered Canada's intensity with possession discipline and struck when it mattered.",
+      "points": [
+        "Recovery time of 10.0s vs 14.5s created passing angles Canada couldn't disrupt.",
+        "Converted low-quality chances (0.25 and 0.12 xG) while Canada's highest-value shot (0.54 xG) was their only goal.",
+        "High-press volume (2.6 phases) limited turnovers; let Canada exhaust themselves hunting possession."
+      ]
+    },
+    "away": {
+      "team": "Canada",
+      "verdict": "Intensity without composure: missed two crucial late chances that would have earned at least a draw.",
+      "points": [
+        "13 shots vs 6 underlined dominance, but only 7 on target; clinical finishing beats volume.",
+        "9.7 high-press phases backfired: slower 14.5s recovery left defensive gaps at transitions.",
+        "Late desperation (90+1', 90+3') produced chances but conversion failure cost the point; composure from deeper would have helped."
+      ]
+    }
+  },
+  "statLine": "Switzerland won with 1.68 xG while Canada mustered 1.61 from 13 shots; clinical finishing, not dominance, decided it."
+}

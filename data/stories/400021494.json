@@ -1,0 +1,32 @@
+{
+  "headline": "Messi strides through toothless Austria",
+  "story": [
+    "Argentina settled into the rhythm they wanted: patient, possession-light but shot-heavy, with Messi directing traffic. An early chance of 0.79 xG—the kind that haunts losers—went begging at nine minutes, but the game's shape was already clear. Argentina's control came not from holding the ball longer (48% possession to Austria's 43%) but from where they kept it: dangerous positions. By the thirty-eighth minute, they had their reward, a goal that never looked in danger from that point forward.",
+    "Austria's high-press tactics—5.9 phases to Argentina's 4.3—created chaos that never translated to chances. Only one on-target shot all evening, their recovery time stuck at 22.7 seconds versus Argentina's 19.9, meant they were perpetually slow to the second ball. Messi's 8.6 rating (Seiwald's 7.5 the best Austria could offer) barely captures the gulf. Two goals from 2.45 xG; Austria's 0.63 converted to nothing. Late drama arrived at 90+5, another Argentina finish that sealed a statement win."
+  ],
+  "keyMoment": {
+    "minute": "90+5",
+    "text": "Late goal ends any Austrian hopes and confirms Argentina's dominance"
+  },
+  "advice": {
+    "home": {
+      "team": "Argentina",
+      "verdict": "Messi class and shot discipline overcame a press that never materialised.",
+      "points": [
+        "Five on-target from twelve shots (42%): conversion efficiency that Austria's 17% could never match.",
+        "Recovery time 19.9s vs Austria's 22.7s meant every transition tilted their way—forced 41 turnovers.",
+        "Survived that 0.79 xG miss at nine minutes; any finish there shifts momentum entirely."
+      ]
+    },
+    "away": {
+      "team": "Austria",
+      "verdict": "High press without incisiveness proved a strategy against better finishers.",
+      "points": [
+        "One on-target shot from six attempts (17%): that ninth-minute 0.79 xG chance was the match in miniature.",
+        "Recovery time 3.9 seconds slower (22.7s) than Argentina left them permanently chasing the second ball.",
+        "5.9 high-press phases created urgency but zero big chances; Seiwald and Sabitzer couldn't manufacture what the team needed."
+      ]
+    }
+  },
+  "statLine": "Austria pressed 37% more than Argentina yet managed one on-target shot; Argentina's 2.45 xG versus 0.63 told the only story that mattered."
+}

@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  /* Night turf under floodlights — the pitch is the canvas */
+  --bg: #050d08;
+  --surface: #0a150e;
+  --raised: #102016;
+  --line: #1c3325;
+  --chalk: #edf2e8;
+  --dim: #94a796;
+  --faint: #7d8f80; /* AA-passing quiet text; use --ghost for pure decoration */
+  --ghost: #5a6b5c;
+  --gold: #e3be56; /* floodlight gold: goals, moments, the trophy */
+  --ember: #e8643f; /* hot marks: xG heat, cards, conceded */
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-raised: var(--raised);
+  --color-pitchline: var(--line);
+  --color-chalk: var(--chalk);
+  --color-dim: var(--dim);
+  --color-faint: var(--faint);
+  --color-gold: var(--gold);
+  --color-ember: var(--ember);
+  --font-display: var(--font-barlow);
+  --font-body: var(--font-archivo);
+  --font-data: var(--font-plex-mono);
+}
+
+html {
+  background: var(--bg);
+  color: var(--chalk);
+  scrollbar-color: var(--line) var(--bg);
+}
+
+body {
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Chalk-marking display type: condensed caps, like stadium signage */
+.display {
+  font-family: var(--font-barlow), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.data {
+  font-family: var(--font-plex-mono), monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Eyebrow label: small chalk stencil */
+.eyebrow {
+  font-family: var(--font-plex-mono), monospace;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--dim);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  ::view-transition-group(*),
+  ::view-transition-image-pair(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
