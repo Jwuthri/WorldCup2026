@@ -41,9 +41,9 @@ export default function PlayerShotDuel({ a, b }: { a: ShotSide; b: ShotSide }) {
 
   return (
     <div ref={root}>
-      <div className="mb-2 flex flex-wrap justify-between gap-2 text-xs">
-        <span className="data" style={{ color: a.color }}>{a.name} — {tally(a)}</span>
-        <span className="data" style={{ color: b.color }}>{b.name} — {tally(b)}</span>
+      <div className="mb-2 space-y-1 text-xs">
+        <p className="data" style={{ color: a.color }}>{a.name} — {tally(a)}</p>
+        <p className="data" style={{ color: b.color }}>{b.name} — {tally(b)}</p>
       </div>
       <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img"
         aria-label={`Every tournament shot: ${a.name} vs ${b.name}, both attacking left to right`}>

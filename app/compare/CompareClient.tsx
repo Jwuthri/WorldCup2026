@@ -14,6 +14,7 @@ export type CmpCard = {
   overall: number;
   tier: string;
   photo: string | null;
+  minutes: number;
   stats: { key: string; val: number }[];
 };
 

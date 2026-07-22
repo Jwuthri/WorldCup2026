@@ -41,7 +41,7 @@ export default async function ComparePage({
     .sort((x, y) => y.overall - x.overall)
     .map((c) => ({
       id: c.id, name: c.name, team: c.team, abbr: c.abbr, pos: c.pos,
-      overall: c.overall, tier: c.tier, photo: c.photo,
+      overall: c.overall, tier: c.tier, photo: c.photo, minutes: c.minutes,
       stats: c.stats.map((s) => ({ key: s.key, val: s.val })),
     }));
 
@@ -90,6 +90,10 @@ export default async function ComparePage({
               {hasHeat(gA) && hasHeat(gB) && (
                 <div className="rounded-lg border border-pitchline bg-surface p-4">
                   <p className="eyebrow mb-2">where they lived — field presence, all matches</p>
+                  <div className="mb-2 space-y-1 text-xs">
+                    <p className="data text-gold">{cA.name} — {cA.minutes.toLocaleString("en-US")} minutes on the pitch</p>
+                    <p className="data text-chalk">{cB.name} — {cB.minutes.toLocaleString("en-US")} minutes on the pitch</p>
+                  </div>
                   <Heatmap
                     label={`territory overlay: ${cA.name} vs ${cB.name}`}
                     layers={[
@@ -97,6 +101,7 @@ export default async function ComparePage({
                       { grid: gB, color: "var(--chalk)" },
                     ]}
                   />
+                  <p className="mt-1.5 text-xs text-faint">Both attacking → · brighter is more presence · overlap is shared ground.</p>
                 </div>
               )}
               {(sA.length > 0 || sB.length > 0) && (
