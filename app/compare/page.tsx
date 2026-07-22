@@ -1,10 +1,31 @@
 import { Suspense } from "react";
 import Link from "next/link";
 import { getCards } from "@/lib/cards";
-import { getCalendar } from "@/lib/data";
+import { getCalendar, getMatchBundle } from "@/lib/data";
 import { getRates, simulate, getBacktest } from "@/lib/sim";
+import { playerTerritory, hasHeat } from "@/lib/heatmap";
+import Heatmap from "@/components/Heatmap";
+import PlayerShotDuel, { type DuelShot } from "@/components/PlayerShotDuel";
 import CompareClient, { type CmpCard } from "./CompareClient";
 import TeamPicker from "./TeamPicker";
+import ProbBar from "./ProbBar";
+
+/* ---- one player's every tournament shot, joined by FIFA id ---- */
+function shotsOf(c: CmpCard | undefined): DuelShot[] {
+  if (!c) return [];
+  const out: DuelShot[] = [];
+  for (const m of getCalendar()) {
+    const side = m.home.abbr === c.abbr ? "home" : m.away.abbr === c.abbr ? "away" : null;
+    if (!side) continue;
+    const b = getMatchBundle(m.id);
+    if (!b) continue;
+    const opp = side === "home" ? m.away.name : m.home.name;
+    for (const s of b.shots)
+      if (s.team === side && s.playerFifaId === c.id)
+        out.push({ x: s.x, y: s.y, xg: s.xg ?? 0, outcome: s.outcome, minute: s.minute, opp });
+  }
+  return out;
+}
 
 export const metadata = {
   title: "Compare players — MUNDIAL·26",
@@ -14,7 +35,7 @@ export const metadata = {
 export default async function ComparePage({
   searchParams,
 }: {
-  searchParams: Promise<{ ta?: string; tb?: string }>;
+  searchParams: Promise<{ ta?: string; tb?: string; a?: string; b?: string }>;
 }) {
   const cards: CmpCard[] = [...getCards().values()]
     .sort((x, y) => y.overall - x.overall)
@@ -26,7 +47,9 @@ export default async function ComparePage({
 
   // ---- the rematch machine ----
   const rates = getRates();
-  const { ta: taRaw, tb: tbRaw } = await searchParams;
+  const { ta: taRaw, tb: tbRaw, a: aId, b: bId } = await searchParams;
+  const cA = cards.find((c) => c.id === aId);
+  const cB = cards.find((c) => c.id === bId);
   const ta = rates.has(taRaw?.toUpperCase() ?? "") ? taRaw!.toUpperCase() : "FRA";
   const tb = rates.has(tbRaw?.toUpperCase() ?? "") ? tbRaw!.toUpperCase() : "ARG";
   const A = rates.get(ta)!, B = rates.get(tb)!;
@@ -48,6 +71,48 @@ export default async function ComparePage({
         <CompareClient cards={cards} />
       </Suspense>
 
+      {/* same pitch: both players' territory and shots, overlaid */}
+      {cA && cB && cA.id !== cB.id && (() => {
+        const gA = playerTerritory(cA.id);
+        const gB = playerTerritory(cB.id);
+        const sA = shotsOf(cA);
+        const sB = shotsOf(cB);
+        if (!(hasHeat(gA) && hasHeat(gB)) && !sA.length && !sB.length) return null;
+        return (
+          <section className="mt-12">
+            <h2 className="display mb-1 text-2xl font-semibold">Same pitch, no excuses</h2>
+            <p className="mb-4 max-w-2xl text-sm text-dim">
+              <span className="text-gold">{cA.name}</span> and{" "}
+              <span className="text-chalk">{cB.name}</span>, tournament totals on one pitch —
+              both attacking left to right. Where the colors overlap, they wanted the same ground.
+            </p>
+            <div className="grid items-start gap-6 lg:grid-cols-2">
+              {hasHeat(gA) && hasHeat(gB) && (
+                <div className="rounded-lg border border-pitchline bg-surface p-4">
+                  <p className="eyebrow mb-2">where they lived — field presence, all matches</p>
+                  <Heatmap
+                    label={`territory overlay: ${cA.name} vs ${cB.name}`}
+                    layers={[
+                      { grid: gA, color: "var(--gold)" },
+                      { grid: gB, color: "var(--chalk)" },
+                    ]}
+                  />
+                </div>
+              )}
+              {(sA.length > 0 || sB.length > 0) && (
+                <div className="rounded-lg border border-pitchline bg-surface p-4">
+                  <p className="eyebrow mb-2">every shot of their tournament</p>
+                  <PlayerShotDuel
+                    a={{ name: cA.name, color: "var(--gold)", shots: sA }}
+                    b={{ name: cB.name, color: "var(--chalk)", shots: sB }}
+                  />
+                </div>
+              )}
+            </div>
+          </section>
+        );
+      })()}
+
       {/* the rematch machine */}
       <section className="mt-16 border-t border-pitchline pt-10">
         <p className="eyebrow mb-2">the rematch machine · 10,000 simulations</p>
@@ -63,17 +128,8 @@ export default async function ComparePage({
 
         {sim ? (
           <div className="mt-6 max-w-2xl">
-            {/* probability bar */}
-            <div className="mb-1.5 flex justify-between text-sm">
-              <span className="text-gold">{A.name} {pct(sim.pA)}</span>
-              <span className="text-faint">draw {pct(sim.pDraw)}</span>
-              <span className="text-chalk">{B.name} {pct(sim.pB)}</span>
-            </div>
-            <div className="flex h-3 overflow-hidden rounded-full">
-              <div className="bg-gold" style={{ width: `${sim.pA * 100}%` }} />
-              <div className="bg-raised" style={{ width: `${sim.pDraw * 100}%` }} />
-              <div className="bg-chalk" style={{ width: `${sim.pB * 100}%` }} />
-            </div>
+            {/* probability bar — springs to the odds when the matchup changes */}
+            <ProbBar key={`${ta}-${tb}`} aName={A.name} bName={B.name} pA={sim.pA} pDraw={sim.pDraw} pB={sim.pB} />
 
             <p className="mt-4 text-sm text-dim">
               In a knockout tie, <span className="text-chalk">{sim.koA >= 0.5 ? A.name : B.name}</span> goes

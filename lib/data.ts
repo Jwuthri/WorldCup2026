@@ -151,6 +151,8 @@ export type Shot = {
   team: "home" | "away";
   minute: string;
   player: string;
+  /** FIFA player id, joined 365 athleteId → jersey → lineup; null if the join misses */
+  playerFifaId: string | null;
   xg: number | null;
   xgot: number | null;
   bodyPart: string | null;
@@ -286,18 +288,25 @@ export const getMatchBundle = cache((fifaId: string) => {
 
   // --- shots: prefer 365 chartEvents (xg/xgot/goal mouth), fallback FIFA timeline ---
   const shots: Shot[] = [];
+  const s365Member = (pid: number) => {
+    for (const mm of g365?.members ?? []) if (mm.athleteId === pid || mm.id === pid) return mm;
+    return null;
+  };
   const s365PlayerName = (pid: number) => {
-    for (const mm of g365?.members ?? []) if (mm.athleteId === pid || mm.id === pid) return mm.shortName ?? mm.name;
-    return "";
+    const mm = s365Member(pid);
+    return mm ? mm.shortName ?? mm.name : "";
   };
   for (const e of g365?.chartEvents?.events ?? []) {
     const isHome365 = e.competitorNum === 1;
     const team: "home" | "away" =
       isHome365 === s365HomeIsFifaHome ? "home" : "away";
+    const jersey = s365Member(e.playerId)?.jerseyNumber;
+    const sidePlayers = (team === "home" ? home : away).players;
     shots.push({
       team,
       minute: e.time ?? "",
       player: s365PlayerName(e.playerId),
+      playerFifaId: jersey != null ? sidePlayers.find((p) => p.shirt === jersey)?.fifaId ?? null : null,
       xg: e.xg != null ? parseFloat(e.xg) : null,
       xgot: e.xgot != null ? parseFloat(e.xgot) : null,
       bodyPart: e.bodyPart ?? null,

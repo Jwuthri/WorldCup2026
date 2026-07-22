@@ -3,6 +3,9 @@ import { getHonours, OFFICIAL_EXTRAS, type Honour } from "@/lib/honours";
 import { flagUrl } from "@/lib/flags";
 import { tierColor } from "@/components/MiniCard";
 import type { Card } from "@/lib/cards";
+import Heatmap from "@/components/Heatmap";
+import AwardReveal from "@/components/AwardReveal";
+import { playerTerritory, hasHeat } from "@/lib/heatmap";
 
 export const metadata = {
   title: "The honours — MUNDIAL·26",
@@ -13,11 +16,24 @@ function AwardPanel({ a }: { a: Honour }) {
   const [winner, ...runners] = a.rows;
   if (!winner) return null;
   const c = winner.card;
+  const field = playerTerritory(c.id);
   return (
-    <section className="rounded-lg border border-pitchline bg-surface p-5">
-      <h2 className="display text-2xl font-semibold text-gold">{a.title}</h2>
-      <p className="mb-4 mt-0.5 text-xs text-faint">{a.rule}</p>
-      <Link href={`/player/${c.id}`} className="group flex items-center gap-4">
+    <AwardReveal
+      disagree={!!a.official && !a.official.matches}
+      backdrop={
+        hasHeat(field) ? (
+          <Heatmap
+            label=""
+            arrows={false}
+            className="h-full w-full"
+            layers={[{ grid: field, color: "var(--gold)" }]}
+          />
+        ) : null
+      }
+    >
+      <h2 data-r="title" className="display text-2xl font-semibold text-gold">{a.title}</h2>
+      <p data-r="title" className="mb-4 mt-0.5 text-xs text-faint">{a.rule}</p>
+      <Link data-r="winner" href={`/player/${c.id}`} className="group flex items-center gap-4">
         <div className="h-20 w-20 shrink-0 overflow-hidden rounded-full border-2 border-gold bg-raised">
           {c.photo && <img src={c.photo} alt="" className="h-full w-full object-cover object-top" />}
         </div>
@@ -28,10 +44,10 @@ function AwardPanel({ a }: { a: Honour }) {
           </p>
           <p className="text-xs text-dim">{winner.line}</p>
         </div>
-        <span className="data ml-auto rounded border border-gold px-2 py-1 text-2xl text-gold">{c.overall}</span>
+        <span data-r="badge" className="data ml-auto rounded border border-gold px-2 py-1 text-2xl text-gold">{c.overall}</span>
       </Link>
       {a.official && (
-        <p className="mt-3 rounded border border-gold/30 bg-raised px-3 py-2 text-xs">
+        <p data-r="official" className="mt-3 rounded border border-gold/30 bg-raised px-3 py-2 text-xs">
           {a.official.matches ? (
             <span className="text-gold">✓ FIFA&apos;s official award went to the same player.</span>
           ) : (
@@ -51,7 +67,7 @@ function AwardPanel({ a }: { a: Honour }) {
       )}
       <ol className="mt-4 space-y-1.5 border-t border-pitchline pt-3">
         {runners.map((r, i) => (
-          <li key={r.card.id}>
+          <li key={r.card.id} data-r="runner">
             <Link href={`/player/${r.card.id}`} className="grid grid-cols-[1.25rem_auto_1fr_auto] items-center gap-2 rounded px-1 py-0.5 text-sm hover:bg-raised">
               <span className="data text-faint">{i + 2}</span>
               <img src={flagUrl(r.card.abbr)} alt="" width={14} height={14} className="rounded-[2px]" />
@@ -61,7 +77,10 @@ function AwardPanel({ a }: { a: Honour }) {
           </li>
         ))}
       </ol>
-    </section>
+      {hasHeat(playerTerritory(c.id)) && (
+        <p data-r="runner" className="eyebrow mt-3 opacity-60">behind: {c.name.split(" ").pop()}&#39;s field presence, all tournament</p>
+      )}
+    </AwardReveal>
   );
 }
 

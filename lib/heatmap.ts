@@ -73,6 +73,24 @@ export const matchTerritory = cache((fifaId: string): { home: TeamGrid; away: Te
 
 export const hasHeat = (g: TeamGrid | null | undefined): g is TeamGrid => !!g?.some(Boolean);
 
+/** one player's tournament occupation: each match's grid normalized to mass 1, then summed */
+export const playerTerritory = cache((playerId: string): TeamGrid | null => {
+  const acc = new Array(GRID_N).fill(0);
+  let n = 0;
+  for (const m of getCalendar()) {
+    const b = getMatchBundle(m.id);
+    if (!b) continue;
+    const p = [...b.home.players, ...b.away.players].find((x) => x.fifaId === playerId);
+    const g = p?.heatmap ? decodeHeatmap(p.heatmap) : null;
+    if (!g) continue;
+    const mass = g.reduce((a, x) => a + x, 0);
+    if (!mass) continue;
+    for (let i = 0; i < GRID_N; i++) acc[i] += g[i] / mass;
+    n++;
+  }
+  return n ? acc : null;
+});
+
 export type TerritoryGame = { matchId: string; opp: string; oppAbbr: string; grid: TeamGrid };
 
 /** all of a team's per-match grids plus the tournament average (each match normalized to mass 1) */

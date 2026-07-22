@@ -12,7 +12,7 @@ const CH = H / GRID_H;
 
 /** blurred-cell occupation map on the shared pitch; layers screen-blend so
  *  overlap glows brighter — two-team maps read as contested territory */
-export default function Heatmap({ layers, label, className }: { layers: HeatLayer[]; label: string; className?: string }) {
+export default function Heatmap({ layers, label, className, arrows = true }: { layers: HeatLayer[]; label: string; className?: string; arrows?: boolean }) {
   return (
     <svg viewBox={`0 0 ${W} ${H}`} className={className ?? "w-full"} role="img" aria-label={label}>
       <defs>
@@ -49,7 +49,7 @@ export default function Heatmap({ layers, label, className }: { layers: HeatLaye
       })}
       <PitchLines />
       {/* attack-direction arrows, one per layer */}
-      {layers.map((l, li) => {
+      {arrows && layers.map((l, li) => {
         const y = 36 + li * 34;
         const [x1, x2] = l.mirror ? [W - 30, W - 86] : [30, 86];
         const tip = l.mirror ? x2 - 14 : x2 + 14;

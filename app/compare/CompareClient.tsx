@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useState, useEffect, useRef } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import gsap from "gsap";
 import { flagUrl } from "@/lib/flags";
 
 export type CmpCard = {
@@ -127,6 +128,21 @@ export default function CompareClient({ cards }: { cards: CmpCard[] }) {
     router.replace(`${pathname}?${next.toString()}`, { scroll: false });
   };
 
+  // tug-of-war: every rope snaps from the middle toward whoever wins the metric
+  const duelRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = duelRef.current;
+    if (!el || !a || !b) return;
+    const q = gsap.utils.selector(el);
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      gsap.set(q(".tugfill"), { width: (i, t) => `${(t as HTMLElement).dataset.w}%` });
+      return;
+    }
+    gsap.fromTo(q(".tugfill"),
+      { width: 0 },
+      { width: (i, t) => `${(t as HTMLElement).dataset.w}%`, duration: 1.1, ease: "elastic.out(1, 0.55)", stagger: 0.055 });
+  }, [a?.id, b?.id]); // eslint-disable-line react-hooks/exhaustive-deps
+
   return (
     <div>
       <div className="mb-8 grid gap-4 sm:grid-cols-2">
@@ -139,13 +155,30 @@ export default function CompareClient({ cards }: { cards: CmpCard[] }) {
           <Side c={a} accent="var(--gold)" />
           <div className="rounded-lg border border-pitchline bg-surface p-4">
             <Radar a={a} b={b} />
-            <div className="mt-2 space-y-1.5">
+            <div ref={duelRef} className="mt-2 space-y-2">
               {a.stats.map((s) => {
                 const bv = b.stats.find((x) => x.key === s.key)?.val ?? 0;
+                const aLeads = s.val >= bv;
+                // card stats live in a tight 70-99 band: 2.5% of track per point, 20+ points = full pull
+                const w = Math.min(Math.abs(s.val - bv) * 2.5, 50);
                 return (
                   <div key={s.key} className="grid grid-cols-[3rem_1fr_3rem] items-center gap-2 text-sm">
-                    <span className="data text-right" style={{ color: s.val >= bv ? "var(--gold)" : "var(--dim)" }}>{s.val}</span>
-                    <span className="display text-center text-xs text-faint">{s.key}</span>
+                    <span className="data text-right" style={{ color: aLeads ? "var(--gold)" : "var(--dim)" }}>{s.val}</span>
+                    <div>
+                      <span className="display block text-center text-xs text-faint">{s.key}</span>
+                      <div className="relative mt-0.5 h-1.5 overflow-hidden rounded-full bg-raised">
+                        <span className="absolute left-1/2 top-0 h-full w-px bg-pitchline" />
+                        <span
+                          className="tugfill absolute top-0 h-full"
+                          data-w={w.toFixed(2)}
+                          style={
+                            aLeads
+                              ? { right: "50%", width: 0, background: "var(--gold)", borderRadius: "9999px 0 0 9999px" }
+                              : { left: "50%", width: 0, background: "var(--chalk)", borderRadius: "0 9999px 9999px 0" }
+                          }
+                        />
+                      </div>
+                    </div>
                     <span className="data" style={{ color: bv >= s.val ? "var(--chalk)" : "var(--dim)" }}>{bv}</span>
                   </div>
                 );
