@@ -1,0 +1,1824 @@
+[
+ {
+  "slug": "premier-league-2025-26",
+  "name": "Premier League",
+  "country": "England",
+  "season": "2025/26",
+  "source": {
+   "provider": "365scores",
+   "competitionId": 7,
+   "seasonNum": 131
+  },
+  "depth": "summary",
+  "champion": "Arsenal",
+  "championPts": 85.0,
+  "teams": 20,
+  "matches": 380,
+  "goals": 1045,
+  "goalsPerGame": 2.75,
+  "leaders": {
+   "Goals": {
+    "player": "Erling Haaland",
+    "athleteId": 65760,
+    "imageVersion": 80,
+    "position": "Centre Forward",
+    "value": "27"
+   },
+   "Expected Goals": {
+    "player": "Erling Haaland",
+    "athleteId": 65760,
+    "imageVersion": 80,
+    "position": "Centre Forward",
+    "value": "25.39"
+   },
+   "Assists": {
+    "player": "Bruno Fernandes",
+    "athleteId": 6262,
+    "imageVersion": 79,
+    "position": "Attacking Midfield",
+    "value": "21"
+   },
+   "Expected Assists": {
+    "player": "Bruno Fernandes",
+    "athleteId": 6262,
+    "imageVersion": 79,
+    "position": "Attacking Midfield",
+    "value": "12.32"
+   },
+   "Goals and Assists": {
+    "player": "Erling Haaland",
+    "athleteId": 65760,
+    "imageVersion": 80,
+    "position": "Centre Forward",
+    "value": "35"
+   },
+   "Expected Goals + Assists": {
+    "player": "Erling Haaland",
+    "athleteId": 65760,
+    "imageVersion": 80,
+    "position": "Centre Forward",
+    "value": "28.15"
+   },
+   "365 Ratings": {
+    "player": "Bruno Fernandes",
+    "athleteId": 6262,
+    "imageVersion": 79,
+    "position": "Attacking Midfield",
+    "value": "7.8"
+   },
+   "Penalties Scored": {
+    "player": "Igor Thiago",
+    "athleteId": 74557,
+    "imageVersion": 55,
+    "position": "Centre Forward",
+    "value": "8/9"
+   },
+   "Tackles Won Per Game": {
+    "player": "João Gomes",
+    "athleteId": 80866,
+    "imageVersion": 54,
+    "position": "Central Midfield",
+    "value": "1.9"
+   },
+   "Interceptions Per Game": {
+    "player": "Moises Caicedo",
+    "athleteId": 71650,
+    "imageVersion": 78,
+    "position": "Defensive Midfield",
+    "value": "1.8"
+   },
+   "Red Cards": {
+    "player": "Cristian Romero",
+    "athleteId": 44331,
+    "imageVersion": 62,
+    "position": "Centre Back",
+    "value": "2"
+   },
+   "Yellow Cards": {
+    "player": "André",
+    "athleteId": 79535,
+    "imageVersion": 44,
+    "position": "Defensive Midfield",
+    "value": "12"
+   },
+   "Clean Sheets": {
+    "player": "David Raya",
+    "athleteId": 3941,
+    "imageVersion": 48,
+    "position": "Goalkeeper",
+    "value": "19"
+   },
+   "Goals Conceded Per Game": {
+    "player": "David Raya",
+    "athleteId": 3941,
+    "imageVersion": 48,
+    "position": "Goalkeeper",
+    "value": "0.7"
+   },
+   "Saves Per Game": {
+    "player": "Alphonse Areola",
+    "athleteId": 1969,
+    "imageVersion": 33,
+    "position": "Goalkeeper",
+    "value": "3.8"
+   },
+   "Penalties Saved": {
+    "player": "Caoimhin Kelleher",
+    "athleteId": 61951,
+    "imageVersion": 58,
+    "position": "Goalkeeper",
+    "value": "3/8"
+   }
+  },
+  "table": [
+   {
+    "pos": 1,
+    "name": "Arsenal",
+    "id": 104,
+    "played": 38,
+    "won": 26,
+    "drawn": 7,
+    "lost": 5,
+    "for": 71,
+    "against": 27,
+    "points": 85.0
+   },
+   {
+    "pos": 2,
+    "name": "Manchester City",
+    "id": 110,
+    "played": 38,
+    "won": 23,
+    "drawn": 9,
+    "lost": 6,
+    "for": 77,
+    "against": 35,
+    "points": 78.0
+   },
+   {
+    "pos": 3,
+    "name": "Manchester United",
+    "id": 105,
+    "played": 38,
+    "won": 20,
+    "drawn": 11,
+    "lost": 7,
+    "for": 69,
+    "against": 50,
+    "points": 71.0
+   },
+   {
+    "pos": 4,
+    "name": "Aston Villa",
+    "id": 109,
+    "played": 38,
+    "won": 19,
+    "drawn": 8,
+    "lost": 11,
+    "for": 56,
+    "against": 49,
+    "points": 65.0
+   },
+   {
+    "pos": 5,
+    "name": "Liverpool",
+    "id": 108,
+    "played": 38,
+    "won": 17,
+    "drawn": 9,
+    "lost": 12,
+    "for": 63,
+    "against": 53,
+    "points": 60.0
+   },
+   {
+    "pos": 6,
+    "name": "Bournemouth",
+    "id": 50,
+    "played": 38,
+    "won": 13,
+    "drawn": 18,
+    "lost": 7,
+    "for": 58,
+    "against": 54,
+    "points": 57.0
+   },
+   {
+    "pos": 7,
+    "name": "Sunderland",
+    "id": 117,
+    "played": 38,
+    "won": 14,
+    "drawn": 12,
+    "lost": 12,
+    "for": 42,
+    "against": 48,
+    "points": 54.0
+   },
+   {
+    "pos": 8,
+    "name": "Brighton",
+    "id": 38,
+    "played": 38,
+    "won": 14,
+    "drawn": 11,
+    "lost": 13,
+    "for": 52,
+    "against": 46,
+    "points": 53.0
+   },
+   {
+    "pos": 9,
+    "name": "Brentford",
+    "id": 63,
+    "played": 38,
+    "won": 14,
+    "drawn": 11,
+    "lost": 13,
+    "for": 55,
+    "against": 52,
+    "points": 53.0
+   },
+   {
+    "pos": 10,
+    "name": "Chelsea",
+    "id": 106,
+    "played": 38,
+    "won": 14,
+    "drawn": 10,
+    "lost": 14,
+    "for": 58,
+    "against": 52,
+    "points": 52.0
+   },
+   {
+    "pos": 11,
+    "name": "Fulham",
+    "id": 120,
+    "played": 38,
+    "won": 15,
+    "drawn": 7,
+    "lost": 16,
+    "for": 47,
+    "against": 51,
+    "points": 52.0
+   },
+   {
+    "pos": 12,
+    "name": "Newcastle United",
+    "id": 116,
+    "played": 38,
+    "won": 14,
+    "drawn": 7,
+    "lost": 17,
+    "for": 53,
+    "against": 55,
+    "points": 49.0
+   },
+   {
+    "pos": 13,
+    "name": "Everton",
+    "id": 107,
+    "played": 38,
+    "won": 13,
+    "drawn": 10,
+    "lost": 15,
+    "for": 47,
+    "against": 50,
+    "points": 49.0
+   },
+   {
+    "pos": 14,
+    "name": "Leeds United",
+    "id": 36,
+    "played": 38,
+    "won": 11,
+    "drawn": 14,
+    "lost": 13,
+    "for": 49,
+    "against": 56,
+    "points": 47.0
+   },
+   {
+    "pos": 15,
+    "name": "Crystal Palace",
+    "id": 10,
+    "played": 38,
+    "won": 11,
+    "drawn": 12,
+    "lost": 15,
+    "for": 41,
+    "against": 51,
+    "points": 45.0
+   },
+   {
+    "pos": 16,
+    "name": "Nottingham Forest",
+    "id": 29,
+    "played": 38,
+    "won": 11,
+    "drawn": 11,
+    "lost": 16,
+    "for": 48,
+    "against": 51,
+    "points": 44.0
+   },
+   {
+    "pos": 17,
+    "name": "Tottenham",
+    "id": 114,
+    "played": 38,
+    "won": 10,
+    "drawn": 11,
+    "lost": 17,
+    "for": 48,
+    "against": 57,
+    "points": 41.0
+   },
+   {
+    "pos": 18,
+    "name": "West Ham United",
+    "id": 113,
+    "played": 38,
+    "won": 10,
+    "drawn": 9,
+    "lost": 19,
+    "for": 46,
+    "against": 65,
+    "points": 39.0
+   },
+   {
+    "pos": 19,
+    "name": "Burnley",
+    "id": 12,
+    "played": 38,
+    "won": 4,
+    "drawn": 10,
+    "lost": 24,
+    "for": 38,
+    "against": 75,
+    "points": 22.0
+   },
+   {
+    "pos": 20,
+    "name": "Wolves",
+    "id": 15,
+    "played": 38,
+    "won": 3,
+    "drawn": 11,
+    "lost": 24,
+    "for": 27,
+    "against": 68,
+    "points": 20.0
+   }
+  ]
+ },
+ {
+  "slug": "laliga-2025-26",
+  "name": "LaLiga",
+  "country": "Spain",
+  "season": "2025/26",
+  "source": {
+   "provider": "365scores",
+   "competitionId": 11,
+   "seasonNum": 98
+  },
+  "depth": "summary",
+  "champion": "FC Barcelona",
+  "championPts": 94.0,
+  "teams": 20,
+  "matches": 380,
+  "goals": 1024,
+  "goalsPerGame": 2.69,
+  "leaders": {
+   "Goals": {
+    "player": "Kylian Mbappe",
+    "athleteId": 39820,
+    "imageVersion": 73,
+    "position": "Centre Forward",
+    "value": "25"
+   },
+   "Expected Goals": {
+    "player": "Kylian Mbappe",
+    "athleteId": 39820,
+    "imageVersion": 73,
+    "position": "Centre Forward",
+    "value": "23.95"
+   },
+   "Assists": {
+    "player": "Lamine Yamal",
+    "athleteId": 131182,
+    "imageVersion": 38,
+    "position": "Right Forward",
+    "value": "11"
+   },
+   "Expected Assists": {
+    "player": "Lamine Yamal",
+    "athleteId": 131182,
+    "imageVersion": 38,
+    "position": "Right Forward",
+    "value": "10.09"
+   },
+   "Goals and Assists": {
+    "player": "Kylian Mbappe",
+    "athleteId": 39820,
+    "imageVersion": 73,
+    "position": "Centre Forward",
+    "value": "30"
+   },
+   "Expected Goals + Assists": {
+    "player": "Kylian Mbappe",
+    "athleteId": 39820,
+    "imageVersion": 73,
+    "position": "Centre Forward",
+    "value": "30.26"
+   },
+   "365 Ratings": {
+    "player": "Lamine Yamal",
+    "athleteId": 131182,
+    "imageVersion": 38,
+    "position": "Right Forward",
+    "value": "7.9"
+   },
+   "Penalties Scored": {
+    "player": "Kylian Mbappe",
+    "athleteId": 39820,
+    "imageVersion": 73,
+    "position": "Centre Forward",
+    "value": "8/9"
+   },
+   "Tackles Won Per Game": {
+    "player": "Santiago Mouriño",
+    "athleteId": 124711,
+    "imageVersion": 34,
+    "position": "Right Back",
+    "value": "2.3"
+   },
+   "Interceptions Per Game": {
+    "player": "Antonio Blanco",
+    "athleteId": 87577,
+    "imageVersion": 38,
+    "position": "Defensive Midfield",
+    "value": "1.5"
+   },
+   "Red Cards": {
+    "player": "Federico Vinas",
+    "athleteId": 65202,
+    "imageVersion": 33,
+    "position": "Centre Forward",
+    "value": "3"
+   },
+   "Yellow Cards": {
+    "player": "José Ángel Carmona",
+    "athleteId": 99263,
+    "imageVersion": 22,
+    "position": "Right Back",
+    "value": "13"
+   },
+   "Clean Sheets": {
+    "player": "Joan García",
+    "athleteId": 82341,
+    "imageVersion": 20,
+    "position": "Goalkeeper",
+    "value": "15"
+   },
+   "Goals Conceded Per Game": {
+    "player": "Joan García",
+    "athleteId": 82341,
+    "imageVersion": 20,
+    "position": "Goalkeeper",
+    "value": "0.7"
+   },
+   "Saves Per Game": {
+    "player": "Aarón Escandell",
+    "athleteId": 5875,
+    "imageVersion": 66,
+    "position": "Goalkeeper",
+    "value": "4.1"
+   },
+   "Penalties Saved": {
+    "player": "David Soria",
+    "athleteId": 14641,
+    "imageVersion": 56,
+    "position": "Goalkeeper",
+    "value": "2/4"
+   }
+  },
+  "table": [
+   {
+    "pos": 1,
+    "name": "FC Barcelona",
+    "id": 132,
+    "played": 38,
+    "won": 31,
+    "drawn": 1,
+    "lost": 6,
+    "for": 95,
+    "against": 36,
+    "points": 94.0
+   },
+   {
+    "pos": 2,
+    "name": "Real Madrid",
+    "id": 131,
+    "played": 38,
+    "won": 27,
+    "drawn": 5,
+    "lost": 6,
+    "for": 77,
+    "against": 35,
+    "points": 86.0
+   },
+   {
+    "pos": 3,
+    "name": "Villarreal",
+    "id": 133,
+    "played": 38,
+    "won": 22,
+    "drawn": 6,
+    "lost": 10,
+    "for": 72,
+    "against": 46,
+    "points": 72.0
+   },
+   {
+    "pos": 4,
+    "name": "Atletico Madrid",
+    "id": 134,
+    "played": 38,
+    "won": 21,
+    "drawn": 6,
+    "lost": 11,
+    "for": 62,
+    "against": 44,
+    "points": 69.0
+   },
+   {
+    "pos": 5,
+    "name": "Real Betis",
+    "id": 146,
+    "played": 38,
+    "won": 15,
+    "drawn": 15,
+    "lost": 8,
+    "for": 59,
+    "against": 48,
+    "points": 60.0
+   },
+   {
+    "pos": 6,
+    "name": "Celta Vigo",
+    "id": 158,
+    "played": 38,
+    "won": 14,
+    "drawn": 12,
+    "lost": 12,
+    "for": 53,
+    "against": 48,
+    "points": 54.0
+   },
+   {
+    "pos": 7,
+    "name": "Getafe",
+    "id": 140,
+    "played": 38,
+    "won": 15,
+    "drawn": 6,
+    "lost": 17,
+    "for": 32,
+    "against": 38,
+    "points": 51.0
+   },
+   {
+    "pos": 8,
+    "name": "Rayo Vallecano",
+    "id": 174,
+    "played": 38,
+    "won": 12,
+    "drawn": 14,
+    "lost": 12,
+    "for": 41,
+    "against": 44,
+    "points": 50.0
+   },
+   {
+    "pos": 9,
+    "name": "Valencia",
+    "id": 139,
+    "played": 38,
+    "won": 13,
+    "drawn": 10,
+    "lost": 15,
+    "for": 46,
+    "against": 55,
+    "points": 49.0
+   },
+   {
+    "pos": 10,
+    "name": "Real Sociedad",
+    "id": 154,
+    "played": 38,
+    "won": 11,
+    "drawn": 13,
+    "lost": 14,
+    "for": 59,
+    "against": 61,
+    "points": 46.0
+   },
+   {
+    "pos": 11,
+    "name": "Espanyol",
+    "id": 136,
+    "played": 38,
+    "won": 12,
+    "drawn": 10,
+    "lost": 16,
+    "for": 43,
+    "against": 55,
+    "points": 46.0
+   },
+   {
+    "pos": 12,
+    "name": "Athletic Bilbao",
+    "id": 144,
+    "played": 38,
+    "won": 13,
+    "drawn": 6,
+    "lost": 19,
+    "for": 43,
+    "against": 58,
+    "points": 45.0
+   },
+   {
+    "pos": 13,
+    "name": "Sevilla",
+    "id": 135,
+    "played": 38,
+    "won": 12,
+    "drawn": 7,
+    "lost": 19,
+    "for": 46,
+    "against": 60,
+    "points": 43.0
+   },
+   {
+    "pos": 14,
+    "name": "Alaves",
+    "id": 168,
+    "played": 38,
+    "won": 11,
+    "drawn": 10,
+    "lost": 17,
+    "for": 44,
+    "against": 56,
+    "points": 43.0
+   },
+   {
+    "pos": 15,
+    "name": "Elche",
+    "id": 156,
+    "played": 38,
+    "won": 10,
+    "drawn": 13,
+    "lost": 15,
+    "for": 49,
+    "against": 57,
+    "points": 43.0
+   },
+   {
+    "pos": 16,
+    "name": "Levante",
+    "id": 150,
+    "played": 38,
+    "won": 11,
+    "drawn": 9,
+    "lost": 18,
+    "for": 47,
+    "against": 61,
+    "points": 42.0
+   },
+   {
+    "pos": 17,
+    "name": "Osasuna",
+    "id": 143,
+    "played": 38,
+    "won": 11,
+    "drawn": 9,
+    "lost": 18,
+    "for": 44,
+    "against": 50,
+    "points": 42.0
+   },
+   {
+    "pos": 18,
+    "name": "Mallorca",
+    "id": 142,
+    "played": 38,
+    "won": 11,
+    "drawn": 9,
+    "lost": 18,
+    "for": 47,
+    "against": 57,
+    "points": 42.0
+   },
+   {
+    "pos": 19,
+    "name": "Girona",
+    "id": 175,
+    "played": 38,
+    "won": 9,
+    "drawn": 14,
+    "lost": 15,
+    "for": 39,
+    "against": 55,
+    "points": 41.0
+   },
+   {
+    "pos": 20,
+    "name": "Real Oviedo",
+    "id": 193,
+    "played": 38,
+    "won": 6,
+    "drawn": 11,
+    "lost": 21,
+    "for": 26,
+    "against": 60,
+    "points": 29.0
+   }
+  ]
+ },
+ {
+  "slug": "serie-a-2025-26",
+  "name": "Serie A",
+  "country": "Italy",
+  "season": "2025/26",
+  "source": {
+   "provider": "365scores",
+   "competitionId": 17,
+   "seasonNum": 124
+  },
+  "depth": "summary",
+  "champion": "Inter Milan",
+  "championPts": 87.0,
+  "teams": 20,
+  "matches": 380,
+  "goals": 922,
+  "goalsPerGame": 2.43,
+  "leaders": {
+   "Goals": {
+    "player": "Lautaro Martinez",
+    "athleteId": 38667,
+    "imageVersion": 35,
+    "position": "Centre Forward",
+    "value": "17"
+   },
+   "Expected Goals": {
+    "player": "Moise Kean",
+    "athleteId": 45792,
+    "imageVersion": 81,
+    "position": "Centre Forward",
+    "value": "15.07"
+   },
+   "Assists": {
+    "player": "Federico Dimarco",
+    "athleteId": 13389,
+    "imageVersion": 50,
+    "position": "Left Back",
+    "value": "17"
+   },
+   "Expected Assists": {
+    "player": "Federico Dimarco",
+    "athleteId": 13389,
+    "imageVersion": 50,
+    "position": "Left Back",
+    "value": "11.55"
+   },
+   "Goals and Assists": {
+    "player": "Federico Dimarco",
+    "athleteId": 13389,
+    "imageVersion": 50,
+    "position": "Left Back",
+    "value": "24"
+   },
+   "Expected Goals + Assists": {
+    "player": "Kenan Yıldız",
+    "athleteId": 136674,
+    "imageVersion": 23,
+    "position": "Left Forward",
+    "value": "17.76"
+   },
+   "365 Ratings": {
+    "player": "Kenan Yıldız",
+    "athleteId": 136674,
+    "imageVersion": 23,
+    "position": "Left Forward",
+    "value": "7.5"
+   },
+   "Penalties Scored": {
+    "player": "Christopher Nkunku",
+    "athleteId": 27702,
+    "imageVersion": 58,
+    "position": "Centre Forward",
+    "value": "5/5"
+   },
+   "Tackles Won Per Game": {
+    "player": "Manuel Locatelli",
+    "athleteId": 38364,
+    "imageVersion": 61,
+    "position": "Defensive Midfield",
+    "value": "1.9"
+   },
+   "Interceptions Per Game": {
+    "player": "Tommaso Macchioni",
+    "athleteId": 227971,
+    "imageVersion": 1,
+    "position": "Centre Back",
+    "value": "2"
+   },
+   "Red Cards": {
+    "player": "Mariano Troilo",
+    "athleteId": 135726,
+    "imageVersion": 17,
+    "position": "Centre Back",
+    "value": "2"
+   },
+   "Yellow Cards": {
+    "player": "Marin Pongracic",
+    "athleteId": 48439,
+    "imageVersion": 37,
+    "position": "Centre Back",
+    "value": "12"
+   },
+   "Clean Sheets": {
+    "player": "Jean Butez",
+    "athleteId": 9697,
+    "imageVersion": 73,
+    "position": "Goalkeeper",
+    "value": "19"
+   },
+   "Goals Conceded Per Game": {
+    "player": "Jean Butez",
+    "athleteId": 9697,
+    "imageVersion": 73,
+    "position": "Goalkeeper",
+    "value": "0.8"
+   },
+   "Saves Per Game": {
+    "player": "Emil Audero",
+    "athleteId": 12642,
+    "imageVersion": 32,
+    "position": "Goalkeeper",
+    "value": "3.7"
+   },
+   "Penalties Saved": {
+    "player": "Lorenzo Montipo",
+    "athleteId": 52427,
+    "imageVersion": 32,
+    "position": "Goalkeeper",
+    "value": "3/5"
+   }
+  },
+  "table": [
+   {
+    "pos": 1,
+    "name": "Inter Milan",
+    "id": 224,
+    "played": 38,
+    "won": 27,
+    "drawn": 6,
+    "lost": 5,
+    "for": 89,
+    "against": 35,
+    "points": 87.0
+   },
+   {
+    "pos": 2,
+    "name": "Napoli",
+    "id": 234,
+    "played": 38,
+    "won": 23,
+    "drawn": 7,
+    "lost": 8,
+    "for": 58,
+    "against": 36,
+    "points": 76.0
+   },
+   {
+    "pos": 3,
+    "name": "AS Roma",
+    "id": 225,
+    "played": 38,
+    "won": 23,
+    "drawn": 4,
+    "lost": 11,
+    "for": 59,
+    "against": 31,
+    "points": 73.0
+   },
+   {
+    "pos": 4,
+    "name": "Como",
+    "id": 6117,
+    "played": 38,
+    "won": 20,
+    "drawn": 11,
+    "lost": 7,
+    "for": 65,
+    "against": 29,
+    "points": 71.0
+   },
+   {
+    "pos": 5,
+    "name": "AC Milan",
+    "id": 227,
+    "played": 38,
+    "won": 20,
+    "drawn": 10,
+    "lost": 8,
+    "for": 53,
+    "against": 35,
+    "points": 70.0
+   },
+   {
+    "pos": 6,
+    "name": "Juventus",
+    "id": 226,
+    "played": 38,
+    "won": 19,
+    "drawn": 12,
+    "lost": 7,
+    "for": 61,
+    "against": 34,
+    "points": 69.0
+   },
+   {
+    "pos": 7,
+    "name": "Atalanta",
+    "id": 232,
+    "played": 38,
+    "won": 15,
+    "drawn": 14,
+    "lost": 9,
+    "for": 51,
+    "against": 36,
+    "points": 59.0
+   },
+   {
+    "pos": 8,
+    "name": "Bologna",
+    "id": 245,
+    "played": 38,
+    "won": 16,
+    "drawn": 8,
+    "lost": 14,
+    "for": 49,
+    "against": 46,
+    "points": 56.0
+   },
+   {
+    "pos": 9,
+    "name": "Lazio",
+    "id": 236,
+    "played": 38,
+    "won": 14,
+    "drawn": 12,
+    "lost": 12,
+    "for": 41,
+    "against": 40,
+    "points": 54.0
+   },
+   {
+    "pos": 10,
+    "name": "Udinese",
+    "id": 229,
+    "played": 38,
+    "won": 14,
+    "drawn": 8,
+    "lost": 16,
+    "for": 45,
+    "against": 48,
+    "points": 50.0
+   },
+   {
+    "pos": 11,
+    "name": "Sassuolo",
+    "id": 266,
+    "played": 38,
+    "won": 14,
+    "drawn": 7,
+    "lost": 17,
+    "for": 46,
+    "against": 50,
+    "points": 49.0
+   },
+   {
+    "pos": 12,
+    "name": "Torino",
+    "id": 235,
+    "played": 38,
+    "won": 12,
+    "drawn": 9,
+    "lost": 17,
+    "for": 44,
+    "against": 63,
+    "points": 45.0
+   },
+   {
+    "pos": 13,
+    "name": "Parma",
+    "id": 241,
+    "played": 38,
+    "won": 11,
+    "drawn": 12,
+    "lost": 15,
+    "for": 28,
+    "against": 46,
+    "points": 45.0
+   },
+   {
+    "pos": 14,
+    "name": "Cagliari",
+    "id": 243,
+    "played": 38,
+    "won": 11,
+    "drawn": 10,
+    "lost": 17,
+    "for": 40,
+    "against": 53,
+    "points": 43.0
+   },
+   {
+    "pos": 15,
+    "name": "Fiorentina",
+    "id": 228,
+    "played": 38,
+    "won": 9,
+    "drawn": 15,
+    "lost": 14,
+    "for": 41,
+    "against": 50,
+    "points": 42.0
+   },
+   {
+    "pos": 16,
+    "name": "Genoa",
+    "id": 231,
+    "played": 38,
+    "won": 10,
+    "drawn": 11,
+    "lost": 17,
+    "for": 41,
+    "against": 51,
+    "points": 41.0
+   },
+   {
+    "pos": 17,
+    "name": "Lecce",
+    "id": 246,
+    "played": 38,
+    "won": 10,
+    "drawn": 8,
+    "lost": 20,
+    "for": 28,
+    "against": 50,
+    "points": 38.0
+   },
+   {
+    "pos": 18,
+    "name": "Cremonese",
+    "id": 290,
+    "played": 38,
+    "won": 8,
+    "drawn": 10,
+    "lost": 20,
+    "for": 32,
+    "against": 57,
+    "points": 34.0
+   },
+   {
+    "pos": 19,
+    "name": "Hellas Verona",
+    "id": 316,
+    "played": 38,
+    "won": 3,
+    "drawn": 12,
+    "lost": 23,
+    "for": 25,
+    "against": 61,
+    "points": 21.0
+   },
+   {
+    "pos": 20,
+    "name": "Pisa",
+    "id": 248,
+    "played": 38,
+    "won": 2,
+    "drawn": 12,
+    "lost": 24,
+    "for": 26,
+    "against": 71,
+    "points": 18.0
+   }
+  ]
+ },
+ {
+  "slug": "bundesliga-2025-26",
+  "name": "Bundesliga",
+  "country": "Germany",
+  "season": "2025/26",
+  "source": {
+   "provider": "365scores",
+   "competitionId": 25,
+   "seasonNum": 117
+  },
+  "depth": "summary",
+  "champion": "Bayern Munich",
+  "championPts": 89.0,
+  "teams": 18,
+  "matches": 306,
+  "goals": 990,
+  "goalsPerGame": 3.24,
+  "leaders": {
+   "Goals": {
+    "player": "Harry Kane",
+    "athleteId": 1669,
+    "imageVersion": 92,
+    "position": "Centre Forward",
+    "value": "36"
+   },
+   "Expected Goals": {
+    "player": "Harry Kane",
+    "athleteId": 1669,
+    "imageVersion": 92,
+    "position": "Centre Forward",
+    "value": "26.83"
+   },
+   "Assists": {
+    "player": "Michael Olise",
+    "athleteId": 65785,
+    "imageVersion": 87,
+    "position": "Right Forward",
+    "value": "19"
+   },
+   "Expected Assists": {
+    "player": "Michael Olise",
+    "athleteId": 65785,
+    "imageVersion": 87,
+    "position": "Right Forward",
+    "value": "17.23"
+   },
+   "Goals and Assists": {
+    "player": "Harry Kane",
+    "athleteId": 1669,
+    "imageVersion": 92,
+    "position": "Centre Forward",
+    "value": "41"
+   },
+   "Expected Goals + Assists": {
+    "player": "Harry Kane",
+    "athleteId": 1669,
+    "imageVersion": 92,
+    "position": "Centre Forward",
+    "value": "31.09"
+   },
+   "365 Ratings": {
+    "player": "Harry Kane",
+    "athleteId": 1669,
+    "imageVersion": 92,
+    "position": "Centre Forward",
+    "value": "8"
+   },
+   "Penalties Scored": {
+    "player": "Harry Kane",
+    "athleteId": 1669,
+    "imageVersion": 92,
+    "position": "Centre Forward",
+    "value": "10/11"
+   },
+   "Tackles Won Per Game": {
+    "player": "Nicolás Capaldo",
+    "athleteId": 65717,
+    "imageVersion": 47,
+    "position": "Central Midfield",
+    "value": "1.8"
+   },
+   "Interceptions Per Game": {
+    "player": "Senne Lynen",
+    "athleteId": 97646,
+    "imageVersion": 30,
+    "position": "Defensive Midfield",
+    "value": "2.5"
+   },
+   "Red Cards": {
+    "player": "Dominik Kohr",
+    "athleteId": 1801,
+    "imageVersion": 43,
+    "position": "Centre Back",
+    "value": "2"
+   },
+   "Yellow Cards": {
+    "player": "Nicolai Remberg",
+    "athleteId": 135693,
+    "imageVersion": 23,
+    "position": "Central Midfield",
+    "value": "11"
+   },
+   "Clean Sheets": {
+    "player": "Gregor Kobel",
+    "athleteId": 48401,
+    "imageVersion": 41,
+    "position": "Goalkeeper",
+    "value": "15"
+   },
+   "Goals Conceded Per Game": {
+    "player": "Manuel Neuer",
+    "athleteId": 656,
+    "imageVersion": 71,
+    "position": "Goalkeeper",
+    "value": "0.9"
+   },
+   "Saves Per Game": {
+    "player": "Moritz Nicolas",
+    "athleteId": 51889,
+    "imageVersion": 28,
+    "position": "Goalkeeper",
+    "value": "4"
+   },
+   "Penalties Saved": {
+    "player": "Nikola Vasilj",
+    "athleteId": 74833,
+    "imageVersion": 41,
+    "position": "Goalkeeper",
+    "value": "2/6"
+   }
+  },
+  "table": [
+   {
+    "pos": 1,
+    "name": "Bayern Munich",
+    "id": 331,
+    "played": 34,
+    "won": 28,
+    "drawn": 5,
+    "lost": 1,
+    "for": 122,
+    "against": 36,
+    "points": 89.0
+   },
+   {
+    "pos": 2,
+    "name": "Borussia Dortmund",
+    "id": 341,
+    "played": 34,
+    "won": 22,
+    "drawn": 7,
+    "lost": 5,
+    "for": 70,
+    "against": 34,
+    "points": 73.0
+   },
+   {
+    "pos": 3,
+    "name": "RB Leipzig",
+    "id": 7171,
+    "played": 34,
+    "won": 20,
+    "drawn": 5,
+    "lost": 9,
+    "for": 66,
+    "against": 47,
+    "points": 65.0
+   },
+   {
+    "pos": 4,
+    "name": "Stuttgart",
+    "id": 338,
+    "played": 34,
+    "won": 18,
+    "drawn": 8,
+    "lost": 8,
+    "for": 71,
+    "against": 49,
+    "points": 62.0
+   },
+   {
+    "pos": 5,
+    "name": "Hoffenheim",
+    "id": 351,
+    "played": 34,
+    "won": 18,
+    "drawn": 7,
+    "lost": 9,
+    "for": 65,
+    "against": 52,
+    "points": 61.0
+   },
+   {
+    "pos": 6,
+    "name": "Bayer Leverkusen",
+    "id": 333,
+    "played": 34,
+    "won": 17,
+    "drawn": 8,
+    "lost": 9,
+    "for": 68,
+    "against": 47,
+    "points": 59.0
+   },
+   {
+    "pos": 7,
+    "name": "Freiburg",
+    "id": 354,
+    "played": 34,
+    "won": 13,
+    "drawn": 8,
+    "lost": 13,
+    "for": 51,
+    "against": 57,
+    "points": 47.0
+   },
+   {
+    "pos": 8,
+    "name": "Eintracht Frankfurt",
+    "id": 337,
+    "played": 34,
+    "won": 11,
+    "drawn": 11,
+    "lost": 12,
+    "for": 61,
+    "against": 65,
+    "points": 44.0
+   },
+   {
+    "pos": 9,
+    "name": "FC Augsburg",
+    "id": 358,
+    "played": 34,
+    "won": 12,
+    "drawn": 7,
+    "lost": 15,
+    "for": 45,
+    "against": 61,
+    "points": 43.0
+   },
+   {
+    "pos": 10,
+    "name": "Mainz 05",
+    "id": 352,
+    "played": 34,
+    "won": 10,
+    "drawn": 10,
+    "lost": 14,
+    "for": 44,
+    "against": 53,
+    "points": 40.0
+   },
+   {
+    "pos": 11,
+    "name": "Union Berlin",
+    "id": 392,
+    "played": 34,
+    "won": 10,
+    "drawn": 9,
+    "lost": 15,
+    "for": 44,
+    "against": 58,
+    "points": 39.0
+   },
+   {
+    "pos": 12,
+    "name": "Borussia Mönchengladbach",
+    "id": 349,
+    "played": 34,
+    "won": 9,
+    "drawn": 11,
+    "lost": 14,
+    "for": 42,
+    "against": 53,
+    "points": 38.0
+   },
+   {
+    "pos": 13,
+    "name": "Hamburger SV",
+    "id": 334,
+    "played": 34,
+    "won": 9,
+    "drawn": 11,
+    "lost": 14,
+    "for": 40,
+    "against": 54,
+    "points": 38.0
+   },
+   {
+    "pos": 14,
+    "name": "1. FC Köln",
+    "id": 350,
+    "played": 34,
+    "won": 7,
+    "drawn": 11,
+    "lost": 16,
+    "for": 49,
+    "against": 63,
+    "points": 32.0
+   },
+   {
+    "pos": 15,
+    "name": "Werder Bremen",
+    "id": 332,
+    "played": 34,
+    "won": 8,
+    "drawn": 8,
+    "lost": 18,
+    "for": 37,
+    "against": 60,
+    "points": 32.0
+   },
+   {
+    "pos": 16,
+    "name": "Wolfsburg",
+    "id": 339,
+    "played": 34,
+    "won": 7,
+    "drawn": 8,
+    "lost": 19,
+    "for": 45,
+    "against": 69,
+    "points": 29.0
+   },
+   {
+    "pos": 17,
+    "name": "FC Heidenheim",
+    "id": 434,
+    "played": 34,
+    "won": 6,
+    "drawn": 8,
+    "lost": 20,
+    "for": 41,
+    "against": 72,
+    "points": 26.0
+   },
+   {
+    "pos": 18,
+    "name": "St. Pauli",
+    "id": 359,
+    "played": 34,
+    "won": 6,
+    "drawn": 8,
+    "lost": 20,
+    "for": 29,
+    "against": 60,
+    "points": 26.0
+   }
+  ]
+ },
+ {
+  "slug": "ligue-1-2025-26",
+  "name": "Ligue 1",
+  "country": "France",
+  "season": "2025/26",
+  "source": {
+   "provider": "365scores",
+   "competitionId": 35,
+   "seasonNum": 93
+  },
+  "depth": "summary",
+  "champion": "PSG",
+  "championPts": 76.0,
+  "teams": 18,
+  "matches": 306,
+  "goals": 863,
+  "goalsPerGame": 2.82,
+  "leaders": {
+   "Goals": {
+    "player": "Esteban Lepaul",
+    "athleteId": 151512,
+    "imageVersion": 15,
+    "position": "Centre Forward",
+    "value": "21"
+   },
+   "Expected Goals": {
+    "player": "Esteban Lepaul",
+    "athleteId": 151512,
+    "imageVersion": 15,
+    "position": "Centre Forward",
+    "value": "15.13"
+   },
+   "Assists": {
+    "player": "Adrien Thomasson",
+    "athleteId": 4499,
+    "imageVersion": 36,
+    "position": "Central Midfield",
+    "value": "9"
+   },
+   "Expected Assists": {
+    "player": "Matthieu Udol",
+    "athleteId": 42583,
+    "imageVersion": 29,
+    "position": "Left Back",
+    "value": "9.17"
+   },
+   "Goals and Assists": {
+    "player": "Esteban Lepaul",
+    "athleteId": 151512,
+    "imageVersion": 15,
+    "position": "Centre Forward",
+    "value": "26"
+   },
+   "Expected Goals + Assists": {
+    "player": "Mason Greenwood",
+    "athleteId": 65650,
+    "imageVersion": 59,
+    "position": "Right Forward",
+    "value": "20.26"
+   },
+   "365 Ratings": {
+    "player": "Mason Greenwood",
+    "athleteId": 65650,
+    "imageVersion": 59,
+    "position": "Right Forward",
+    "value": "7.6"
+   },
+   "Penalties Scored": {
+    "player": "Mason Greenwood",
+    "athleteId": 65650,
+    "imageVersion": 59,
+    "position": "Right Forward",
+    "value": "6/8"
+   },
+   "Tackles Won Per Game": {
+    "player": "Johann Lepenant",
+    "athleteId": 80210,
+    "imageVersion": 33,
+    "position": "Defensive Midfield",
+    "value": "1.9"
+   },
+   "Interceptions Per Game": {
+    "player": "Malang Sarr",
+    "athleteId": 44638,
+    "imageVersion": 38,
+    "position": "Centre Back",
+    "value": "2.3"
+   },
+   "Red Cards": {
+    "player": "Thilo Kehrer",
+    "athleteId": 14782,
+    "imageVersion": 66,
+    "position": "Centre Back",
+    "value": "2"
+   },
+   "Yellow Cards": {
+    "player": "Adrien Thomasson",
+    "athleteId": 4499,
+    "imageVersion": 36,
+    "position": "Central Midfield",
+    "value": "11"
+   },
+   "Clean Sheets": {
+    "player": "Berke Özer",
+    "athleteId": 57161,
+    "imageVersion": 21,
+    "position": "Goalkeeper",
+    "value": "13"
+   },
+   "Goals Conceded Per Game": {
+    "player": "Lucas Chevalier",
+    "athleteId": 79714,
+    "imageVersion": 26,
+    "position": "Goalkeeper",
+    "value": "0.8"
+   },
+   "Saves Per Game": {
+    "player": "Herve Koffi",
+    "athleteId": 55353,
+    "imageVersion": 87,
+    "position": "Goalkeeper",
+    "value": "4.1"
+   },
+   "Penalties Saved": {
+    "player": "Dominik Greif",
+    "athleteId": 70072,
+    "imageVersion": 39,
+    "position": "Goalkeeper",
+    "value": "3/5"
+   }
+  },
+  "table": [
+   {
+    "pos": 1,
+    "name": "PSG",
+    "id": 480,
+    "played": 34,
+    "won": 24,
+    "drawn": 4,
+    "lost": 6,
+    "for": 74,
+    "against": 29,
+    "points": 76.0
+   },
+   {
+    "pos": 2,
+    "name": "Lens",
+    "id": 481,
+    "played": 34,
+    "won": 22,
+    "drawn": 4,
+    "lost": 8,
+    "for": 66,
+    "against": 35,
+    "points": 70.0
+   },
+   {
+    "pos": 3,
+    "name": "Lille",
+    "id": 478,
+    "played": 34,
+    "won": 18,
+    "drawn": 7,
+    "lost": 9,
+    "for": 52,
+    "against": 37,
+    "points": 61.0
+   },
+   {
+    "pos": 4,
+    "name": "Lyon",
+    "id": 465,
+    "played": 34,
+    "won": 18,
+    "drawn": 6,
+    "lost": 10,
+    "for": 53,
+    "against": 40,
+    "points": 60.0
+   },
+   {
+    "pos": 5,
+    "name": "Olympique de Marseille",
+    "id": 469,
+    "played": 34,
+    "won": 18,
+    "drawn": 5,
+    "lost": 11,
+    "for": 63,
+    "against": 45,
+    "points": 59.0
+   },
+   {
+    "pos": 6,
+    "name": "Rennes",
+    "id": 477,
+    "played": 34,
+    "won": 17,
+    "drawn": 8,
+    "lost": 9,
+    "for": 59,
+    "against": 50,
+    "points": 59.0
+   },
+   {
+    "pos": 7,
+    "name": "Monaco",
+    "id": 471,
+    "played": 34,
+    "won": 16,
+    "drawn": 6,
+    "lost": 12,
+    "for": 60,
+    "against": 54,
+    "points": 54.0
+   },
+   {
+    "pos": 8,
+    "name": "Strasbourg",
+    "id": 479,
+    "played": 34,
+    "won": 15,
+    "drawn": 8,
+    "lost": 11,
+    "for": 58,
+    "against": 47,
+    "points": 53.0
+   },
+   {
+    "pos": 9,
+    "name": "Toulouse",
+    "id": 482,
+    "played": 34,
+    "won": 12,
+    "drawn": 9,
+    "lost": 13,
+    "for": 47,
+    "against": 46,
+    "points": 45.0
+   },
+   {
+    "pos": 10,
+    "name": "Lorient",
+    "id": 472,
+    "played": 34,
+    "won": 11,
+    "drawn": 12,
+    "lost": 11,
+    "for": 48,
+    "against": 51,
+    "points": 45.0
+   },
+   {
+    "pos": 11,
+    "name": "Paris FC",
+    "id": 6075,
+    "played": 34,
+    "won": 11,
+    "drawn": 11,
+    "lost": 12,
+    "for": 47,
+    "against": 50,
+    "points": 44.0
+   },
+   {
+    "pos": 12,
+    "name": "Brest",
+    "id": 534,
+    "played": 34,
+    "won": 10,
+    "drawn": 9,
+    "lost": 15,
+    "for": 43,
+    "against": 55,
+    "points": 39.0
+   },
+   {
+    "pos": 13,
+    "name": "Angers",
+    "id": 493,
+    "played": 34,
+    "won": 9,
+    "drawn": 9,
+    "lost": 16,
+    "for": 29,
+    "against": 48,
+    "points": 36.0
+   },
+   {
+    "pos": 14,
+    "name": "Le Havre",
+    "id": 485,
+    "played": 34,
+    "won": 7,
+    "drawn": 14,
+    "lost": 13,
+    "for": 32,
+    "against": 44,
+    "points": 35.0
+   },
+   {
+    "pos": 15,
+    "name": "Auxerre",
+    "id": 476,
+    "played": 34,
+    "won": 8,
+    "drawn": 10,
+    "lost": 16,
+    "for": 34,
+    "against": 44,
+    "points": 34.0
+   },
+   {
+    "pos": 16,
+    "name": "OGC Nice",
+    "id": 470,
+    "played": 34,
+    "won": 7,
+    "drawn": 11,
+    "lost": 16,
+    "for": 37,
+    "against": 60,
+    "points": 32.0
+   },
+   {
+    "pos": 17,
+    "name": "Nantes",
+    "id": 486,
+    "played": 34,
+    "won": 5,
+    "drawn": 9,
+    "lost": 20,
+    "for": 29,
+    "against": 52,
+    "points": 24.0
+   },
+   {
+    "pos": 18,
+    "name": "Metz",
+    "id": 484,
+    "played": 34,
+    "won": 3,
+    "drawn": 8,
+    "lost": 23,
+    "for": 32,
+    "against": 76,
+    "points": 17.0
+   }
+  ]
+ }
+]

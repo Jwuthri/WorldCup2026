@@ -37,6 +37,7 @@ type Acc = {
   xa: number; keyPasses: number;
   dribbles: number; touches: number;
   tackles: number; inter: number; recov: number; duels: number;
+  clears: number; blocks: number; bigCh: number; finalThird: number; possLost: number; fouled: number;
   forced: number;
   topSpeed: number; sprintDist: number; distance: number;
   saves: number; savePctSum: number; savePctN: number; conceded: number; xgp: number;
@@ -71,14 +72,35 @@ const pct = (v: number, sorted: number[]): number => {
 };
 const score = (p: number) => Math.round(40 + p * 59); // 40..99
 
-export const getCards = cache((): Map<string, Card> => {
+/**
+ * One match, flattened for the card engine. The tournament builds these from FIFA +
+ * 365scores bundles; a league builds them from the 365-only bundles. Same engine,
+ * same maths — only the axis set differs, because a league feed has no FIFA
+ * physical tier to put on the PAC/PHY faces.
+ */
+export type CardSourceMatch = {
+  id: string;
+  score: string;
+  sides: {
+    players: MatchPlayer[];
+    teamName: string;
+    teamAbbr: string;
+    oppName: string;
+    oppAbbr: string;
+    oppScore: number | null;
+  }[];
+};
+
+export type CardFlavour = "tournament" | "league";
+
+export function buildCards(source: CardSourceMatch[], flavour: CardFlavour): Map<string, Card> {
   const accs = new Map<string, Acc>();
 
-  for (const m of getCalendar()) {
-    const b = getMatchBundle(m.id);
-    if (!b) continue;
-    const score2 = `${m.home.score}:${m.away.score}`;
-    for (const [side, opp] of [[b.home, m.away], [b.away, m.home]] as const) {
+  for (const m of source) {
+    const score2 = m.score;
+    for (const sideSrc of m.sides) {
+      const side = { ref: { name: sideSrc.teamName, abbr: sideSrc.teamAbbr }, players: sideSrc.players };
+      const opp = { name: sideSrc.oppName, abbr: sideSrc.oppAbbr, score: sideSrc.oppScore };
       for (const p of side.players) {
         const min = p.fdh.TimePlayed ?? n365(p, "Minutes");
         if (!min) continue;
@@ -89,7 +111,8 @@ export const getCards = cache((): Map<string, Card> => {
             photo: p.photo, min: 0, matches: 0,
             goals: 0, xg: 0, att: 0, attOn: 0, passesC: 0, passes: 0, crossesC: 0,
             assists: 0, xa: 0, keyPasses: 0, dribbles: 0, touches: 0,
-            tackles: 0, inter: 0, recov: 0, duels: 0, forced: 0,
+            tackles: 0, inter: 0, recov: 0, duels: 0,
+            clears: 0, blocks: 0, bigCh: 0, finalThird: 0, possLost: 0, fouled: 0, forced: 0,
             topSpeed: 0, sprintDist: 0, distance: 0,
             saves: 0, savePctSum: 0, savePctN: 0, conceded: 0, xgp: 0,
             cleanSheets: 0,
@@ -118,6 +141,12 @@ export const getCards = cache((): Map<string, Card> => {
         a.inter += n365(p, "Interceptions");
         a.recov += n365(p, "Ball Recovery");
         a.duels += n365(p, "Ground Duels Won") + n365(p, "Aerial Duels Won");
+        a.clears += n365(p, "Clearances");
+        a.blocks += n365(p, "Blocks");
+        a.bigCh += n365(p, "Big Chances Created");
+        a.finalThird += n365(p, "Passes Into Final Third");
+        a.possLost += n365(p, "Possession Lost");
+        a.fouled += n365(p, "Was Fouled");
         a.forced += f.ForcedTurnovers ?? 0;
         a.topSpeed = Math.max(a.topSpeed, f.TopSpeed ?? 0);
         a.sprintDist += (f.DistanceHighSpeedSprinting ?? 0) + (f.DistanceHighSpeedRunning ?? 0);
@@ -132,6 +161,7 @@ export const getCards = cache((): Map<string, Card> => {
       }
     }
   }
+  const physical = flavour === "tournament"; // FIFA tracking exists only at the tournament
 
   // ---- derived metrics + percentile pools ----
   // ponytail: effective minutes floor of 45 stops 10-minute cameos gaming per-90s
@@ -159,18 +189,55 @@ export const getCards = cache((): Map<string, Card> => {
     saves90: (a) => per90(a.saves, a),
     savePct: (a) => (a.savePctN ? a.savePctSum / a.savePctN : 0),
     xgp90: (a) => per90(a.xgp, a),
+    shoot90: (a) => per90(a.goals * 1.2 + a.xg, a),
+    create90: (a) => per90(a.assists * 1.2 + a.xa + a.keyPasses * 0.5 + a.bigCh * 0.8, a),
+    build90: (a) => per90(a.passesC * 0.5 + a.finalThird + a.crossesC * 0.6, a),
+    carry90: (a) => per90(a.dribbles * 2 + a.touches * 0.15, a),
+    stop90: (a) => per90(a.tackles + a.inter + a.recov * 0.6 + a.clears * 0.5 + a.blocks * 0.8, a),
+    physical90: (a) => per90(a.duels + a.fouled * 0.5, a),
+    cleanRate: (a) => (a.matches ? a.cleanSheets / a.matches : 0),
+    savePctDerived: (a) => (a.saves + a.conceded > 0 ? a.saves / (a.saves + a.conceded) : 0),
     concInv: (a) => -per90(a.conceded, a),
   };
-  const GK_POOL_KEYS = new Set(["saves90", "savePct", "xgp90", "concInv", "passPct", "topSpeed", "dist90", "rating"]);
-  const sortedPools: Record<string, { out: number[]; gk: number[] }> = {};
+  const GK_POOL_KEYS = new Set(["saves90", "savePct", "savePctDerived", "xgp90", "concInv",
+    "passPct", "topSpeed", "dist90", "rating", "cleanRate", "build90"]);
+  /**
+   * League cards rank each player against their OWN position group; the tournament
+   * keeps its single outfield pool, unchanged.
+   *
+   * With one pooled outfield group, a centre-back's tackling is measured against
+   * strikers, so every defender lands in the 95th percentile for defending while
+   * also passing more than the forwards — and the league's top scorer drops out of
+   * the top twenty. Comparing like with like asks the question that actually matters:
+   * how good are you at your job, against the others doing that job.
+   */
+  const byPosition = !physical;
+  const groupOf = (a: Acc) => (isGk(a) ? "GK" : byPosition ? posOf(a.posCounts) : "OUT");
+  const sortedPools: Record<string, Record<string, number[]>> = {};
   for (const [k, fn] of Object.entries(METRICS)) {
-    sortedPools[k] = {
-      out: pool.filter((a) => !isGk(a)).map(fn).sort((x, y) => x - y),
-      gk: pool.filter(isGk).map(fn).sort((x, y) => x - y),
-    };
+    const groups: Record<string, number[]> = {};
+    for (const a of pool) {
+      const g = GK_POOL_KEYS.has(k) && isGk(a) ? "GK" : groupOf(a);
+      (groups[g] ??= []).push(fn(a));
+    }
+    for (const arr of Object.values(groups)) arr.sort((x, y) => x - y);
+    sortedPools[k] = groups;
   }
-  const P = (a: Acc, k: string) =>
-    pct(METRICS[k](a), GK_POOL_KEYS.has(k) && isGk(a) ? sortedPools[k].gk : sortedPools[k].out);
+  /**
+   * Minutes of evidence needed before a percentile is taken at face value. Every
+   * metric here is a rate, so a keeper who played once and kept a clean sheet would
+   * otherwise sit at the 100th percentile for save %, clean-sheet rate and goals
+   * conceded at the same time — which is exactly how two backup goalkeepers ended up
+   * topping a 500-player league. Below the threshold the percentile is pulled toward
+   * the middle in proportion to how little was actually seen.
+   */
+  const CONF_MIN = physical ? 450 : 1350; // ~5 tournament matches, ~15 league matches
+  const P = (a: Acc, k: string) => {
+    const g = GK_POOL_KEYS.has(k) && isGk(a) ? "GK" : groupOf(a);
+    const raw = pct(METRICS[k](a), sortedPools[k][g] ?? []);
+    const confidence = Math.min(1, a.min / CONF_MIN);
+    return 0.5 + (raw - 0.5) * confidence;
+  };
 
   const WEIGHTS: Record<string, number[]> = {
     // PAC SHO PAS DRI DEF PHY
@@ -188,24 +255,43 @@ export const getCards = cache((): Map<string, Card> => {
     let stats: CardStat[];
     let weighted: number;
     if (pos === "GK") {
-      const s = {
-        SAV: score(P(a, "saves90")),
-        STP: score(P(a, "savePct")),
-        XGP: score(P(a, "xgp90")),
-        DIS: score(P(a, "passPct")),
-        SPD: score(P(a, "topSpeed")),
-        PHY: score(P(a, "dist90")),
-      };
-      stats = [
-        { key: "SAV", label: "saves", val: s.SAV },
-        { key: "STP", label: "save %", val: s.STP },
-        { key: "XGP", label: "xG prevented", val: s.XGP },
-        { key: "DIS", label: "distribution", val: s.DIS },
-        { key: "SPD", label: "speed", val: s.SPD },
-        { key: "PHY", label: "workrate", val: s.PHY },
-      ];
+      const s = physical
+        ? {
+            SAV: score(P(a, "saves90")),
+            STP: score(P(a, "savePct")),
+            XGP: score(P(a, "xgp90")),
+            DIS: score(P(a, "passPct")),
+            SPD: score(P(a, "topSpeed")),
+            PHY: score(P(a, "dist90")),
+          }
+        : {
+            // no tracking tier: speed/workrate give way to shot-stopping outcomes
+            SAV: score(P(a, "saves90")),
+            STP: score(P(a, "savePctDerived")),
+            XGP: score(P(a, "xgp90")),
+            DIS: score(P(a, "build90")),
+            SPD: score(P(a, "cleanRate")),
+            PHY: score(P(a, "concInv")),
+          };
+      stats = physical
+        ? [
+            { key: "SAV", label: "saves", val: s.SAV },
+            { key: "STP", label: "save %", val: s.STP },
+            { key: "XGP", label: "xG prevented", val: s.XGP },
+            { key: "DIS", label: "distribution", val: s.DIS },
+            { key: "SPD", label: "speed", val: s.SPD },
+            { key: "PHY", label: "workrate", val: s.PHY },
+          ]
+        : [
+            { key: "SAV", label: "saves", val: s.SAV },
+            { key: "STP", label: "save %", val: s.STP },
+            { key: "XGP", label: "xG prevented", val: s.XGP },
+            { key: "DIS", label: "distribution", val: s.DIS },
+            { key: "CLN", label: "clean sheets", val: s.SPD },
+            { key: "CNC", label: "goals kept out", val: s.PHY },
+          ];
       weighted = (s.SAV + s.STP + s.XGP) / 3 * 0.75 + (s.DIS + s.SPD + s.PHY) / 3 * 0.25;
-    } else {
+    } else if (physical) {
       const s = {
         PAC: score(P(a, "topSpeed") * 0.7 + P(a, "sprint90") * 0.3),
         SHO: score(P(a, "goals90") * 0.45 + P(a, "xg90") * 0.3 + P(a, "attOn90") * 0.25),
@@ -223,6 +309,34 @@ export const getCards = cache((): Map<string, Card> => {
         { key: "PHY", label: "engine", val: s.PHY },
       ];
       const w = WEIGHTS[pos];
+      weighted = stats.reduce((sum, st, i) => sum + st.val * w[i], 0);
+    } else {
+      // league faces: six axes a club feed can actually fill. Pace and distance are
+      // gone (FIFA-only), so creation and duels take those slots rather than being
+      // faked from something they are not.
+      const s = {
+        SHO: score(P(a, "shoot90") * 0.6 + P(a, "attOn90") * 0.4),
+        CRE: score(P(a, "create90")),
+        PAS: score(P(a, "build90") * 0.65 + P(a, "passC90") * 0.35),
+        DRI: score(P(a, "carry90")),
+        DEF: score(P(a, "stop90")),
+        DUE: score(P(a, "physical90")),
+      };
+      stats = [
+        { key: "SHO", label: "shooting", val: s.SHO },
+        { key: "CRE", label: "creation", val: s.CRE },
+        { key: "PAS", label: "passing", val: s.PAS },
+        { key: "DRI", label: "carrying", val: s.DRI },
+        { key: "DEF", label: "defending", val: s.DEF },
+        { key: "DUE", label: "duels", val: s.DUE },
+      ];
+      // SHO CRE PAS DRI DEF DUE
+      const lw: Record<string, number[]> = {
+        DEF: [0.04, 0.06, 0.18, 0.05, 0.45, 0.22],
+        MID: [0.08, 0.28, 0.30, 0.16, 0.14, 0.04],
+        ATT: [0.55, 0.18, 0.05, 0.13, 0.03, 0.06],
+      };
+      const w = lw[pos];
       weighted = stats.reduce((sum, st, i) => sum + st.val * w[i], 0);
     }
     const ratingScore = a.ratings.length ? score(P(a, "rating")) : weighted;
@@ -247,9 +361,18 @@ export const getCards = cache((): Map<string, Card> => {
             { label: "Tackles + interceptions", value: fmt(a.tackles + a.inter) },
             { label: "Duels won", value: fmt(a.duels) },
           ]),
-      { label: "Pass completion", value: a.passes > 0 ? `${Math.round((a.passesC / a.passes) * 100)}%` : "—" },
-      { label: "Distance", value: `${(a.distance / 1000).toFixed(1)} km` },
-      { label: "Top speed", value: a.topSpeed ? `${a.topSpeed.toFixed(1)} km/h` : "—" },
+      ...(physical
+        ? [
+            { label: "Pass completion", value: a.passes > 0 ? `${Math.round((a.passesC / a.passes) * 100)}%` : "—" },
+            { label: "Distance", value: `${(a.distance / 1000).toFixed(1)} km` },
+            { label: "Top speed", value: a.topSpeed ? `${a.topSpeed.toFixed(1)} km/h` : "—" },
+          ]
+        : [
+            { label: "Key passes", value: fmt(a.keyPasses) },
+            { label: "Big chances created", value: fmt(a.bigCh) },
+            { label: "Into final third", value: fmt(a.finalThird) },
+            { label: "Clean sheets", value: fmt(a.cleanSheets) },
+          ]),
       { label: "Avg rating", value: avgRating != null ? avgRating.toFixed(2) : "—" },
     ];
     cards.set(a.id, {
@@ -267,4 +390,25 @@ export const getCards = cache((): Map<string, Card> => {
     });
   }
   return cards;
-});
+}
+
+/** the 2026 tournament — FIFA bundles, physical axes */
+export const getCards = cache((): Map<string, Card> =>
+  buildCards(
+    getCalendar().flatMap((m) => {
+      const b = getMatchBundle(m.id);
+      if (!b) return [];
+      return [{
+        id: m.id,
+        score: `${m.home.score}:${m.away.score}`,
+        sides: [
+          { players: b.home.players, teamName: b.home.ref.name, teamAbbr: b.home.ref.abbr,
+            oppName: m.away.name, oppAbbr: m.away.abbr, oppScore: m.away.score },
+          { players: b.away.players, teamName: b.away.ref.name, teamAbbr: b.away.ref.abbr,
+            oppName: m.home.name, oppAbbr: m.home.abbr, oppScore: m.home.score },
+        ],
+      }];
+    }),
+    "tournament"
+  )
+);

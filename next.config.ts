@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  async redirects() {
-    return [{ source: "/story", destination: "/", permanent: false }];
-  },
+  // / is the dataset chooser; the 2026 film lives at /story
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "digitalhub.fifa.com" },

@@ -13,7 +13,7 @@ import { getCalendar, getMatchBundle, type MatchPlayer } from "@/lib/data";
  */
 export const GRID_W = 20;
 export const GRID_H = 14;
-const GRID_N = GRID_W * GRID_H;
+export const GRID_N = GRID_W * GRID_H;
 
 export function decodeHeatmap(url: string): number[] | null {
   let u = url;
@@ -51,7 +51,7 @@ const minutesOf = (p: MatchPlayer): number => {
 
 /** each player's grid is self-normalized 0-9, so treat it as a spatial
  *  distribution (mass 1) and weight by minutes played before summing */
-const sumSide = (players: MatchPlayer[]): TeamGrid => {
+export const sumSide = (players: MatchPlayer[]): TeamGrid => {
   const acc = new Array(GRID_N).fill(0);
   for (const p of players) {
     const g = p.heatmap ? decodeHeatmap(p.heatmap) : null;

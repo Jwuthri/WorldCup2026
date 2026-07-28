@@ -17,7 +17,7 @@ export type SlimCard = {
 
 const POSITIONS = ["GK", "DEF", "MID", "ATT"] as const;
 
-export default function PlayersExplorer({ cards }: { cards: SlimCard[] }) {
+export default function PlayersExplorer({ cards, base = "" }: { cards: SlimCard[]; base?: string }) {
   const [q, setQ] = useState("");
   const [pos, setPos] = useState<string | null>(null);
   const [shown, setShown] = useState(60);
@@ -59,7 +59,7 @@ export default function PlayersExplorer({ cards }: { cards: SlimCard[] }) {
 
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
         {filtered.slice(0, shown).map((c) => (
-          <MiniCard key={c.id} c={c} />
+          <MiniCard key={c.id} c={c} base={base} badge={c.flag} />
         ))}
       </div>
 
